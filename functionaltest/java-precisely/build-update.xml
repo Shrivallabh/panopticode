@@ -1,0 +1,8 @@
+<project name="Update Panopticode for Java Precisely" basedir="." default="update">
+    <target name="update">
+        <ant dir="../.." antfile="build.xml" target="dist" />
+        <delete dir="panopticode" />
+        <mkdir dir="panopticode" />
+        <unzip src="../../target/panopticode-latest.zip" dest="." />
+    </target>
+</project>

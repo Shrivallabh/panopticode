@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="simian.xsl" type="text/xsl"?>
+<!--
+Similarity Analyser 2.2.12 - http://www.redhillconsulting.com.au/products/simian/index.html
+Copyright (c) 2003-06 RedHill Consulting Pty. Ltd.  All rights reserved.
+Simian is not free unless used solely for non-commercial or evaluation purposes.
+-->
+<simian version="2.2.12">
+    <check ignoreCharacterCase="true" ignoreCurlyBraces="true" ignoreIdentifierCase="true" ignoreModifiers="true" ignoreStringCase="true" language="Java" threshold="10">
+        <set lineCount="10">
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example101.java" startLineNumber="10" endLineNumber="19"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example021.java" startLineNumber="10" endLineNumber="19"/>
+        </set>
+        <set lineCount="10">
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example135.java" startLineNumber="24" endLineNumber="41"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example130.java" startLineNumber="14" endLineNumber="31"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example127.java" startLineNumber="14" endLineNumber="31"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example026.java" startLineNumber="6" endLineNumber="16"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example039.java" startLineNumber="6" endLineNumber="16"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example044.java" startLineNumber="6" endLineNumber="16"/>
+        </set>
+        <set lineCount="12">
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example059.java" startLineNumber="6" endLineNumber="17"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example034.java" startLineNumber="6" endLineNumber="17"/>
+        </set>
+        <set lineCount="14">
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example081.java" startLineNumber="6" endLineNumber="26"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example080.java" startLineNumber="6" endLineNumber="26"/>
+        </set>
+        <set lineCount="16">
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example074.java" startLineNumber="11" endLineNumber="33"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example071.java" startLineNumber="10" endLineNumber="32"/>
+        </set>
+        <set lineCount="17">
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example070.java" startLineNumber="7" endLineNumber="29"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example131.java" startLineNumber="7" endLineNumber="29"/>
+        </set>
+        <set lineCount="18">
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example135.java" startLineNumber="43" endLineNumber="68"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example130.java" startLineNumber="34" endLineNumber="59"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example127.java" startLineNumber="34" endLineNumber="59"/>
+        </set>
+        <set lineCount="29">
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example127.java" startLineNumber="14" endLineNumber="59"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example130.java" startLineNumber="14" endLineNumber="59"/>
+        </set>
+        <set lineCount="31">
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example108.java" startLineNumber="17" endLineNumber="50"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example109.java" startLineNumber="17" endLineNumber="50"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example112.java" startLineNumber="17" endLineNumber="50"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example113.java" startLineNumber="17" endLineNumber="50"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example117.java" startLineNumber="17" endLineNumber="50"/>
+        </set>
+        <set lineCount="32">
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example129.java" startLineNumber="7" endLineNumber="47"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/functionaltest/java-precisely/src/Example121.java" startLineNumber="7" endLineNumber="47"/>
+        </set>
+        <summary duplicateFileCount="23" duplicateLineCount="476" duplicateBlockCount="24" totalFileCount="156" totalRawLineCount="5835" totalSignificantLineCount="3178" processingTime="204"/>
+    </check>
+</simian>

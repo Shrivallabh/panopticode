@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" 
+	   xmlns:xlink="http://www.w3.org/1999/xlink" 
+	   viewBox="0 0 540 120">
+	<defs>
+		<g id="bullet-graph-with-ticks">
+			<!-- Good Background -->
+			<rect x=" 0" y="0" width="13" height="15" fill="green"/>
+			<!-- Okay Background -->
+			<rect x="13" y="0" width="12" height="15" fill="yellow"/>
+			<!-- Bad Background -->
+			<rect x="25" y="0" width="175" height="15" fill="red"/>
+			<!-- Target -->
+			<rect x="12" y="2" width="1" height="11" fill="black" stroke="black" />
+			<!-- Ticks -->
+			<rect x="  0" y="15" width="1" height="3" />
+			<rect x=" 25" y="15" width="1" height="3" />
+			<rect x=" 50" y="15" width="1" height="3" />
+			<rect x=" 75" y="15" width="1" height="3" />
+			<rect x="100" y="15" width="1" height="3" />
+			<rect x="125" y="15" width="1" height="3" />
+			<rect x="150" y="15" width="1" height="3" />
+			<rect x="175" y="15" width="1" height="3" />
+			<rect x="199" y="15" width="1" height="3" />
+		</g>
+		<g id="bullet-graph-with-labels">
+			<use xlink:href="#bullet-graph-with-ticks" x="0" y="0" />
+			<!-- Labels -->
+			<text x="  0" y="27" text-anchor="middle" font-size="0.5em">0</text>
+			<text x=" 25" y="27" text-anchor="middle" font-size="0.5em">200</text>
+			<text x=" 50" y="27" text-anchor="middle" font-size="0.5em">400</text>
+			<text x=" 75" y="27" text-anchor="middle" font-size="0.5em">600</text>
+			<text x="100" y="27" text-anchor="middle" font-size="0.5em">800</text>
+			<text x="125" y="27" text-anchor="middle" font-size="0.5em">1000</text>
+			<text x="150" y="27" text-anchor="middle" font-size="0.5em">1200</text>
+			<text x="175" y="27" text-anchor="middle" font-size="0.5em">1400</text>
+			<text x="200" y="27" text-anchor="middle" font-size="0.5em">1600</text>
+		</g>
+	</defs>
+	<!-- Title -->
+	<text x="290" y="15" text-anchor="middle" font-size="1.2em">Top NPaths over Threshold of 100</text>
+	
+	<!-- Line Items -->
+	<text x="270" y=" 40" text-anchor="end" font-size="0.8em">html/tokenizer/Parser.java:234</text>
+	<use xlink:href="#bullet-graph-with-ticks" x="275" y=" 27" />
+	<rect x="275" y="32" width="194" height="5" fill="black" />
+	<text x="520" y=" 40" text-anchor="end">1552</text>
+	
+	<text x="270" y=" 60" text-anchor="end" font-size="0.8em">html/tokenizer/Parser.java:171</text>
+	<use xlink:href="#bullet-graph-with-ticks" x="275" y=" 47" />
+	<rect x="275" y="52" width="51" height="5" fill="black" />
+	<text x="520" y=" 60" text-anchor="end">408</text>
+	
+	<text x="270" y=" 80" text-anchor="end" font-size="0.8em">taglib/page/ApplyDecoratorTag.java:142</text>
+	<use xlink:href="#bullet-graph-with-ticks" x="275" y=" 67" />
+	<rect x="275" y="72" width="41" height="5" fill="black" />
+	<text x="520" y=" 80" text-anchor="end">330</text>
+	
+	<text x="270" y="100" text-anchor="end" font-size="0.8em">parser/FastPageParser.java:98</text>
+	<use xlink:href="#bullet-graph-with-labels" x="275" y=" 87" />
+	<rect x="275" y="92" width="15" height="5" fill="black" />
+	<text x="520" y="100" text-anchor="end">121</text>
+</svg>

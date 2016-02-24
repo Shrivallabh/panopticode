@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" name="org.panopticode.DecimalMetricDeclarationTest" tests="2" time="0.157">
+  <properties>
+    <property name="java.vendor" value="Apple Computer, Inc." />
+    <property name="jikes.class.path" value=":/System/Library/Frameworks/JavaVM.framework/Home/../Classes/charsets.jar:/System/Library/Frameworks/JavaVM.framework/Home/../Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Home/../Classes/dt.jar:/System/Library/Frameworks/JavaVM.framework/Home/../Classes/jce.jar:/System/Library/Frameworks/JavaVM.framework/Home/../Classes/jconsole.jar:/System/Library/Frameworks/JavaVM.framework/Home/../Classes/jsse.jar:/System/Library/Frameworks/JavaVM.framework/Home/../Classes/laf.jar:/System/Library/Frameworks/JavaVM.framework/Home/../Classes/ui.jar" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/ui.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/laf.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/sunrsasign.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jsse.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jce.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/charsets.jar" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="/usr/local/ant/current" />
+    <property name="java.runtime.version" value="1.5.0_07-164" />
+    <property name="user.name" value="julias" />
+    <property name="ant.file.Subversion Imports" value="/Users/julias/projects/personal/panopticode/panopticode/plugins/subversion/subversion-imports.xml" />
+    <property name="awt.nativeDoubleBuffering" value="true" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Libraries" />
+    <property name="ant.file.JavaNCSS Imports" value="/Users/julias/projects/personal/panopticode/panopticode/plugins/javancss/javancss-imports.xml" />
+    <property name="ant.project.name" value="Panopticode" />
+    <property name="java.version" value="1.5.0_07" />
+    <property name="version" value="0.1" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="emma.coverage.out.file" value="target/scratch/emma/coverage.emma" />
+    <property name="java.endorsed.dirs" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="MacRoman" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="ant.file.Panopticode Imports" value="/Users/julias/projects/personal/panopticode/panopticode/panopticode-imports.xml" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="49.0" />
+    <property name="ant.file.CheckStyle Imports" value="/Users/julias/projects/personal/panopticode/panopticode/plugins/checkstyle/checkstyle-imports.xml" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="ant.file" value="/Users/julias/projects/personal/panopticode/build.xml" />
+    <property name="os.version" value="10.4.8" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="1.5.0_07-87" />
+    <property name="ant.library.dir" value="/usr/local/ant/current/lib" />
+    <property name="ant.file.Panopticode" value="/Users/julias/projects/personal/panopticode/build.xml" />
+    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="apple.awt.CToolkit" />
+    <property name="user.home" value="/Users/julias" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="java.vendor.url" value="http://apple.com/" />
+    <property name="java.vm.vendor" value="&quot;Apple Computer, Inc.&quot;" />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.runtime.name" value="Java(TM) 2 Runtime Environment, Standard Edition" />
+    <property name="java.class.path" value="/Users/julias/projects/personal/panopticode/prod/lib/TreemapAlgorithms.jar:/Users/julias/projects/personal/panopticode/prod/lib/ant.jar:/Users/julias/projects/personal/panopticode/prod/lib/dom4j-1.6.1.jar:/Users/julias/projects/personal/panopticode/prod/lib/jaxen-1.1.jar:/Users/julias/projects/personal/panopticode/unittest/lib/ant-testutil.jar:/Users/julias/projects/personal/panopticode/unittest/lib/cglib-nodep-2.1_3.jar:/Users/julias/projects/personal/panopticode/unittest/lib/jmock-1.1.0RC1.jar:/Users/julias/projects/personal/panopticode/unittest/lib/jmock-cglib-1.1.0RC1.jar:/Users/julias/projects/personal/panopticode/unittest/lib/junit.jar:/Users/julias/projects/personal/panopticode/target/classes:/Users/julias/projects/personal/panopticode/panopticode/plugins/emma/lib/emma.jar:/Users/julias/projects/personal/panopticode/panopticode/plugins/emma/lib/emma_ant.jar:/usr/local/ant/current/lib/junit.jar:/usr/local/ant/1.6.5/lib/ant-launcher.jar:/usr/local/ant/current/lib/ant.jar:/usr/local/ant/current/lib/ant-junit.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/.compatibility/14compatibility.jar" />
+    <property name="ant.version" value="Apache Ant version 1.6.5 compiled on June 2 2005" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="ant.file.Emma Imports" value="/Users/julias/projects/personal/panopticode/panopticode/plugins/emma/emma-imports.xml" />
+    <property name="java.vendor.url.bug" value="http://developer.apple.com/java/" />
+    <property name="os.arch" value="i386" />
+    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
+    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/ext" />
+    <property name="mrj.version" value="1040.1.5.0_07-164" />
+    <property name="user.dir" value="/Users/julias/projects/personal/panopticode" />
+    <property name="ant.file.Simian Imports" value="/Users/julias/projects/personal/panopticode/panopticode/plugins/simian/simian-imports.xml" />
+    <property name="emma.coverage.out.merge" value="true" />
+    <property name="line.separator" value="
+" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="basedir" value="/Users/julias/projects/personal/panopticode" />
+    <property name="ant.java.version" value="1.5" />
+    <property name="ant.file.Complexian Imports" value="/Users/julias/projects/personal/panopticode/panopticode/plugins/complexian/complexian-imports.xml" />
+    <property name="file.encoding" value="MacRoman" />
+    <property name="ant.file.JDepend Imports" value="/Users/julias/projects/personal/panopticode/panopticode/plugins/jdepend/jdepend-imports.xml" />
+    <property name="java.specification.version" value="1.5" />
+  </properties>
+  <testcase classname="org.panopticode.DecimalMetricDeclarationTest" name="testCreateMetric" time="0.112" />
+  <testcase classname="org.panopticode.DecimalMetricDeclarationTest" name="testGetType" time="0.0" />
+  <system-out><![CDATA[EMMA: collecting runtime coverage data ...
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

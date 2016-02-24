@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="simian.xsl" type="text/xsl"?>
+<!--
+Similarity Analyser 2.2.12 - http://www.redhillconsulting.com.au/products/simian/index.html
+Copyright (c) 2003-06 RedHill Consulting Pty. Ltd.  All rights reserved.
+Simian is not free unless used solely for non-commercial or evaluation purposes.
+-->
+<simian version="2.2.12">
+    <check ignoreCharacterCase="true" ignoreCurlyBraces="true" ignoreIdentifierCase="true" ignoreModifiers="true" ignoreStringCase="true" language="Java" threshold="10">
+        <set lineCount="11">
+            <block sourceFile="/Users/julias/projects/personal/panopticode/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java" startLineNumber="97" endLineNumber="108"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java" startLineNumber="119" endLineNumber="130"/>
+        </set>
+        <set lineCount="11">
+            <block sourceFile="/Users/julias/projects/personal/panopticode/prod/src/org/panopticode/supplement/emma/EmmaSupplement.java" startLineNumber="395" endLineNumber="409"/>
+            <block sourceFile="/Users/julias/projects/personal/panopticode/prod/src/org/panopticode/supplement/javancss/JavaNCSSSupplement.java" startLineNumber="37" endLineNumber="51"/>
+        </set>
+        <summary duplicateFileCount="3" duplicateLineCount="44" duplicateBlockCount="4" totalFileCount="36" totalRawLineCount="4369" totalSignificantLineCount="2105" processingTime="153"/>
+    </check>
+</simian>

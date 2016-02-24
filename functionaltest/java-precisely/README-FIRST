@@ -1,0 +1,7 @@
+To run Panopticode against the Java Precisely examples you must:
+
+1) ant -f build-update.xml
+2) ant
+
+The first command updates the local panopticode with the latest version.  The
+second command builds the examples and runs Panopticode against them.

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<log>
+<logentry
+   revision="42">
+<author>jrshaw</author>
+<date>2007-02-14T00:40:40.829066Z</date>
+<paths>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/jhawk.xml</path>
+</paths>
+<msg>Added output file from running JHawk against the Java Precisely code.  This is to be used for future JHawk plugin development.</msg>
+</logentry>
+<logentry
+   revision="32">
+<author>jrshaw</author>
+<date>2007-02-03T20:08:20.379349Z</date>
+<paths>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/common</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/MyLinkedList.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/common/Access.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/common/Mapper.java</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/Example112.java</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/Example113.java</path>
+<path
+   action="D">/trunk/functionaltest/java-precisely/src/Access.java</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/MyList.java</path>
+<path
+   action="D">/trunk/functionaltest/java-precisely/src/Mapper.java</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/Example108.java</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/Example117.java</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/Example109.java</path>
+</paths>
+<msg>Created a common package and moved a few classes into it to help with functional testing</msg>
+</logentry>
+<logentry
+   revision="26">
+<author>jrshaw</author>
+<date>2007-02-03T16:27:04.990532Z</date>
+<paths>
+<path
+   action="M">/trunk/build.xml</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/build-update.xml</path>
+</paths>
+<msg>Changed dist target for main project to create a file called panopticode-latest.zip in addition to the panopticode-VERSION.zip file</msg>
+</logentry>
+<logentry
+   revision="25">
+<author>jrshaw</author>
+<date>2007-02-03T16:22:19.145061Z</date>
+<paths>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/panopticode.xml</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/sample_data/svn-log.xml</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/sample_data/javancss.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/junit</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/sample_data/emma.xml</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/sample_data/simian.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/junit/TEST-Example001Test.xml</path>
+</paths>
+<msg>Updated sample data to reflect output from version 0.1 alpha</msg>
+</logentry>
+<logentry
+   revision="20">
+<author>jrshaw</author>
+<date>2007-01-28T23:23:23.658166Z</date>
+<paths>
+<path
+   action="M">/trunk/functionaltest/java-precisely</path>
+</paths>
+<msg>Added ignore directives for 'Java Precisely' examples</msg>
+</logentry>
+<logentry
+   revision="19">
+<author>jrshaw</author>
+<date>2007-01-28T23:20:19.489001Z</date>
+<paths>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example100.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/MyString.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example003.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example112.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example140.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/MyList.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example015.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example124.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/simian.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example152.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example071.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example027.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example108.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example164.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example083.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example039.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example148.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example067.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example095.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example079.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Access.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/C2.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/build-update.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/MyLinkedList.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example012.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example040.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example121.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example105.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example133.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example052.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example008.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example080.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example117.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example064.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example145.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example092.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example129.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example048.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example076.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/unittest/src/Example001Test.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example088.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/README-FIRST</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/jdepend.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example102.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example021.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example130.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example114.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example033.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example061.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example142.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example017.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example126.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example045.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example073.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example154.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example057.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example138.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example085.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example069.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example097.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/WeekdayException.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/unittest</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/javancss.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example002.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example030.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example111.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example014.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example123.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example151.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example070.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example107.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example026.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example135.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Mapper.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example082.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example119.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example038.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/TimeComparator.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/svn-log.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example147.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example094.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Point.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example078.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/unittest/src</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/C1.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example011.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example120.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example023.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example104.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example051.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/TLC.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example007.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example035.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example116.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example144.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example063.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example019.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example091.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example047.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example128.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/build.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example156.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example075.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example059.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example087.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example099.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/PrintableMyLinkedList.java</path>
+<path
+   action="A">/trunk/functionaltest</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/SPoint.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example020.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example101.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example004.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example113.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example141.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example060.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example016.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example044.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example125.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example153.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example072.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example109.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example028.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example056.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example084.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example165.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example149.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example068.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/SortedList.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Time.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/checkstyle.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example001.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example110.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example013.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example041.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example122.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example150.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/emma.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example106.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example134.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example053.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example009.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example081.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example118.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example146.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example065.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example093.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example049.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example077.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example010.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/README</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example022.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example103.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example050.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example131.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Printable.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example006.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example034.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example115.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example143.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example062.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example018.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example090.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example046.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example127.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example155.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example074.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example139.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example058.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example086.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example098.java</path>
+</paths>
+<msg>Added the example code from the excellent book 'Java Precisely' to use in testing.  The author's permission to use this code has been requested, but no response has been received yet.  If usage is denied this code will be deleted.</msg>
+</logentry>
+</log>

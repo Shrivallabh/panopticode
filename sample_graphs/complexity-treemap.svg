@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0.0 0.0 1024.0 768.0">
+  <text x="512.0" y="20.0" style="text-anchor: middle;">Panopticode Complexity</text>
+  <g desc="Project - Panopticode">
+    <g desc="Package - org.panopticode">
+      <g desc="Class - DecimalMetric">
+        <rect x="7.0" y="35.0" width="42.21612541993281" height="23.91616736866311" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="58.91616736866311" width="21.108062709966404" height="31.88822315821748" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="28.108062709966404" y="58.91616736866311" width="21.108062709966404" height="31.88822315821748" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="90.8043905268806" width="42.21612541993281" height="15.94411157910874" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - DecimalMetricDeclaration">
+        <rect x="51.21612541993281" y="35.0" width="28.477416946621872" height="23.91616736866311" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="79.69354236655468" y="35.0" width="28.477416946621872" height="23.91616736866311" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="51.21612541993281" y="58.91616736866311" width="14.238708473310936" height="47.83233473732622" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="65.45483389324374" y="58.91616736866311" width="42.7161254199328" height="47.83233473732622" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - IntegerMetric">
+        <rect x="110.17095931317654" y="35.0" width="42.21612541993281" height="23.91616736866311" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="110.17095931317654" y="58.91616736866311" width="21.108062709966404" height="31.88822315821748" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="131.27902202314294" y="58.91616736866311" width="21.108062709966404" height="31.88822315821748" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="110.17095931317654" y="90.8043905268806" width="42.21612541993281" height="15.94411157910874" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - IntegerMetricDeclaration">
+        <rect x="154.38708473310936" y="35.0" width="28.477416946621872" height="23.91616736866311" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="182.86450167973123" y="35.0" width="28.477416946621872" height="23.91616736866311" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="154.38708473310936" y="58.91616736866311" width="14.238708473310936" height="47.83233473732622" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="168.6257932064203" y="58.91616736866311" width="42.7161254199328" height="47.83233473732622" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - Level">
+        <rect x="213.34191862635308" y="35.0" width="17.651611297747912" height="35.87425105299467" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="213.34191862635308" y="70.87425105299468" width="17.651611297747912" height="35.87425105299467" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - Metric">
+        <rect x="232.99352992410098" y="35.0" width="33.39031977105884" height="30.749358045424" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="266.3838496951598" y="35.0" width="11.130106590352948" height="30.749358045424" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="277.5139562855128" y="35.0" width="22.260213180705897" height="30.749358045424" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="232.99352992410098" y="65.749358045424" width="44.52042636141179" height="15.374679022712" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="277.5139562855128" y="65.749358045424" width="22.260213180705897" height="15.374679022712" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="232.99352992410098" y="81.124037068136" width="66.7806395421177" height="25.62446503785333" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - MetricDeclaration">
+        <rect x="301.7741694662187" y="35.0" width="40.99090569751264" height="25.45914590857686" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="342.76507516373135" y="35.0" width="27.327270465008425" height="25.45914590857686" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="370.0923456287398" y="35.0" width="27.327270465008425" height="25.45914590857686" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="397.41961609374823" y="35.0" width="27.327270465008425" height="25.45914590857686" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="424.7468865587566" y="35.0" width="27.327270465008425" height="25.45914590857686" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="301.7741694662187" y="60.45914590857686" width="30.059997511509266" height="23.14467809870624" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="331.834166977728" y="60.45914590857686" width="15.029998755754633" height="23.14467809870624" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="346.86416573348265" y="60.45914590857686" width="30.059997511509266" height="23.14467809870624" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="376.92416324499186" y="60.45914590857686" width="60.11999502301853" height="23.14467809870624" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="437.0441582680104" y="60.45914590857686" width="15.029998755754633" height="23.14467809870624" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="301.7741694662187" y="83.60382400728311" width="150.29998755754636" height="23.14467809870624" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - MetricDeclaration.XMLRenderer">
+        <rect x="454.07415702376505" y="35.0" width="26.098615332657882" height="26.43365867062765" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="480.1727723564229" y="35.0" width="39.147922998986814" height="26.43365867062765" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="519.3206953554097" y="35.0" width="26.098615332657882" height="26.43365867062765" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="454.07415702376505" y="61.43365867062765" width="15.224192277383763" height="45.314843435361695" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="469.2983493011488" y="61.43365867062765" width="22.836288416075647" height="45.314843435361695" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="492.13463771722445" y="61.43365867062765" width="38.06048069345941" height="45.314843435361695" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="530.1951184106839" y="61.43365867062765" width="15.224192277383763" height="45.314843435361695" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - MetricTarget">
+        <rect x="547.4193106880676" y="35.0" width="18.651611297747916" height="17.937125526497336" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="566.0709219858155" y="35.0" width="18.651611297747916" height="17.937125526497336" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="547.4193106880676" y="52.93712552649734" width="18.651611297747916" height="17.937125526497336" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="566.0709219858155" y="52.93712552649734" width="18.651611297747916" height="17.937125526497336" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="547.4193106880676" y="70.87425105299468" width="18.651611297747916" height="17.937125526497336" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="566.0709219858155" y="70.87425105299468" width="18.651611297747916" height="17.937125526497336" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="547.4193106880676" y="88.81137657949202" width="18.651611297747916" height="17.937125526497336" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="566.0709219858155" y="88.81137657949202" width="18.651611297747916" height="17.937125526497336" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - PanopticodeArgument">
+        <rect x="586.7225332835634" y="35.0" width="81.46922406944802" height="30.088081528318117" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="668.1917573530114" y="35.0" width="23.276921162699438" height="30.088081528318117" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="691.4686785157108" y="35.0" width="23.276921162699438" height="30.088081528318117" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="714.7455996784103" y="35.0" width="23.276921162699438" height="30.088081528318117" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="738.0225208411098" y="35.0" width="104.74614523214747" height="30.088081528318117" fill="yellow" stroke="black" stroke-width="1"/>
+        <rect x="842.7686660732572" y="35.0" width="23.276921162699438" height="30.088081528318117" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="866.0455872359566" y="35.0" width="23.276921162699438" height="30.088081528318117" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="586.7225332835634" y="65.08808152831811" width="42.02777432154064" height="41.66042057767124" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="628.750307605104" y="65.08808152831811" width="16.81110972861626" height="41.66042057767124" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="645.5614173337203" y="65.08808152831811" width="25.216664592924385" height="41.66042057767124" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="670.7780819266446" y="65.08808152831811" width="84.05554864308128" height="41.66042057767124" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="754.833630569726" y="65.08808152831811" width="16.81110972861626" height="41.66042057767124" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="771.6447402983422" y="65.08808152831811" width="117.6777681003138" height="41.66042057767124" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - PanopticodeClass">
+        <rect x="7.0" y="108.74850210598935" width="92.61991762401038" height="26.87207879535683" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="99.61991762401038" y="108.74850210598935" width="26.462833606860112" height="26.87207879535683" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="126.0827512308705" y="108.74850210598935" width="26.462833606860112" height="26.87207879535683" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="152.54558483773062" y="108.74850210598935" width="26.462833606860112" height="26.87207879535683" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="179.00841844459072" y="108.74850210598935" width="26.462833606860112" height="26.87207879535683" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="205.47125205145082" y="108.74850210598935" width="26.462833606860112" height="26.87207879535683" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="135.6205809013462" width="34.60524394743245" height="20.549236725861107" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="41.60524394743245" y="135.6205809013462" width="34.60524394743245" height="20.549236725861107" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="76.2104878948649" y="135.6205809013462" width="86.51310986858114" height="20.549236725861107" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="162.72359776344604" y="135.6205809013462" width="34.60524394743245" height="20.549236725861107" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="197.3288417108785" y="135.6205809013462" width="34.60524394743245" height="20.549236725861107" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="156.1698176272073" width="92.90755711973713" height="72.71268379920083" fill="yellow" stroke="black" stroke-width="1"/>
+        <rect x="99.90755711973713" y="156.1698176272073" width="97.79742854709171" height="72.71268379920083" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="197.70498566682883" y="156.1698176272073" width="34.2290999914821" height="72.71268379920083" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="228.8825014264081" width="56.23352141457774" height="37.937052416974346" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="63.23352141457774" y="228.8825014264081" width="56.23352141457774" height="37.937052416974346" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="119.46704282915547" y="228.8825014264081" width="84.35028212186661" height="37.937052416974346" fill="yellow" stroke="black" stroke-width="1"/>
+        <rect x="203.81732495102207" y="228.8825014264081" width="28.11676070728887" height="37.937052416974346" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="266.8195538433825" width="28.11676070728887" height="25.291368277982897" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="35.11676070728887" y="266.8195538433825" width="28.11676070728887" height="25.291368277982897" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="63.23352141457774" y="266.8195538433825" width="28.11676070728887" height="25.291368277982897" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="91.3502821218666" y="266.8195538433825" width="28.11676070728887" height="25.291368277982897" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="119.46704282915547" y="266.8195538433825" width="28.11676070728887" height="25.291368277982897" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="147.58380353644435" y="266.8195538433825" width="28.11676070728887" height="25.291368277982897" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="175.70056424373323" y="266.8195538433825" width="28.11676070728887" height="25.291368277982897" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="203.8173249510221" y="266.8195538433825" width="28.11676070728887" height="25.291368277982897" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="292.1109221213654" width="44.98681713166219" height="15.807105173739311" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="51.98681713166219" y="292.1109221213654" width="44.98681713166219" height="15.807105173739311" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="96.97363426332439" y="292.1109221213654" width="44.98681713166219" height="15.807105173739311" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="141.9604513949866" y="292.1109221213654" width="44.98681713166219" height="15.807105173739311" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="186.94726852664877" y="292.1109221213654" width="44.98681713166219" height="15.807105173739311" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - PanopticodeFile">
+        <rect x="233.93408565831095" y="108.74850210598935" width="79.11810038032587" height="49.07075258282553" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="313.0521860386368" y="108.74850210598935" width="43.155327480177746" height="49.07075258282553" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="233.93408565831095" y="157.81925468881488" width="40.75780928683454" height="25.978633720319397" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="274.69189494514546" y="157.81925468881488" width="27.171872857889692" height="25.978633720319397" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="301.8637678030352" y="157.81925468881488" width="27.171872857889692" height="25.978633720319397" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="329.03564066092486" y="157.81925468881488" width="27.171872857889692" height="25.978633720319397" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="233.93408565831095" y="183.79788840913426" width="22.231532338273386" height="31.75166343594593" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="256.16561799658433" y="183.79788840913426" width="22.231532338273386" height="31.75166343594593" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="278.3971503348577" y="183.79788840913426" width="77.81036318395685" height="31.75166343594593" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="233.93408565831095" y="215.5495518450802" width="86.31065496035549" height="49.07075258282553" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="320.24474061866647" y="215.5495518450802" width="35.962772900148124" height="49.07075258282553" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="233.93408565831095" y="264.6203044279057" width="40.75780928683454" height="25.978633720319397" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="274.69189494514546" y="264.6203044279057" width="27.171872857889692" height="25.978633720319397" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="301.8637678030352" y="264.6203044279057" width="27.171872857889692" height="25.978633720319397" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="329.03564066092486" y="264.6203044279057" width="27.171872857889692" height="25.978633720319397" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="233.93408565831095" y="290.5989381482251" width="40.75780928683454" height="17.319089146879595" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="274.69189494514546" y="290.5989381482251" width="40.75780928683454" height="17.319089146879595" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="315.44970423198004" y="290.5989381482251" width="40.75780928683454" height="17.319089146879595" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - PanopticodeMethod">
+        <rect x="358.20751351881455" y="108.74850210598935" width="115.62689788263954" height="33.78768730886778" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="473.8344114014541" y="108.74850210598935" width="21.0230723422981" height="33.78768730886778" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="494.8574837437522" y="108.74850210598935" width="21.0230723422981" height="33.78768730886778" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="515.8805560860503" y="108.74850210598935" width="21.0230723422981" height="33.78768730886778" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="536.9036284283484" y="108.74850210598935" width="21.0230723422981" height="33.78768730886778" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="358.20751351881455" y="142.53618941485712" width="28.531312464547423" height="24.89619064863942" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="386.73882598336195" y="142.53618941485712" width="28.531312464547423" height="24.89619064863942" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="415.2701384479094" y="142.53618941485712" width="28.531312464547423" height="24.89619064863942" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="443.8014509124568" y="142.53618941485712" width="28.531312464547423" height="24.89619064863942" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="472.33276337700426" y="142.53618941485712" width="28.531312464547423" height="24.89619064863942" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="500.86407584155165" y="142.53618941485712" width="28.531312464547423" height="24.89619064863942" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="529.3953883060991" y="142.53618941485712" width="28.531312464547423" height="24.89619064863942" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="358.20751351881455" y="167.43238006349654" width="88.11140614051409" height="60.462177289552876" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="446.3189196593286" y="167.43238006349654" width="111.60778111131786" height="60.462177289552876" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="358.20751351881455" y="227.89455735304944" width="22.191020805759102" height="48.01408196523317" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="380.39853432457363" y="227.89455735304944" width="14.79401387050607" height="48.01408196523317" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="395.1925481950797" y="227.89455735304944" width="14.79401387050607" height="48.01408196523317" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="409.9865620655858" y="227.89455735304944" width="14.79401387050607" height="48.01408196523317" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="424.78057593609185" y="227.89455735304944" width="133.14612483455463" height="48.01408196523317" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="358.20751351881455" y="275.90863931828255" width="133.14612483455463" height="32.00938797682211" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="491.3536383533692" y="275.90863931828255" width="22.19102080575911" height="32.00938797682211" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="513.5446591591283" y="275.90863931828255" width="22.19102080575911" height="32.00938797682211" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="535.7356799648874" y="275.90863931828255" width="22.19102080575911" height="32.00938797682211" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - PanopticodePackage">
+        <rect x="559.9267007706466" y="108.74850210598935" width="42.498267398119836" height="33.194920864852556" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="602.4249681687664" y="108.74850210598935" width="31.873700548589877" height="33.194920864852556" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="634.2986687173562" y="108.74850210598935" width="21.249133699059918" height="33.194920864852556" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="655.5478024164162" y="108.74850210598935" width="21.249133699059918" height="33.194920864852556" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="559.9267007706466" y="141.9434229708419" width="63.747401097179754" height="33.194920864852556" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="623.6741018678263" y="141.9434229708419" width="31.873700548589877" height="33.194920864852556" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="655.5478024164162" y="141.9434229708419" width="21.249133699059918" height="33.194920864852556" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="559.9267007706466" y="175.13834383569446" width="38.95674511494318" height="18.106320471737757" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="598.8834458855897" y="175.13834383569446" width="38.95674511494318" height="18.106320471737757" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="637.840191000533" y="175.13834383569446" width="38.95674511494318" height="18.106320471737757" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="559.9267007706466" y="193.24466430743223" width="51.942326819924254" height="54.318961415213266" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="611.8690275905708" y="193.24466430743223" width="64.9279085249053" height="54.318961415213266" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="559.9267007706466" y="247.5636257226455" width="48.69593139367898" height="36.21264094347551" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="608.6226321643255" y="247.5636257226455" width="48.69593139367898" height="36.21264094347551" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="657.3185635580045" y="247.5636257226455" width="19.47837255747159" height="36.21264094347551" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="559.9267007706466" y="283.77626666612105" width="29.217558836207385" height="24.14176062898368" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="589.1442596068539" y="283.77626666612105" width="29.217558836207385" height="24.14176062898368" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="618.3618184430613" y="283.77626666612105" width="29.217558836207385" height="24.14176062898368" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="647.5793772792687" y="283.77626666612105" width="29.217558836207385" height="24.14176062898368" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - PanopticodeProject">
+        <rect x="678.796936115476" y="108.74850210598935" width="36.613143005770446" height="38.821178638556376" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="715.4100791212464" y="108.74850210598935" width="18.306571502885223" height="38.821178638556376" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="733.7166506241317" y="108.74850210598935" width="54.919714508655666" height="38.821178638556376" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="788.6363651327873" y="108.74850210598935" width="27.459857254327833" height="38.821178638556376" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="816.0962223871152" y="108.74850210598935" width="73.22628601154089" height="38.821178638556376" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="678.796936115476" y="147.56968074454574" width="30.07508175474001" height="23.630282649556055" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="708.872017870216" y="147.56968074454574" width="30.07508175474001" height="23.630282649556055" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="738.9470996249561" y="147.56968074454574" width="30.07508175474001" height="23.630282649556055" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="769.022181379696" y="147.56968074454574" width="30.07508175474001" height="23.630282649556055" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="799.097263134436" y="147.56968074454574" width="30.07508175474001" height="23.630282649556055" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="829.1723448891761" y="147.56968074454574" width="30.07508175474001" height="23.630282649556055" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="859.247426643916" y="147.56968074454574" width="30.07508175474001" height="23.630282649556055" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="678.796936115476" y="171.1999633941018" width="29.239662817108346" height="60.76358395600128" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="708.0365989325843" y="171.1999633941018" width="70.17519076106002" height="60.76358395600128" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="778.2117896936444" y="171.1999633941018" width="17.543797690265006" height="60.76358395600128" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="795.7555873839094" y="171.1999633941018" width="93.5669210147467" height="60.76358395600128" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="678.796936115476" y="231.96354735010306" width="18.306571502885223" height="38.821178638556376" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="697.1035076183613" y="231.96354735010306" width="45.766428757213056" height="38.821178638556376" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="742.8699363755743" y="231.96354735010306" width="45.766428757213056" height="38.821178638556376" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="788.6363651327873" y="231.96354735010306" width="45.766428757213056" height="38.821178638556376" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="834.4027938900003" y="231.96354735010306" width="54.919714508655666" height="38.821178638556376" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="678.796936115476" y="270.78472598865943" width="66.98540936283003" height="37.133301306445226" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="745.7823454783061" y="270.78472598865943" width="28.70803258407001" height="37.133301306445226" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="774.4903780623761" y="270.78472598865943" width="19.138688389380007" height="37.133301306445226" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="793.629066451756" y="270.78472598865943" width="19.138688389380007" height="37.133301306445226" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="812.767754841136" y="270.78472598865943" width="19.138688389380007" height="37.133301306445226" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="831.9064432305161" y="270.78472598865943" width="19.138688389380007" height="37.133301306445226" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="851.0451316198961" y="270.78472598865943" width="19.138688389380007" height="37.133301306445226" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="870.1838200092761" y="270.78472598865943" width="19.138688389380007" height="37.133301306445226" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - RatioMetric">
+        <rect x="7.0" y="309.9180272951047" width="31.809356036630973" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="38.80935603663097" y="309.9180272951047" width="23.857017027473233" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="62.66637306410421" y="309.9180272951047" width="15.904678018315487" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="78.57105108241969" y="309.9180272951047" width="15.904678018315487" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="94.47572910073517" y="309.9180272951047" width="23.857017027473233" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="118.33274612820841" y="309.9180272951047" width="71.57105108241969" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - RatioMetricDeclaration">
+        <rect x="191.9037972106281" y="309.9180272951047" width="15.792876776079465" height="43.06852906477127" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="207.69667398670757" y="309.9180272951047" width="15.792876776079465" height="43.06852906477127" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="223.48955076278705" y="309.9180272951047" width="15.792876776079465" height="43.06852906477127" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="239.2824275388665" y="309.9180272951047" width="63.17150710431786" height="43.06852906477127" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - Report">
+        <rect x="304.45393464318437" y="309.9180272951047" width="6.039295530896874" height="43.068529064771255" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - ReportRunner">
+        <rect x="312.49323017408125" y="309.9180272951047" width="31.87146783787322" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="344.3646980119545" y="309.9180272951047" width="79.67866959468304" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="424.0433676066375" y="309.9180272951047" width="63.74293567574644" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="487.786303282384" y="309.9180272951047" width="47.80720175680983" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - Supplement">
+        <rect x="537.5935050391938" y="309.9180272951047" width="14.078591061793748" height="21.53426453238563" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="537.5935050391938" y="331.45229182749034" width="14.078591061793748" height="21.53426453238563" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - SupplementDeclaration">
+        <rect x="553.6720961009876" y="309.9180272951047" width="15.983352966555657" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="569.6554490675433" y="309.9180272951047" width="15.983352966555657" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="585.638802034099" y="309.9180272951047" width="23.975029449833485" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="609.6138314839324" y="309.9180272951047" width="87.90844131605611" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="697.5222727999885" y="309.9180272951047" width="95.90011779933394" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="793.4223905993224" y="309.9180272951047" width="15.983352966555657" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="809.4057435658781" y="309.9180272951047" width="15.983352966555657" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="825.3890965324338" y="309.9180272951047" width="15.983352966555657" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="841.3724494989895" y="309.9180272951047" width="47.95005889966697" height="43.06852906477126" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+    </g>
+    <g desc="Package - org.panopticode.doclet">
+      <g desc="Class - PanopticodeDoclet">
+        <rect x="897.3225083986562" y="35.0" width="19.94624860022396" height="34.06998818141528" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="917.2687569988801" y="35.0" width="39.89249720044792" height="34.06998818141528" fill="yellow" stroke="black" stroke-width="1"/>
+        <rect x="957.161254199328" y="35.0" width="59.83874580067189" height="34.06998818141528" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="897.3225083986562" y="69.06998818141528" width="14.959686450167972" height="45.42665090855371" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="912.2821948488241" y="69.06998818141528" width="82.27827547592385" height="45.42665090855371" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="994.5604703247479" y="69.06998818141528" width="22.439529675251958" height="45.42665090855371" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="897.3225083986562" y="114.496639089969" width="91.18285074388096" height="59.62247931747675" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="988.5053591425371" y="114.496639089969" width="28.4946408574628" height="59.62247931747675" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="897.3225083986562" y="174.11911840744574" width="119.67749160134377" height="96.53163318067664" fill="yellow" stroke="black" stroke-width="1"/>
+        <rect x="897.3225083986562" y="270.6507515881224" width="74.28258099393751" height="82.33580477175362" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="971.6050893925936" y="270.6507515881224" width="20.634050276093753" height="82.33580477175362" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="992.2391396686875" y="270.6507515881224" width="24.7608603313125" height="82.33580477175362" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+    </g>
+    <g desc="Package - org.panopticode.report.treemap">
+      <g desc="Class - AbstractMapItem">
+        <rect x="7.0" y="360.9865563598759" width="18.9296885624915" height="36.26765282287514" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="25.9296885624915" y="360.9865563598759" width="37.859377124983" height="36.26765282287514" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="397.2542091827511" width="28.394532843737252" height="24.17843521525009" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="35.39453284373725" y="397.2542091827511" width="28.394532843737252" height="24.17843521525009" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="421.4326443980012" width="14.197266421868626" height="24.17843521525009" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="21.197266421868626" y="421.4326443980012" width="28.394532843737252" height="24.17843521525009" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="49.59179926560588" y="421.4326443980012" width="14.197266421868626" height="24.17843521525009" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="445.61107961325126" width="28.394532843737252" height="24.17843521525009" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="35.39453284373725" y="445.61107961325126" width="28.394532843737252" height="24.17843521525009" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="469.78951482850135" width="37.859377124983" height="36.26765282287514" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="44.859377124983" y="469.78951482850135" width="18.9296885624915" height="36.26765282287514" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="506.0571676513765" width="56.789065687474505" height="12.089217607625045" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - BaseTreemap">
+        <rect x="65.7890656874745" y="360.9865563598759" width="101.28876753601358" height="52.38660963304188" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="167.07783322348808" y="360.9865563598759" width="54.02067601920724" height="52.38660963304188" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="221.09850924269531" y="360.9865563598759" width="40.51550701440543" height="52.38660963304188" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="261.61401625710073" y="360.9865563598759" width="47.26809151680634" height="52.38660963304188" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="308.88210777390714" y="360.9865563598759" width="40.51550701440543" height="52.38660963304188" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="349.3976147883126" y="360.9865563598759" width="33.76292251200452" height="52.38660963304188" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="383.16053730031706" y="360.9865563598759" width="121.5465210432163" height="52.38660963304188" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="65.7890656874745" y="413.3731659929178" width="25.444521313394713" height="55.61040099507523" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="91.23358700086922" y="413.3731659929178" width="38.166781970092075" height="55.61040099507523" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="129.4003689709613" y="413.3731659929178" width="38.166781970092075" height="55.61040099507523" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="167.56715094105337" y="413.3731659929178" width="229.00069182055242" height="55.61040099507523" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="396.5678427616058" y="413.3731659929178" width="12.722260656697356" height="55.61040099507523" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="409.29010341830315" y="413.3731659929178" width="95.41695492523017" height="55.61040099507523" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="65.7890656874745" y="468.983566987993" width="280.61970022272607" height="49.16281827100854" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="346.4087659102006" y="468.983566987993" width="143.90753857575697" height="49.16281827100854" fill="yellow" stroke="black" stroke-width="1"/>
+        <rect x="490.3163044859575" y="468.983566987993" width="7.195376928787849" height="49.16281827100854" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="497.51168141474545" y="468.983566987993" width="7.195376928787849" height="49.16281827100854" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - Categorizer">
+        <rect x="506.7070583435333" y="360.9865563598759" width="30.623011015911874" height="33.980503545756896" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="537.3300693594451" y="360.9865563598759" width="51.038351693186456" height="33.980503545756896" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="506.7070583435333" y="394.9670599056328" width="40.830681354549164" height="16.990251772878448" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="547.5377396980824" y="394.9670599056328" width="40.830681354549164" height="16.990251772878448" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="506.7070583435333" y="411.95731167851125" width="48.996817625459" height="63.713444148294194" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="555.7038759689923" y="411.95731167851125" width="32.66454508363933" height="63.713444148294194" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="506.7070583435333" y="475.6707558268055" width="81.66136270909833" height="42.47562943219612" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - Category">
+        <rect x="7.0" y="520.1463852590016" width="37.20752331278648" height="36.25949473108446" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="44.20752331278648" y="520.1463852590016" width="18.60376165639324" height="36.25949473108446" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="556.4058799900861" width="22.32451398767188" height="30.216245609237053" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="29.32451398767188" y="556.4058799900861" width="22.32451398767188" height="30.216245609237053" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="51.64902797534376" y="556.4058799900861" width="11.16225699383594" height="30.216245609237053" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - ComplexityTreemap">
+        <rect x="64.81128496917971" y="520.1463852590016" width="66.32242769084874" height="46.02166638945336" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="64.81128496917971" y="566.1680516484549" width="33.16121384542436" height="20.45407395086816" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="97.97249881460408" y="566.1680516484549" width="33.16121384542436" height="20.45407395086816" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - ComplexityTreemap.ComplexityCategory">
+        <rect x="133.13371266002844" y="520.1463852590016" width="30.783428165007113" height="33.23787017016075" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="163.91714082503555" y="520.1463852590016" width="51.30571360834519" height="33.23787017016075" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="133.13371266002844" y="553.3842554291623" width="30.783428165007113" height="33.23787017016075" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="163.91714082503555" y="553.3842554291623" width="51.30571360834519" height="33.23787017016075" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - ContainerMapItem">
+        <rect x="217.22285443338077" y="520.1463852590016" width="19.020347578699983" height="36.40338161493798" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="236.24320201208076" y="520.1463852590016" width="38.040695157399966" height="36.40338161493798" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="274.2838971694807" y="520.1463852590016" width="19.020347578699983" height="36.40338161493798" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="293.30424474818074" y="520.1463852590016" width="28.53052136804997" height="36.40338161493798" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="321.8347661162307" y="520.1463852590016" width="19.020347578699983" height="36.40338161493798" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="340.85511369493065" y="520.1463852590016" width="95.1017378934999" height="36.40338161493798" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="217.22285443338077" y="556.5497668739396" width="23.024631279478925" height="30.072358725383545" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="240.2474857128597" y="556.5497668739396" width="69.07389383843677" height="30.072358725383545" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="309.32137955129645" y="556.5497668739396" width="11.512315639739462" height="30.072358725383545" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="320.83369519103593" y="556.5497668739396" width="23.024631279478925" height="30.072358725383545" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="343.85832647051484" y="556.5497668739396" width="23.024631279478925" height="30.072358725383545" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="366.8829577499938" y="556.5497668739396" width="23.024631279478925" height="30.072358725383545" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="389.9075890294727" y="556.5497668739396" width="23.024631279478925" height="30.072358725383545" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="412.9322203089516" y="556.5497668739396" width="23.024631279478925" height="30.072358725383545" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - CoverageTreemap">
+        <rect x="437.9568515884306" y="520.1463852590016" width="66.32242769084874" height="46.02166638945336" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="437.9568515884306" y="566.1680516484549" width="33.16121384542436" height="20.45407395086816" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="471.11806543385495" y="566.1680516484549" width="33.16121384542436" height="20.45407395086816" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - CoverageTreemap.CoverageCategory">
+        <rect x="506.2792792792793" y="520.1463852590016" width="30.783428165007113" height="33.23787017016075" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="537.0627074442864" y="520.1463852590016" width="51.30571360834519" height="33.23787017016075" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="506.2792792792793" y="553.3842554291623" width="30.783428165007113" height="33.23787017016075" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="537.0627074442864" y="553.3842554291623" width="51.30571360834519" height="33.23787017016075" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - DefaultCategory">
+        <rect x="7.0" y="588.6221255993231" width="30.86582653817642" height="20.899898937670393" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="609.5220245369935" width="30.86582653817642" height="20.899898937670393" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - LeafMapItem">
+        <rect x="39.86582653817643" y="588.6221255993231" width="65.49284710620361" height="41.799797875340786" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="105.35867364438005" y="588.6221255993231" width="302.9044178661917" height="41.799797875340786" fill="yellow" stroke="black" stroke-width="1"/>
+        <rect x="408.2630915105717" y="588.6221255993231" width="90.05266477102995" height="41.799797875340786" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="498.3157562816017" y="588.6221255993231" width="16.373211776550903" height="41.799797875340786" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="514.6889680581526" y="588.6221255993231" width="8.186605888275452" height="41.799797875340786" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="522.8755739464281" y="588.6221255993231" width="16.373211776550903" height="41.799797875340786" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="539.2487857229789" y="588.6221255993231" width="16.373211776550903" height="41.799797875340786" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="555.6219974995298" y="588.6221255993231" width="16.373211776550903" height="41.799797875340786" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="571.9952092760807" y="588.6221255993231" width="16.373211776550903" height="41.799797875340786" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+    </g>
+    <g desc="Package - org.panopticode.supplement.ant">
+      <g desc="Class - EmmaPanopticode">
+        <rect x="596.3684210526316" y="360.9865563598759" width="27.248245614035085" height="23.216735725340584" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="623.6166666666667" y="360.9865563598759" width="27.248245614035085" height="23.216735725340584" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="650.8649122807017" y="360.9865563598759" width="27.248245614035085" height="23.216735725340584" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="596.3684210526316" y="384.2032920852165" width="49.04684210526316" height="19.34727977111715" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="645.4152631578947" y="384.2032920852165" width="32.6978947368421" height="19.34727977111715" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - JDependPanopticode">
+        <rect x="596.3684210526316" y="405.55057185633365" width="27.248245614035085" height="23.216735725340584" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="623.6166666666667" y="405.55057185633365" width="27.248245614035085" height="23.216735725340584" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="650.8649122807017" y="405.55057185633365" width="27.248245614035085" height="23.216735725340584" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="596.3684210526316" y="428.76730758167423" width="49.04684210526316" height="19.34727977111715" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="645.4152631578947" y="428.76730758167423" width="32.6978947368421" height="19.34727977111715" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - JavaNCSSPanopticode">
+        <rect x="596.3684210526316" y="450.1145873527914" width="27.248245614035085" height="23.30764481624967" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="623.6166666666667" y="450.1145873527914" width="27.248245614035085" height="23.30764481624967" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="650.8649122807017" y="450.1145873527914" width="27.248245614035085" height="23.30764481624967" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="596.3684210526316" y="473.422232169041" width="54.49649122807017" height="23.30764481624967" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="650.8649122807017" y="473.422232169041" width="27.248245614035085" height="23.30764481624967" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - SupplementTask">
+        <rect x="596.3684210526316" y="498.72987698529073" width="40.87236842105263" height="15.962672301742202" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="637.2407894736842" y="498.72987698529073" width="40.87236842105263" height="15.962672301742202" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="596.3684210526316" y="514.692549287033" width="81.74473684210525" height="43.897348829791056" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="596.3684210526316" y="558.589898116824" width="35.03345864661654" height="27.934676528048854" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="631.4018796992481" y="558.589898116824" width="46.71127819548872" height="27.934676528048854" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="596.3684210526316" y="586.5245746448728" width="36.33099415204678" height="35.916012678919955" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="632.6994152046783" y="586.5245746448728" width="45.41374269005847" height="35.916012678919955" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="596.3684210526316" y="622.4405873237928" width="40.87236842105263" height="7.981336150871101" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="637.2407894736842" y="622.4405873237928" width="40.87236842105263" height="7.981336150871101" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+    </g>
+    <g desc="Package - org.panopticode.supplement.emma">
+      <g desc="Class - CouldntFindElementException">
+        <rect x="686.1131578947369" y="360.9865563598759" width="26.9466819221968" height="22.675942464980725" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - CouldntNarrowMethodMatchesException">
+        <rect x="715.0598398169337" y="360.9865563598759" width="57.51241146344122" height="22.675942464980725" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="772.572251280375" y="360.9865563598759" width="244.42774871962519" height="22.675942464980725" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - EmmaSupplement">
+        <rect x="686.1131578947369" y="385.66249882485664" width="33.08868421052632" height="53.208570576045055" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="719.2018421052633" y="385.66249882485664" width="33.08868421052632" height="53.208570576045055" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="752.2905263157895" y="385.66249882485664" width="105.88378947368422" height="53.208570576045055" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="858.1743157894738" y="385.66249882485664" width="125.737" height="53.208570576045055" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="983.9113157894737" y="385.66249882485664" width="33.08868421052632" height="53.208570576045055" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="686.1131578947369" y="438.8710694009017" width="91.91301169590643" height="57.465256222128666" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="778.0261695906433" y="438.8710694009017" width="30.63767056530214" height="57.465256222128666" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="808.6638401559454" y="438.8710694009017" width="49.02027290448342" height="57.465256222128666" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="857.6841130604289" y="438.8710694009017" width="85.78547758284599" height="57.465256222128666" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="943.4695906432748" y="438.8710694009017" width="30.63767056530214" height="57.465256222128666" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="974.107261208577" y="438.8710694009017" width="42.89273879142299" height="57.465256222128666" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="686.1131578947369" y="496.33632562303035" width="64.04261460101867" height="65.97862751429588" fill="yellow" stroke="black" stroke-width="1"/>
+        <rect x="750.1557724957556" y="496.33632562303035" width="48.031960950764" height="65.97862751429588" fill="yellow" stroke="black" stroke-width="1"/>
+        <rect x="798.1877334465196" y="496.33632562303035" width="53.36884550084889" height="65.97862751429588" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="851.5565789473685" y="496.33632562303035" width="117.41146010186756" height="65.97862751429588" fill="red" stroke="black" stroke-width="1"/>
+        <rect x="968.968039049236" y="496.33632562303035" width="48.031960950764" height="65.97862751429588" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="686.1131578947369" y="562.3149531373263" width="36.19074835526315" height="68.10697033733767" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="722.3039062500001" y="562.3149531373263" width="36.19074835526315" height="68.10697033733767" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="758.4946546052632" y="562.3149531373263" width="46.53096217105263" height="68.10697033733767" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="805.0256167763158" y="562.3149531373263" width="31.020641447368416" height="68.10697033733767" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="836.0462582236843" y="562.3149531373263" width="25.85053453947368" height="68.10697033733767" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="861.8967927631579" y="562.3149531373263" width="36.19074835526315" height="68.10697033733767" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="898.0875411184211" y="562.3149531373263" width="51.70106907894736" height="68.10697033733767" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="949.7886101973684" y="562.3149531373263" width="46.53096217105263" height="68.10697033733767" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="996.3195723684212" y="562.3149531373263" width="10.340213815789472" height="68.10697033733767" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="1006.6597861842106" y="562.3149531373263" width="10.340213815789472" height="68.10697033733767" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+    </g>
+    <g desc="Package - org.panopticode.supplement.javancss">
+      <g desc="Class - JavaNCSSSupplement">
+        <rect x="7.0" y="638.4219234746639" width="68.43924758515506" height="49.040484124248344" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="75.43924758515506" y="638.4219234746639" width="109.5027961362481" height="49.040484124248344" fill="yellow" stroke="black" stroke-width="1"/>
+        <rect x="184.94204372140317" y="638.4219234746639" width="27.375699034062023" height="49.040484124248344" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="212.31774275546516" y="638.4219234746639" width="13.687849517031012" height="49.040484124248344" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="226.0055922724962" y="638.4219234746639" width="13.687849517031012" height="49.040484124248344" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="239.6934417895272" y="638.4219234746639" width="75.28317234367056" height="49.040484124248344" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="314.97661413319776" y="638.4219234746639" width="75.28317234367056" height="49.040484124248344" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="7.0" y="687.4624075989123" width="14.740761018341088" height="45.53759240108775" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="21.74076101834109" y="687.4624075989123" width="51.592663564193806" height="45.53759240108775" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="73.33342458253489" y="687.4624075989123" width="73.70380509170545" height="45.53759240108775" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="147.03722967424034" y="687.4624075989123" width="81.07418560087599" height="45.53759240108775" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="228.11141527511634" y="687.4624075989123" width="81.07418560087599" height="45.53759240108775" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="309.18560087599235" y="687.4624075989123" width="81.07418560087599" height="45.53759240108775" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+    </g>
+    <g desc="Package - org.panopticode.supplement.jdepend">
+      <g desc="Class - JDependSupplement">
+        <rect x="398.2597864768684" y="638.4219234746639" width="141.57769869513643" height="94.57807652533606" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="539.8374851720048" y="638.4219234746639" width="31.854982206405694" height="94.57807652533606" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="571.6924673784105" y="638.4219234746639" width="99.1043890865955" height="94.57807652533606" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="670.7968564650059" y="638.4219234746639" width="53.09163701067615" height="94.57807652533606" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="723.8884934756823" y="638.4219234746639" width="14.157769869513642" height="94.57807652533606" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+    </g>
+    <g desc="Package - org.panopticode.util">
+      <g desc="Class - ArgumentValidation">
+        <rect x="746.0462633451957" y="638.4219234746639" width="40.53824467347599" height="23.64451913133402" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="746.0462633451957" y="662.066442605998" width="40.53824467347599" height="23.64451913133402" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="746.0462633451957" y="685.7109617373319" width="40.53824467347599" height="23.64451913133402" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="746.0462633451957" y="709.355480868666" width="40.53824467347599" height="23.64451913133402" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - SVGHelper">
+        <rect x="788.5845080186717" y="638.4219234746639" width="51.71215653900646" height="44.96334785630733" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="840.2966645576782" y="638.4219234746639" width="110.81176401215669" height="44.96334785630733" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="951.1084285698348" y="638.4219234746639" width="51.71215653900646" height="44.96334785630733" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="788.5845080186717" y="683.3852713309712" width="20.0846322272034" height="49.61472866902877" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="808.6691402458752" y="683.3852713309712" width="133.897548181356" height="49.61472866902877" fill="yellow" stroke="black" stroke-width="1"/>
+        <rect x="942.5666884272312" y="683.3852713309712" width="60.25389668161021" height="49.61472866902877" fill="yellow" stroke="black" stroke-width="1"/>
+      </g>
+      <g desc="Class - StringHelper">
+        <rect x="1004.8205851088413" y="638.4219234746639" width="12.179414891158665" height="47.28903826266804" fill="green" stroke="black" stroke-width="1"/>
+        <rect x="1004.8205851088413" y="685.7109617373319" width="12.179414891158665" height="47.28903826266804" fill="green" stroke="black" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+  <rect x="3.0" y="740.0" width="1018.0" height="25.0" fill="none" stroke="black" stroke-width="1"/>
+  <rect x="9.0" y="745.0" width="15.0" height="15.0" fill="green" stroke="black" stroke-width="1"/>
+  <text x="31.0" y="757.0">CCN 1-5</text>
+  <rect x="212.6" y="745.0" width="15.0" height="15.0" fill="yellow" stroke="black" stroke-width="1"/>
+  <text x="234.6" y="757.0">CCN 6-9</text>
+  <rect x="416.2" y="745.0" width="15.0" height="15.0" fill="red" stroke="black" stroke-width="1"/>
+  <text x="438.2" y="757.0">CCN 10-24</text>
+  <rect x="619.8" y="745.0" width="15.0" height="15.0" fill="black" stroke="red" stroke-width="1"/>
+  <text x="641.8" y="757.0">CCN 25+</text>
+  <rect x="823.4" y="745.0" width="15.0" height="15.0" fill="blue" stroke="black" stroke-width="1"/>
+  <text x="845.4" y="757.0">N/A</text>
+</svg>

@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="com.sun.javadoc">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="edu.umd.cs.treemap">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.apache.tools.ant">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.dom4j">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.dom4j.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.panopticode">
+            <Stats>
+                <TotalClasses>22</TotalClasses>
+                <ConcreteClasses>17</ConcreteClasses>
+                <AbstractClasses>5</AbstractClasses>
+                <Ca>6</Ca>
+                <Ce>3</Ce>
+                <A>0.23</A>
+                <I>0.33</I>
+                <D>0.44</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Metric.java">
+                    org.panopticode.Metric
+                </Class>
+                <Class sourceFile="MetricDeclaration.java">
+                    org.panopticode.MetricDeclaration
+                </Class>
+                <Class sourceFile="MetricTarget.java">
+                    org.panopticode.MetricTarget
+                </Class>
+                <Class sourceFile="Report.java">
+                    org.panopticode.Report
+                </Class>
+                <Class sourceFile="Supplement.java">
+                    org.panopticode.Supplement
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="DecimalMetric.java">
+                    org.panopticode.DecimalMetric
+                </Class>
+                <Class sourceFile="DecimalMetricDeclaration.java">
+                    org.panopticode.DecimalMetricDeclaration
+                </Class>
+                <Class sourceFile="IntegerMetric.java">
+                    org.panopticode.IntegerMetric
+                </Class>
+                <Class sourceFile="IntegerMetricDeclaration.java">
+                    org.panopticode.IntegerMetricDeclaration
+                </Class>
+                <Class sourceFile="Level.java">
+                    org.panopticode.Level
+                </Class>
+                <Class sourceFile="MetricDeclaration.java">
+                    org.panopticode.MetricDeclaration$XMLRenderer
+                </Class>
+                <Class sourceFile="PanopticodeArgument.java">
+                    org.panopticode.PanopticodeArgument
+                </Class>
+                <Class sourceFile="PanopticodeClass.java">
+                    org.panopticode.PanopticodeClass
+                </Class>
+                <Class sourceFile="PanopticodeFile.java">
+                    org.panopticode.PanopticodeFile
+                </Class>
+                <Class sourceFile="PanopticodeMethod.java">
+                    org.panopticode.PanopticodeMethod
+                </Class>
+                <Class sourceFile="PanopticodePackage.java">
+                    org.panopticode.PanopticodePackage
+                </Class>
+                <Class sourceFile="PanopticodeProject.java">
+                    org.panopticode.PanopticodeProject
+                </Class>
+                <Class sourceFile="RatioMetric.java">
+                    org.panopticode.RatioMetric
+                </Class>
+                <Class sourceFile="RatioMetricDeclaration.java">
+                    org.panopticode.RatioMetricDeclaration
+                </Class>
+                <Class sourceFile="ReportRunner.java">
+                    org.panopticode.ReportRunner
+                </Class>
+                <Class sourceFile="SupplementDeclaration.java">
+                    org.panopticode.SupplementDeclaration
+                </Class>
+                <Class sourceFile="SupplementRunner.java">
+                    org.panopticode.SupplementRunner
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>org.dom4j</Package>
+                <Package>org.dom4j.io</Package>
+                <Package>org.panopticode.util</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.panopticode.doclet</Package>
+                <Package>org.panopticode.report.treemap</Package>
+                <Package>org.panopticode.supplement.ant</Package>
+                <Package>org.panopticode.supplement.emma</Package>
+                <Package>org.panopticode.supplement.javancss</Package>
+                <Package>org.panopticode.supplement.jdepend</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.panopticode.doclet">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>3</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="PanopticodeDoclet.java">
+                    org.panopticode.doclet.PanopticodeDoclet
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.sun.javadoc</Package>
+                <Package>org.dom4j.io</Package>
+                <Package>org.panopticode</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.panopticode.report.treemap">
+            <Stats>
+                <TotalClasses>11</TotalClasses>
+                <ConcreteClasses>8</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>5</Ce>
+                <A>0.27</A>
+                <I>1</I>
+                <D>0.27</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="AbstractMapItem.java">
+                    org.panopticode.report.treemap.AbstractMapItem
+                </Class>
+                <Class sourceFile="BaseTreemap.java">
+                    org.panopticode.report.treemap.BaseTreemap
+                </Class>
+                <Class sourceFile="Category.java">
+                    org.panopticode.report.treemap.Category
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Categorizer.java">
+                    org.panopticode.report.treemap.Categorizer
+                </Class>
+                <Class sourceFile="ComplexityTreemap.java">
+                    org.panopticode.report.treemap.ComplexityTreemap
+                </Class>
+                <Class sourceFile="ComplexityTreemap.java">
+                    org.panopticode.report.treemap.ComplexityTreemap$ComplexityCategory
+                </Class>
+                <Class sourceFile="ContainerMapItem.java">
+                    org.panopticode.report.treemap.ContainerMapItem
+                </Class>
+                <Class sourceFile="CoverageTreemap.java">
+                    org.panopticode.report.treemap.CoverageTreemap
+                </Class>
+                <Class sourceFile="CoverageTreemap.java">
+                    org.panopticode.report.treemap.CoverageTreemap$CoverageCategory
+                </Class>
+                <Class sourceFile="DefaultCategory.java">
+                    org.panopticode.report.treemap.DefaultCategory
+                </Class>
+                <Class sourceFile="LeafMapItem.java">
+                    org.panopticode.report.treemap.LeafMapItem
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>edu.umd.cs.treemap</Package>
+                <Package>org.dom4j</Package>
+                <Package>org.dom4j.io</Package>
+                <Package>org.panopticode</Package>
+                <Package>org.panopticode.util</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.panopticode.supplement.ant">
+            <Stats>
+                <TotalClasses>4</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>6</Ce>
+                <A>0.25</A>
+                <I>1</I>
+                <D>0.25</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="SupplementTask.java">
+                    org.panopticode.supplement.ant.SupplementTask
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="EmmaPanopticode.java">
+                    org.panopticode.supplement.ant.EmmaPanopticode
+                </Class>
+                <Class sourceFile="JDependPanopticode.java">
+                    org.panopticode.supplement.ant.JDependPanopticode
+                </Class>
+                <Class sourceFile="JavaNCSSPanopticode.java">
+                    org.panopticode.supplement.ant.JavaNCSSPanopticode
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>org.apache.tools.ant</Package>
+                <Package>org.dom4j</Package>
+                <Package>org.panopticode</Package>
+                <Package>org.panopticode.supplement.emma</Package>
+                <Package>org.panopticode.supplement.javancss</Package>
+                <Package>org.panopticode.supplement.jdepend</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.panopticode.supplement.emma">
+            <Stats>
+                <TotalClasses>3</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>3</Ce>
+                <A>0</A>
+                <I>0.75</I>
+                <D>0.25</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="CouldntFindElementException.java">
+                    org.panopticode.supplement.emma.CouldntFindElementException
+                </Class>
+                <Class sourceFile="CouldntNarrowMethodMatchesException.java">
+                    org.panopticode.supplement.emma.CouldntNarrowMethodMatchesException
+                </Class>
+                <Class sourceFile="EmmaSupplement.java">
+                    org.panopticode.supplement.emma.EmmaSupplement
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>org.dom4j</Package>
+                <Package>org.dom4j.io</Package>
+                <Package>org.panopticode</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.panopticode.supplement.ant</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.panopticode.supplement.javancss">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>3</Ce>
+                <A>0</A>
+                <I>0.75</I>
+                <D>0.25</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="JavaNCSSSupplement.java">
+                    org.panopticode.supplement.javancss.JavaNCSSSupplement
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>org.dom4j</Package>
+                <Package>org.dom4j.io</Package>
+                <Package>org.panopticode</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.panopticode.supplement.ant</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.panopticode.supplement.jdepend">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>3</Ce>
+                <A>0</A>
+                <I>0.75</I>
+                <D>0.25</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="JDependSupplement.java">
+                    org.panopticode.supplement.jdepend.JDependSupplement
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>org.dom4j</Package>
+                <Package>org.dom4j.io</Package>
+                <Package>org.panopticode</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.panopticode.supplement.ant</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.panopticode.util">
+            <Stats>
+                <TotalClasses>3</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>1</Ce>
+                <A>0</A>
+                <I>0.33</I>
+                <D>0.67</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ArgumentValidation.java">
+                    org.panopticode.util.ArgumentValidation
+                </Class>
+                <Class sourceFile="SVGHelper.java">
+                    org.panopticode.util.SVGHelper
+                </Class>
+                <Class sourceFile="StringHelper.java">
+                    org.panopticode.util.StringHelper
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>org.dom4j</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.panopticode</Package>
+                <Package>org.panopticode.report.treemap</Package>
+            </UsedBy>
+        </Package>
+    </Packages>
+
+    <Cycles>
+    </Cycles>
+</JDepend>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="prod/src"/>
+	<classpathentry kind="src" path="unittest/src"/>
+	<classpathentry kind="lib" path="prod/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="prod/lib/jaxen-1.1.jar"/>
+	<classpathentry kind="lib" path="prod/lib/TreemapAlgorithms.jar"/>
+	<classpathentry kind="lib" path="unittest/lib/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="unittest/lib/jmock-1.1.0RC1.jar"/>
+	<classpathentry kind="lib" path="unittest/lib/jmock-cglib-1.1.0RC1.jar"/>
+	<classpathentry kind="lib" path="unittest/lib/junit.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="prod/lib/ant.jar"/>
+	<classpathentry kind="lib" path="unittest/lib/ant-testutil.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/checkstyle/lib/checkstyle-all-4.2.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/asm-2.2.1.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/cobertura.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/jakarta-oro-2.0.8.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/log4j-1.2.9.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/complexian/lib/complexian-0.9.1.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/emma/lib/emma_ant.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/emma/lib/emma.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/javancss/lib/ccl.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/javancss/lib/javancss.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/javancss/lib/jhbasic.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/jdepend/lib/jdepend-2.9.1.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/simian/lib/simian-2.2.12.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

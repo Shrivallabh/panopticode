@@ -1,0 +1,2147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<log>
+<logentry
+   revision="80">
+<author>jrshaw</author>
+<date>2007-02-23T02:45:21.175613Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/Categorizer.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticCoverageTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticComplexityTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/LeafMapItem.java</path>
+<path
+   action="M">/trunk/panopticode/panopticode-imports.xml</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+</paths>
+<msg>Major rework of treemap reports.  Now supports both interactive and static versions.</msg>
+</logentry>
+<logentry
+   revision="79">
+<author>jrshaw</author>
+<date>2007-02-22T04:53:38.284107Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/emma/EmmaPluginTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/javancss/JavaNCSSPluginTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/jdepend/JDependPluginTest.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/Report.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/EmmaPlugin.java</path>
+<path
+   action="M">/trunk/panopticode/panopticode-imports.xml</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/javancss/JavaNCSSPlugin.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/Plugin.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/jdepend/JDependPlugin.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/ReportRunner.java</path>
+</paths>
+<msg>Added a new concept called report that operated much like a plugin but does not resave the panopticode.xml file when it is done.  Changed existing reports from plugins to reports.  Started restructuring build files.</msg>
+</logentry>
+<logentry
+   revision="78">
+<author>jrshaw</author>
+<date>2007-02-22T04:29:02.209623Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PluginRunner.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/doclet/PanopticodeDoclet.java</path>
+<path
+   action="M">/trunk/panopticode/panopticode-imports.xml</path>
+<path
+   action="D">/trunk/prod/src/org/panopticode/Plugins.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PluginDeclaration.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/doclet/PanopticodeDocletTest.java</path>
+</paths>
+<msg>Moved plugin running from PanopticodeDoclet to PluginRunner</msg>
+</logentry>
+<logentry
+   revision="77">
+<author>jrshaw</author>
+<date>2007-02-22T03:54:39.487744Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/emma/EmmaPluginTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PluginRunner.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticCoverageTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticComplexityTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/EmmaPlugin.java</path>
+</paths>
+<msg>Completed first cut of being able to load the project data structure from XML.  This pointed out a bug in the emma plugin where it attached a method coverage metric to the method</msg>
+</logentry>
+<logentry
+   revision="76">
+<author>jrshaw</author>
+<date>2007-02-22T03:53:03.501203Z</date>
+<paths>
+<path
+   action="M">/trunk/sample_data/panopticode.xml</path>
+</paths>
+<msg>Updated sample panopticode.xml</msg>
+</logentry>
+<logentry
+   revision="75">
+<author>jrshaw</author>
+<date>2007-02-20T21:41:24.439474Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticCoverageTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticComplexityTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+</paths>
+<msg>Started cleanup of Treemaps</msg>
+</logentry>
+<logentry
+   revision="74">
+<author>jrshaw</author>
+<date>2007-02-20T21:32:50.240682Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticCoverageTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticComplexityTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/LeafMapItem.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+</paths>
+<msg>Started cleanup of Treemaps</msg>
+</logentry>
+<logentry
+   revision="73">
+<author>jrshaw</author>
+<date>2007-02-20T21:02:17.665607Z</date>
+<paths>
+<path
+   action="A">/trunk/prod/src/org/panopticode/report/treemap/Categorizer.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticCoverageTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticComplexityTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeProject.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/report/treemap/Category.java</path>
+</paths>
+<msg>Started cleanup of Treemaps</msg>
+</logentry>
+<logentry
+   revision="72">
+<author>jrshaw</author>
+<date>2007-02-20T05:19:44.268379Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeClassTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeProjectTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PluginRunner.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/doclet/PanopticodeDoclet.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeProject.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodePackageTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeFileTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodePackage.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeMethodTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeFile.java</path>
+</paths>
+<msg>Continuing work on being able to load up a PanopticodeProject from XML</msg>
+</logentry>
+<logentry
+   revision="71">
+<author>jrshaw</author>
+<date>2007-02-20T04:13:37.276869Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeMethod.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeClassTest.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/PluginRunner.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeFileTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeMethodTest.java</path>
+</paths>
+<msg>Continuing work on being able to load up a PanopticodeProject form XML</msg>
+</logentry>
+<logentry
+   revision="70">
+<author>jrshaw</author>
+<date>2007-02-20T03:17:28.476287Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeMethod.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeClassTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/IntegerMetricDeclaration.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeProjectTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/DecimalMetricDeclaration.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/RatioMetricDeclaration.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/MetricDeclaration.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeProject.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeFileTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodePackage.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeMethodTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/MetricDeclarationTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeFile.java</path>
+</paths>
+<msg>Added the ability to load metrics back from XML file</msg>
+</logentry>
+<logentry
+   revision="69">
+<author>jrshaw</author>
+<date>2007-02-20T02:09:34.338921Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/IntegerMetricDeclaration.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/DecimalMetricDeclaration.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/RatioMetricDeclaration.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/IntegerMetricDeclarationTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/DecimalMetricDeclarationTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/RatioMetricDeclarationTest.java</path>
+</paths>
+<msg>Changed MetricDeclaration.getType to return the fully qualified class name instead of just a descriptive string</msg>
+</logentry>
+<logentry
+   revision="68">
+<author>jrshaw</author>
+<date>2007-02-19T05:28:30.384028Z</date>
+<paths>
+<path
+   action="M">/trunk/sample_data/svn-log.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.RatioMetricDeclarationTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.PanopticodeClassTest.xml</path>
+<path
+   action="M">/trunk/sample_data/checkstyle.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.PluginDeclarationTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.PanopticodeMethodTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.DecimalMetricDeclarationTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.PanopticodeArgumentTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.util.ArgumentValidationTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.plugin.emma.EmmaPluginTest.xml</path>
+<path
+   action="M">/trunk/sample_data/jdepend.xml</path>
+<path
+   action="M">/trunk/sample_data/emma.xml</path>
+<path
+   action="M">/trunk/sample_data/simian.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.doclet.PanopticodeDocletGatherStructureTest.xml</path>
+<path
+   action="A">/trunk/sample_data/javancss-test.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.report.treemap.AbstractMapItemTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.MetricDeclarationTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.plugin.javancss.JavaNCSSPluginTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.PanopticodeProjectTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.plugin.jdepend.JDependPluginTest.xml</path>
+<path
+   action="M">/trunk/sample_graphs/coverage-treemap.svg</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.plugin.emma.CouldntNarrowMethodMatchesExceptionTest.xml</path>
+<path
+   action="M">/trunk/sample_graphs/complexity-treemap.svg</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.doclet.PanopticodeDocletOptionTest.xml</path>
+<path
+   action="A">/trunk/sample_data/panopticode.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.report.treemap.ContainerMapItemTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.PanopticodeFileTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.IntegerMetricDeclarationTest.xml</path>
+<path
+   action="M">/trunk/sample_data/javancss.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.doclet.PanopticodeDocletTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.PanopticodePackageTest.xml</path>
+<path
+   action="M">/trunk/sample_data/junit/TEST-org.panopticode.MetricTest.xml</path>
+</paths>
+<msg>Updated sample data and graphs</msg>
+</logentry>
+<logentry
+   revision="67">
+<author>jrshaw</author>
+<date>2007-02-19T05:18:24.384901Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/LeafMapItem.java</path>
+</paths>
+<msg>Removed unused constants</msg>
+</logentry>
+<logentry
+   revision="66">
+<author>jrshaw</author>
+<date>2007-02-19T05:15:24.545375Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeProjectTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/doclet/PanopticodeDoclet.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeProject.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/TestHelpers.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/Plugin.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PluginDeclarationTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/FakePlugin.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodePackage.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/Plugins.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PluginDeclaration.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeFile.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/doclet/PanopticodeDocletTest.java</path>
+</paths>
+<msg>Added fromXML method to PanopticodeProject and PluginDeclaration</msg>
+</logentry>
+<logentry
+   revision="65">
+<author>jrshaw</author>
+<date>2007-02-19T03:54:42.412888Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodePackage.java</path>
+</paths>
+<msg>Added fromXML method to PanopticodePackage</msg>
+</logentry>
+<logentry
+   revision="64">
+<author>jrshaw</author>
+<date>2007-02-19T03:54:09.726412Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodePackageTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodePackage.java</path>
+</paths>
+<msg>Added fromXML method to PanopticodePackage</msg>
+</logentry>
+<logentry
+   revision="63">
+<author>jrshaw</author>
+<date>2007-02-19T03:43:14.654219Z</date>
+<paths>
+<path
+   action="M">/trunk/build.xml</path>
+</paths>
+<msg>Updated build file to reflect that we are now working on the 0.1 release</msg>
+</logentry>
+<logentry
+   revision="62">
+<author>jrshaw</author>
+<date>2007-02-19T03:29:03.469937Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeFileTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeFile.java</path>
+</paths>
+<msg>Added fromXML method to PanopticodeFile</msg>
+</logentry>
+<logentry
+   revision="61">
+<author>jrshaw</author>
+<date>2007-02-19T03:17:24.676138Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeClassTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/doclet/PanopticodeDoclet.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/doclet/PanopticodeDocletGatherStructureTest.java</path>
+</paths>
+<msg>Added fromXML method to PanopticodeClass and added abstractness to PanopticodeClass</msg>
+</logentry>
+<logentry
+   revision="60">
+<author>jrshaw</author>
+<date>2007-02-19T01:04:03.322325Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeMethod.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeArgument.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeMethodTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeArgumentTest.java</path>
+</paths>
+<msg>Added fromXML method to PanopticodeMethod</msg>
+</logentry>
+<logentry
+   revision="59">
+<author>jrshaw</author>
+<date>2007-02-19T00:32:22.713460Z</date>
+<paths>
+<path
+   action="M">/trunk/build.xml</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/report/treemap/ContainerMapItemTest.java</path>
+</paths>
+<msg>Added unit tests for AbstractMapItem and fixed build to run them</msg>
+</logentry>
+<logentry
+   revision="58">
+<author>jrshaw</author>
+<date>2007-02-19T00:22:54.918802Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/ContainerMapItem.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractMapItem.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/LeafMapItem.java</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/report/treemap/ContainerMapItemTest.java</path>
+</paths>
+<msg>Added unit tests for ContainerMapItem</msg>
+</logentry>
+<logentry
+   revision="57">
+<author>jrshaw</author>
+<date>2007-02-18T23:45:04.803144Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeProjectTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/TestHelpers.java</path>
+</paths>
+<msg>Added unit tests for PanopticodeProject</msg>
+</logentry>
+<logentry
+   revision="56">
+<author>jrshaw</author>
+<date>2007-02-18T23:34:11.271319Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodePackageTest.java</path>
+</paths>
+<msg>Added unit tests for PanopticodePackage</msg>
+</logentry>
+<logentry
+   revision="55">
+<author>jrshaw</author>
+<date>2007-02-18T23:22:16.553411Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeFileTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeFile.java</path>
+</paths>
+<msg>Added unit tests for PanopticodeFile</msg>
+</logentry>
+<logentry
+   revision="54">
+<author>jrshaw</author>
+<date>2007-02-18T23:15:21.881667Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeClassTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+</paths>
+<msg>Added unit tests for PanopticodeClass</msg>
+</logentry>
+<logentry
+   revision="53">
+<author>jrshaw</author>
+<date>2007-02-18T23:08:25.048646Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeMethodTest.java</path>
+</paths>
+<msg>Added unit tests for PanopticodeMethod</msg>
+</logentry>
+<logentry
+   revision="52">
+<author>jrshaw</author>
+<date>2007-02-18T19:11:42.550471Z</date>
+<paths>
+<path
+   action="M">/trunk/panopticode/plugins/complexian/complexian-imports.xml</path>
+<path
+   action="D">/trunk/panopticode/plugins/complexian/lib/complexian-0.8.jar</path>
+<path
+   action="A">/trunk/panopticode/plugins/complexian/lib/complexian-0.9.1.jar</path>
+</paths>
+<msg>Upgraded Complexian to version 0.9.1</msg>
+</logentry>
+<logentry
+   revision="51">
+<author>jrshaw</author>
+<date>2007-02-18T18:03:31.244507Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeMethod.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/MetricTarget.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeProject.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodePackage.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeFile.java</path>
+</paths>
+<msg>Added getName() and isLevel(Level) methods to MetricTarget</msg>
+</logentry>
+<logentry
+   revision="50">
+<author>jrshaw</author>
+<date>2007-02-18T17:50:35.734156Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticCoverageTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticComplexityTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+<path
+   action="D">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticMethodTreeMapCommand.java</path>
+</paths>
+<msg>Removed AbstractStaticMethodTreeMapCommand</msg>
+</logentry>
+<logentry
+   revision="49">
+<author>jrshaw</author>
+<date>2007-02-18T17:43:36.114670Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeMethod.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/MetricTarget.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeProject.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodePackage.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeFile.java</path>
+</paths>
+<msg>Added MetricTarget interface and made all appropriate domain objects implement it</msg>
+</logentry>
+<logentry
+   revision="48">
+<author>jrshaw</author>
+<date>2007-02-18T17:12:03.341603Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/emma/EmmaPluginTest.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/Level.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/javancss/JavaNCSSPluginTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/MetricDeclaration.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/jdepend/JDependPluginTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/EmmaPlugin.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/javancss/JavaNCSSPlugin.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/jdepend/JDependPlugin.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/MetricDeclarationTest.java</path>
+</paths>
+<msg>Added a Level enum (PROJECT, PACKAGE, FILE, CLASS, METHOD) and changed the MethodDeclaration class to use it</msg>
+</logentry>
+<logentry
+   revision="47">
+<author>jrshaw</author>
+<date>2007-02-18T16:44:24.888298Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeProjectTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeProject.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+</paths>
+<msg>Factored out some duplication</msg>
+</logentry>
+<logentry
+   revision="46">
+<author>jrshaw</author>
+<date>2007-02-18T16:04:52.627690Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeMethod.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/ContainerMapItem.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeProjectTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractMapItem.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/javancss/JavaNCSSPluginTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticComplexityTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeProject.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/LeafMapItem.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/javancss/JavaNCSSPlugin.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodePackage.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticMethodTreeMapCommand.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/report/treemap/AbstractMapItemTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeFile.java</path>
+</paths>
+<msg>Changed treemaps to dynamically get the list of metrics to display details for.  Still much work to do to clean this up</msg>
+</logentry>
+<logentry
+   revision="45">
+<author>jrshaw</author>
+<date>2007-02-16T21:44:13.508004Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/EmmaPlugin.java</path>
+</paths>
+<msg>factored out a bit of duplication</msg>
+</logentry>
+<logentry
+   revision="44">
+<author>jrshaw</author>
+<date>2007-02-16T21:00:44.630056Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+<path
+   action="M">/trunk/sample_graphs/coverage-treemap.svg</path>
+<path
+   action="M">/trunk/sample_graphs/complexity-treemap.svg</path>
+</paths>
+<msg>Fixed problem with treemap javascript in IE and updated sample graphs</msg>
+</logentry>
+<logentry
+   revision="43">
+<author>jrshaw</author>
+<date>2007-02-16T20:37:43.830071Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticCoverageTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticComplexityTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/LeafMapItem.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+</paths>
+<msg>Added the ability to click on a rectangle in treemaps and get the details under the legend.  This is only tested in Firefox and IE and is known to be broken in IE.</msg>
+</logentry>
+<logentry
+   revision="42">
+<author>jrshaw</author>
+<date>2007-02-14T00:40:40.829066Z</date>
+<paths>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/jhawk.xml</path>
+</paths>
+<msg>Added output file from running JHawk against the Java Precisely code.  This is to be used for future JHawk plugin development.</msg>
+</logentry>
+<logentry
+   revision="41">
+<author>jrshaw</author>
+<date>2007-02-11T01:36:36.072239Z</date>
+<paths>
+<path
+   action="A">/trunk/sample_graphs/complexian-npath-bullet.svg</path>
+</paths>
+<msg>Added Complexian Violation Example</msg>
+</logentry>
+<logentry
+   revision="40">
+<author>jrshaw</author>
+<date>2007-02-11T01:30:41.615290Z</date>
+<paths>
+<path
+   action="A">/trunk/sample_graphs/npath-bullet.svg</path>
+<path
+   action="M">/trunk/sample_graphs/coverage-bullet.svg</path>
+</paths>
+<msg>Added bullet graph examples</msg>
+</logentry>
+<logentry
+   revision="39">
+<author>jrshaw</author>
+<date>2007-02-10T18:04:59.530963Z</date>
+<paths>
+<path
+   action="A">/trunk/panopticode/plugins/complexian/complexian-imports.xml</path>
+<path
+   action="M">/trunk/panopticode/panopticode-imports.xml</path>
+<path
+   action="A">/trunk/panopticode/plugins/complexian</path>
+<path
+   action="A">/trunk/panopticode/plugins/complexian/lib/complexian-0.8.jar</path>
+<path
+   action="A">/trunk/panopticode/plugins/complexian/lib</path>
+</paths>
+<msg>Added preliminary Complexian plugin</msg>
+</logentry>
+<logentry
+   revision="38">
+<author>jrshaw</author>
+<date>2007-02-10T04:34:50.963150Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeArgument.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeArgumentTest.java</path>
+</paths>
+<msg>Added fromXML to PanopticodeArgument</msg>
+</logentry>
+<logentry
+   revision="37">
+<author>jrshaw</author>
+<date>2007-02-07T12:47:07.957788Z</date>
+<paths>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.doclet.PanopticodeDocletGatherStructureTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.RatioMetricDeclarationTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.MetricDeclarationTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.PanopticodeClassTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.plugin.javancss.JavaNCSSPluginTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.PanopticodeProjectTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.plugin.jdepend.JDependPluginTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.plugin.emma.CouldntNarrowMethodMatchesExceptionTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.doclet.PanopticodeDocletOptionTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.PluginDeclarationTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.PanopticodeFileTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.PanopticodeMethodTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.IntegerMetricDeclarationTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.DecimalMetricDeclarationTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.PanopticodeArgumentTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.doclet.PanopticodeDocletTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.plugin.emma.EmmaPluginTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.util.ArgumentValidationTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.PanopticodePackageTest.xml</path>
+<path
+   action="A">/trunk/sample_data/junit/TEST-org.panopticode.MetricTest.xml</path>
+</paths>
+<msg>Added junit xml output examples</msg>
+</logentry>
+<logentry
+   revision="36">
+<author>jrshaw</author>
+<date>2007-02-07T12:45:29.655918Z</date>
+<paths>
+<path
+   action="M">/trunk/sample_data/svn-log.xml</path>
+<path
+   action="M">/trunk/sample_data/javancss.xml</path>
+<path
+   action="M">/trunk/sample_data/jdepend.xml</path>
+<path
+   action="A">/trunk/sample_graphs/coverage-bullet.svg</path>
+<path
+   action="A">/trunk/sample_graphs</path>
+<path
+   action="M">/trunk/sample_data/checkstyle.xml</path>
+<path
+   action="M">/trunk/sample_data/emma.xml</path>
+<path
+   action="M">/trunk/sample_data/simian.xml</path>
+<path
+   action="A">/trunk/sample_graphs/coverage-treemap.svg</path>
+<path
+   action="A">/trunk/sample_graphs/complexity-treemap.svg</path>
+</paths>
+<msg>Checked in samples of all graphs currently generated and an example of a bullet graph (which we don't currently generate)</msg>
+</logentry>
+<logentry
+   revision="35">
+<author>jrshaw</author>
+<date>2007-02-03T20:45:15.068714Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/jdepend/JDependPluginTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/jdepend/JDependPlugin.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/DecimalMetric.java</path>
+</paths>
+<msg>Implemented all decimal metrics for JDepend</msg>
+</logentry>
+<logentry
+   revision="34">
+<author>jrshaw</author>
+<date>2007-02-03T20:14:15.543494Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/jdepend/JDependPluginTest.java</path>
+</paths>
+<msg>Added test for missing package match in loadPackageData</msg>
+</logentry>
+<logentry
+   revision="33">
+<author>jrshaw</author>
+<date>2007-02-03T20:09:54.115967Z</date>
+<paths>
+<path
+   action="M">/trunk/build.xml</path>
+</paths>
+<msg>Changed the default build target to metrics</msg>
+</logentry>
+<logentry
+   revision="32">
+<author>jrshaw</author>
+<date>2007-02-03T20:08:20.379349Z</date>
+<paths>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/common</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/MyLinkedList.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/common/Access.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/common/Mapper.java</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/Example112.java</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/Example113.java</path>
+<path
+   action="D">/trunk/functionaltest/java-precisely/src/Access.java</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/MyList.java</path>
+<path
+   action="D">/trunk/functionaltest/java-precisely/src/Mapper.java</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/Example108.java</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/Example117.java</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/src/Example109.java</path>
+</paths>
+<msg>Created a common package and moved a few classes into it to help with functional testing</msg>
+</logentry>
+<logentry
+   revision="31">
+<author>jrshaw</author>
+<date>2007-02-03T19:56:32.868169Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/jdepend/JDependPluginTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodePackageTest.java</path>
+<path
+   action="M">/trunk/panopticode/panopticode-imports.xml</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/jdepend/JDependPlugin.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodePackage.java</path>
+</paths>
+<msg>Implemented all integer metrics for JDepend</msg>
+</logentry>
+<logentry
+   revision="30">
+<author>jrshaw</author>
+<date>2007-02-03T18:16:50.921718Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/jdepend/JDependPluginTest.java</path>
+</paths>
+<msg>Fixed unit test bug</msg>
+</logentry>
+<logentry
+   revision="29">
+<author>jrshaw</author>
+<date>2007-02-03T18:12:40.606644Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/jdepend/JDependPluginTest.java</path>
+</paths>
+<msg>Fixed unit test bug</msg>
+</logentry>
+<logentry
+   revision="28">
+<author>jrshaw</author>
+<date>2007-02-03T18:05:24.125221Z</date>
+<paths>
+<path
+   action="A">/trunk/prod/src/org/panopticode/plugin/jdepend</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/plugin/jdepend/JDependPluginTest.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/plugin/jdepend/JDependPlugin.java</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/plugin/jdepend</path>
+</paths>
+<msg>Started JDepend plugin</msg>
+</logentry>
+<logentry
+   revision="27">
+<author>jrshaw</author>
+<date>2007-02-03T17:08:40.728354Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/MetricDeclaration.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/MetricDeclarationTest.java</path>
+</paths>
+<msg>Added optional description to metric declarations</msg>
+</logentry>
+<logentry
+   revision="26">
+<author>jrshaw</author>
+<date>2007-02-03T16:27:04.990532Z</date>
+<paths>
+<path
+   action="M">/trunk/build.xml</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/build-update.xml</path>
+</paths>
+<msg>Changed dist target for main project to create a file called panopticode-latest.zip in addition to the panopticode-VERSION.zip file</msg>
+</logentry>
+<logentry
+   revision="25">
+<author>jrshaw</author>
+<date>2007-02-03T16:22:19.145061Z</date>
+<paths>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/panopticode.xml</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/sample_data/svn-log.xml</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/sample_data/javancss.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/junit</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/sample_data/emma.xml</path>
+<path
+   action="M">/trunk/functionaltest/java-precisely/sample_data/simian.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/junit/TEST-Example001Test.xml</path>
+</paths>
+<msg>Updated sample data to reflect output from version 0.1 alpha</msg>
+</logentry>
+<logentry
+   revision="24">
+<author>jrshaw</author>
+<date>2007-02-03T02:25:51.575231Z</date>
+<paths>
+<path
+   action="M">/trunk/build.xml</path>
+</paths>
+<msg>Changed version to 0.1-beta</msg>
+</logentry>
+<logentry
+   revision="23">
+<author>jrshaw</author>
+<date>2007-02-03T02:20:40.589656Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeClassTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/doclet/PanopticodeDoclet.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/EmmaPlugin.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/doclet/PanopticodeDocletGatherStructureTest.java</path>
+</paths>
+<msg>Fixed Emma plugin problem matching non-static inner class contructors</msg>
+</logentry>
+<logentry
+   revision="22">
+<author>jrshaw</author>
+<date>2007-02-03T02:00:47.515179Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/emma/EmmaPluginTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/EmmaPlugin.java</path>
+</paths>
+<msg>Fixed Emma plugin problem matching enum contructors</msg>
+</logentry>
+<logentry
+   revision="21">
+<author>jrshaw</author>
+<date>2007-02-03T01:41:25.655715Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/emma/EmmaPluginTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/EmmaPlugin.java</path>
+</paths>
+<msg>Fixed Emma plugin problem matching contructors within inner classes</msg>
+</logentry>
+<logentry
+   revision="20">
+<author>jrshaw</author>
+<date>2007-01-28T23:23:23.658166Z</date>
+<paths>
+<path
+   action="M">/trunk/functionaltest/java-precisely</path>
+</paths>
+<msg>Added ignore directives for 'Java Precisely' examples</msg>
+</logentry>
+<logentry
+   revision="19">
+<author>jrshaw</author>
+<date>2007-01-28T23:20:19.489001Z</date>
+<paths>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example100.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/MyString.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example003.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example112.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example140.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/MyList.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example015.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example124.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/simian.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example152.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example071.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example027.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example108.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example164.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example083.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example039.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example148.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example067.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example095.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example079.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Access.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/C2.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/build-update.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/MyLinkedList.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example012.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example040.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example121.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example105.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example133.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example052.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example008.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example080.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example117.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example064.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example145.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example092.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example129.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example048.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example076.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/unittest/src/Example001Test.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example088.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/README-FIRST</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/jdepend.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example102.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example021.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example130.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example114.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example033.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example061.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example142.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example017.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example126.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example045.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example073.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example154.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example057.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example138.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example085.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example069.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example097.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/WeekdayException.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/unittest</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/javancss.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example002.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example030.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example111.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example014.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example123.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example151.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example070.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example107.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example026.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example135.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Mapper.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example082.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example119.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example038.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/TimeComparator.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/svn-log.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example147.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example094.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Point.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example078.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/unittest/src</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/C1.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example011.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example120.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example023.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example104.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example051.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/TLC.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example007.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example035.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example116.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example144.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example063.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example019.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example091.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example047.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example128.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/build.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example156.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example075.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example059.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example087.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example099.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/PrintableMyLinkedList.java</path>
+<path
+   action="A">/trunk/functionaltest</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/SPoint.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example020.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example101.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example004.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example113.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example141.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example060.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example016.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example044.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example125.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example153.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example072.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example109.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example028.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example056.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example084.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example165.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example149.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example068.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/SortedList.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Time.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/checkstyle.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example001.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example110.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example013.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example041.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example122.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example150.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/sample_data/emma.xml</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example106.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example134.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example053.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example009.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example081.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example118.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example146.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example065.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example093.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example049.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example077.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example010.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/README</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example022.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example103.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example050.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example131.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Printable.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example006.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example034.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example115.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example143.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example062.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example018.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example090.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example046.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example127.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example155.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example074.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example139.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example058.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example086.java</path>
+<path
+   action="A">/trunk/functionaltest/java-precisely/src/Example098.java</path>
+</paths>
+<msg>Added the example code from the excellent book 'Java Precisely' to use in testing.  The author's permission to use this code has been requested, but no response has been received yet.  If usage is denied this code will be deleted.</msg>
+</logentry>
+<logentry
+   revision="18">
+<author>jrshaw</author>
+<date>2007-01-28T22:44:20.613642Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/emma/EmmaPluginTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/EmmaPlugin.java</path>
+</paths>
+<msg>Fixed a bug in matching anything in the default package with the Emma plugin</msg>
+</logentry>
+<logentry
+   revision="17">
+<author>jrshaw</author>
+<date>2007-01-28T22:43:39.495521Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/ContainerMapItem.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticMethodTreeMapCommand.java</path>
+</paths>
+<msg>Added 'g' elements to SVG reports to preserve the hierarchical nature of the projects packages and classes within the SVG file.</msg>
+</logentry>
+<logentry
+   revision="16">
+<author>jrshaw</author>
+<date>2007-01-28T17:38:01.942616Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeMethod.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/emma/EmmaPluginTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeArgument.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/javancss/JavaNCSSPluginTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/javancss/JavaNCSSPlugin.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/TestHelpers.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodePackage.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeFile.java</path>
+</paths>
+<msg>Made several constructors package protected</msg>
+</logentry>
+<logentry
+   revision="15">
+<author>jrshaw</author>
+<date>2007-01-28T17:37:10.131878Z</date>
+<paths>
+<path
+   action="M">/trunk/panopticode/panopticode-imports.xml</path>
+</paths>
+<msg>Changed the way we call the doclet to work when all code is in the default package</msg>
+</logentry>
+<logentry
+   revision="14">
+<author>jrshaw</author>
+<date>2007-01-27T21:23:50.079764Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/LeafMapItem.java</path>
+</paths>
+<msg>Removed unused import</msg>
+</logentry>
+<logentry
+   revision="13">
+<author>jrshaw</author>
+<date>2007-01-27T08:08:06.627267Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeMethod.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/LeafMapItem.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticMethodTreeMapCommand.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeMethodTest.java</path>
+</paths>
+<msg>Started work to display method details when clicked in TreeMap reports</msg>
+</logentry>
+<logentry
+   revision="12">
+<author>jrshaw</author>
+<date>2007-01-27T07:34:56.933186Z</date>
+<paths>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/emma/EmmaPluginTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/EmmaPlugin.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/TestHelpers.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/MetricTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/IntegerMetric.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/DecimalMetric.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/RatioMetric.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/IntegerMetricDeclarationTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/Metric.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/DecimalMetricDeclarationTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/RatioMetricDeclarationTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/report/treemap/AbstractMapItemTest.java</path>
+</paths>
+<msg>Made metric values and declaration keys more human friendly</msg>
+</logentry>
+<logentry
+   revision="11">
+<author>jrshaw</author>
+<date>2007-01-27T07:33:46.587167Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/ContainerMapItem.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractMapItem.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticCoverageTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticComplexityTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/LeafMapItem.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+</paths>
+<msg>Changed SVG rendering to use Dom4J instead of just Strings</msg>
+</logentry>
+<logentry
+   revision="10">
+<author>jrshaw</author>
+<date>2007-01-23T03:06:05.289966Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/RatioMetricDeclaration.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticCoverageTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticComplexityTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/util/ArgumentValidation.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeProject.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/LeafMapItem.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/javancss/JavaNCSSPlugin.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticMethodTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/RatioMetric.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PluginDeclaration.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeFile.java</path>
+</paths>
+<msg>Corrected many CheckStyle errors</msg>
+</logentry>
+<logentry
+   revision="9">
+<author>jrshaw</author>
+<date>2007-01-23T02:51:14.322683Z</date>
+<paths>
+<path
+   action="M">/trunk/build.xml</path>
+</paths>
+<msg>Fixed bad change to build file clean target</msg>
+</logentry>
+<logentry
+   revision="8">
+<author>jrshaw</author>
+<date>2007-01-23T02:49:59.740284Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeMethod.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeArgument.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/MetricDeclaration.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/checkstyle/etc/java_mit_license_header.txt</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/doclet/PanopticodeDoclet.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/EmmaPlugin.java</path>
+<path
+   action="M">/trunk/panopticode/plugins/checkstyle/etc/panopticode_checks.xml</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeProject.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/IntegerMetric.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodePackage.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/DecimalMetric.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/Metric.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/CouldntNarrowMethodMatchesException.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeFile.java</path>
+</paths>
+<msg>Updated CheckStyle configuration and corrected many CheckStyle errors</msg>
+</logentry>
+<logentry
+   revision="7">
+<author>jrshaw</author>
+<date>2007-01-23T01:23:50.526603Z</date>
+<paths>
+<path
+   action="D">/trunk/panopticode/plugins/clover</path>
+</paths>
+<msg>Removed clover plugin as it uses unreleased clover libraries</msg>
+</logentry>
+<logentry
+   revision="6">
+<author>jrshaw</author>
+<date>2007-01-23T01:22:18.071193Z</date>
+<paths>
+<path
+   action="M">/trunk/prod/src/org/panopticode/RatioMetricDeclaration.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticCoverageTreeMapCommand.java</path>
+<path
+   action="M">/trunk/panopticode/plugins/javancss/javancss-imports.xml</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/StaticComplexityTreeMapCommand.java</path>
+<path
+   action="M">/trunk/panopticode/plugins/jdepend/jdepend-imports.xml</path>
+<path
+   action="M">/trunk/panopticode/panopticode-imports.xml</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/Plugin.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/IntegerMetric.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/CouldntNarrowMethodMatchesException.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/RatioMetricDeclarationTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/MetricDeclarationTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/IntegerMetricDeclaration.java</path>
+<path
+   action="M">/trunk/panopticode/plugins/subversion/subversion-imports.xml</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/DecimalMetricDeclaration.java</path>
+<path
+   action="M">/trunk/panopticode/plugins/simian/simian-imports.xml</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/doclet/PanopticodeDoclet.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/EmmaPlugin.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/TestHelpers.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PluginDeclarationTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeFileTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeMethodTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodePackage.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/IntegerMetricDeclarationTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/RatioMetric.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeArgumentTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/DecimalMetricDeclarationTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/Metric.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/doclet/PanopticodeDocletTest.java</path>
+<path
+   action="M">/trunk/panopticode/plugins/cobertura/cobertura-imports.xml</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/util/ArgumentValidationTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/emma/EmmaPluginTest.java</path>
+<path
+   action="M">/trunk/build.xml</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractMapItem.java</path>
+<path
+   action="M">/trunk/panopticode/plugins/noscm-imports.xml</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/MetricDeclaration.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodePackageTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/LeafMapItem.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeProject.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/javancss/JavaNCSSPlugin.java</path>
+<path
+   action="M">/trunk/panopticode/plugins/clover/clover-imports.xml</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/MetricTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticMethodTreeMapCommand.java</path>
+<path
+   action="M">/trunk/panopticode/plugins/nocoverage-imports.xml</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/doclet/PanopticodeDocletGatherStructureTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/DecimalMetric.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/report/treemap/AbstractMapItemTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PluginDeclaration.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeFile.java</path>
+<path
+   action="M">/trunk/panopticode/plugins/checkstyle/checkstyle-imports.xml</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeMethod.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeClassTest.java</path>
+<path
+   action="M">/trunk/panopticode/plugins/emma/emma-imports.xml</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/report/treemap/ContainerMapItem.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/PanopticodeProjectTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/PanopticodeArgument.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/javancss/JavaNCSSPluginTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/util/ArgumentValidation.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/doclet/PanopticodeDocletOptionTest.java</path>
+<path
+   action="M">/trunk/unittest/src/org/panopticode/plugin/emma/CouldntNarrowMethodMatchesExceptionTest.java</path>
+<path
+   action="M">/trunk/prod/src/org/panopticode/plugin/emma/CouldntFindElementException.java</path>
+<path
+   action="M">/trunk/panopticode/build-example.xml</path>
+</paths>
+<msg>Added MIT license header</msg>
+</logentry>
+<logentry
+   revision="5">
+<author>jrshaw</author>
+<date>2007-01-23T01:06:24.432939Z</date>
+<paths>
+<path
+   action="A">/trunk/sample_data/svn-log.xml</path>
+<path
+   action="M">/trunk/sample_data/javancss.xml</path>
+<path
+   action="A">/trunk/sample_data/jdepend.xml</path>
+<path
+   action="A">/trunk/sample_data/checkstyle.xml</path>
+<path
+   action="M">/trunk/sample_data/emma.xml</path>
+<path
+   action="A">/trunk/sample_data/simian.xml</path>
+</paths>
+<msg>Updated sample data</msg>
+</logentry>
+<logentry
+   revision="4">
+<author>jrshaw</author>
+<date>2007-01-23T01:01:37.877767Z</date>
+<paths>
+<path
+   action="M">/trunk/build.xml</path>
+</paths>
+<msg>Added some missing generated files to clean build target</msg>
+</logentry>
+<logentry
+   revision="3">
+<author>jrshaw</author>
+<date>2007-01-23T00:58:38.408690Z</date>
+<paths>
+<path
+   action="M">/trunk/panopticode</path>
+</paths>
+<msg>Added SVN ignore directives</msg>
+</logentry>
+<logentry
+   revision="2">
+<author>jrshaw</author>
+<date>2007-01-23T00:56:53.541787Z</date>
+<paths>
+<path
+   action="M">/trunk</path>
+</paths>
+<msg>Added SVN ignore directives</msg>
+</logentry>
+<logentry
+   revision="1">
+<author>jrshaw</author>
+<date>2007-01-23T00:49:40.999188Z</date>
+<paths>
+<path
+   action="A">/trunk/panopticode/plugins/jdepend/lib/jdepend-2.9.1.jar</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/RatioMetricDeclaration.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/javancss/javancss-imports.xml</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/plugin</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/report/treemap/StaticComplexityTreeMapCommand.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/util</path>
+<path
+   action="A">/trunk/panopticode</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/plugin/javancss</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/IntegerMetric.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/checkstyle/lib/checkstyle-all-4.2.jar</path>
+<path
+   action="A">/trunk/sample_data</path>
+<path
+   action="A">/trunk/panopticode/plugins/simian/lib</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/report</path>
+<path
+   action="A">/trunk/panopticode/plugins/cobertura/lib/cobertura.jar</path>
+<path
+   action="A">/trunk/panopticode/plugins/checkstyle</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/PluginDeclarationTest.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/clover/lib</path>
+<path
+   action="A">/trunk/panopticode/plugins/javancss/xslt</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/RatioMetric.java</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/IntegerMetricDeclarationTest.java</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/util/ArgumentValidationTest.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/report/treemap</path>
+<path
+   action="A">/trunk/panopticode/plugins/noscm-imports.xml</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/PanopticodePackageTest.java</path>
+<path
+   action="A">/trunk/prod</path>
+<path
+   action="A">/trunk/panopticode/plugins/clover/clover-imports.xml</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/MetricTest.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticTreeMapCommand.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/emma/lib/emma_ant.jar</path>
+<path
+   action="A">/trunk/prod/lib/TreemapAlgorithms.jar</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/PanopticodeFile.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/emma/emma-imports.xml</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/report/treemap/ContainerMapItem.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/checkstyle/xslt</path>
+<path
+   action="A">/trunk/unittest</path>
+<path
+   action="A">/trunk/sample_data/javancss.xml</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/plugin/emma/CouldntFindElementException.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/Plugin.java</path>
+<path
+   action="A">/trunk/unittest/src</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/RatioMetricDeclarationTest.java</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/report/treemap</path>
+<path
+   action="A">/trunk/panopticode/plugins/subversion/subversion-imports.xml</path>
+<path
+   action="A">/trunk/panopticode/plugins/javancss/lib/ccl.jar</path>
+<path
+   action="A">/trunk/panopticode/plugins/simian/simian-imports.xml</path>
+<path
+   action="A">/trunk/panopticode/plugins/checkstyle/etc/panopticode_checks.xml</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/TestHelpers.java</path>
+<path
+   action="A">/trunk/unittest/lib</path>
+<path
+   action="A">/trunk/panopticode/plugins/simian/lib/simian-2.2.12.jar</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/PanopticodeFileTest.java</path>
+<path
+   action="A">/trunk/unittest/lib/junit.jar</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/Metric.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/clover/lib/clover.jar</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/plugin/emma/EmmaPluginTest.java</path>
+<path
+   action="A">/trunk/build.xml</path>
+<path
+   action="A">/trunk/panopticode/plugins/checkstyle/etc</path>
+<path
+   action="A">/trunk/unittest/lib/jmock-1.1.0RC1.jar</path>
+<path
+   action="A">/trunk/panopticode/plugins/javancss/lib</path>
+<path
+   action="A">/trunk/panopticode/plugins/emma/lib/emma.jar</path>
+<path
+   action="A">/trunk/panopticode/plugins/simian</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/doclet/PanopticodeDocletGatherStructureTest.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/PanopticodeMethod.java</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/PanopticodeClassTest.java</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/PanopticodeProjectTest.java</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/plugin/javancss/JavaNCSSPluginTest.java</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/util</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/PanopticodeArgument.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/clover</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/util/ArgumentValidation.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/cobertura/lib</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/doclet/PanopticodeDocletOptionTest.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/plugin/javancss</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/report/treemap/StaticCoverageTreeMapCommand.java</path>
+<path
+   action="A">/trunk</path>
+<path
+   action="A">/trunk/panopticode/panopticode-imports.xml</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/MetricDeclarationTest.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/IntegerMetricDeclaration.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/cobertura/lib/log4j-1.2.9.jar</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/doclet/PanopticodeDoclet.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/plugin/emma/EmmaPlugin.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/javancss/lib/jhbasic.jar</path>
+<path
+   action="A">/trunk/panopticode/plugins/subversion</path>
+<path
+   action="A">/trunk/prod/lib/jaxen-1.1.jar</path>
+<path
+   action="A">/trunk/sample_data/emma.xml</path>
+<path
+   action="A">/trunk/panopticode/plugins/jdepend/xslt</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/PanopticodeArgumentTest.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/cobertura/cobertura-imports.xml</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/doclet/PanopticodeDocletTest.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/jdepend</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/report/treemap/AbstractMapItem.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/MetricDeclaration.java</path>
+<path
+   action="A">/trunk/unittest/lib/cglib-nodep-2.1_3.jar</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/report/treemap/LeafMapItem.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/PanopticodeProject.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/plugin/javancss/JavaNCSSPlugin.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/emma</path>
+<path
+   action="A">/trunk/panopticode/plugins/nocoverage-imports.xml</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/report/treemap/AbstractStaticMethodTreeMapCommand.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/PluginDeclaration.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/javancss/xslt/javancss2html.xsl</path>
+<path
+   action="A">/trunk/panopticode/plugins/javancss/lib/javancss.jar</path>
+<path
+   action="A">/trunk/panopticode/plugins/checkstyle/lib</path>
+<path
+   action="A">/trunk/prod/src</path>
+<path
+   action="A">/trunk/panopticode/build-example.xml</path>
+<path
+   action="A">/trunk/panopticode/plugins/javancss</path>
+<path
+   action="A">/trunk/panopticode/plugins/clover/lib/clover.license</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/doclet</path>
+<path
+   action="A">/trunk/panopticode/plugins/jdepend/jdepend-imports.xml</path>
+<path
+   action="A">/trunk/panopticode/plugins/jdepend/lib</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/plugin/emma/CouldntNarrowMethodMatchesException.java</path>
+<path
+   action="A">/trunk/prod/lib</path>
+<path
+   action="A">/trunk/panopticode/plugins/cobertura/lib/jakarta-oro-2.0.8.jar</path>
+<path
+   action="A">/trunk/panopticode/plugins/emma/lib</path>
+<path
+   action="A">/trunk/panopticode/plugins/cobertura</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/DecimalMetricDeclaration.java</path>
+<path
+   action="A">/trunk/prod/src/org</path>
+<path
+   action="A">/trunk/panopticode/plugins/checkstyle/etc/sun_checks.xml</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/plugin</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/PanopticodeMethodTest.java</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/PanopticodePackage.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/checkstyle/xslt/checkstyle-noframes.xsl</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/DecimalMetricDeclarationTest.java</path>
+<path
+   action="A">/trunk/unittest/src/org</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/report</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/PanopticodeClass.java</path>
+<path
+   action="A">/trunk/prod/lib/dom4j-1.6.1.jar</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/plugin/emma</path>
+<path
+   action="A">/trunk/panopticode/plugins/simian/LICENSE.txt</path>
+<path
+   action="A">/trunk/panopticode/plugins/jdepend/xslt/jdepend.xsl</path>
+<path
+   action="A">/trunk/prod/src/org/panopticode/DecimalMetric.java</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/report/treemap/AbstractMapItemTest.java</path>
+<path
+   action="A">/trunk/panopticode/plugins/cobertura/lib/asm-2.2.1.jar</path>
+<path
+   action="A">/trunk/panopticode/plugins/checkstyle/checkstyle-imports.xml</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/doclet</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/plugin/emma</path>
+<path
+   action="A">/trunk/unittest/lib/jmock-cglib-1.1.0RC1.jar</path>
+<path
+   action="A">/trunk/panopticode/plugins/clover/lib/cenquatasks.jar</path>
+<path
+   action="A">/trunk/unittest/src/org/panopticode/plugin/emma/CouldntNarrowMethodMatchesExceptionTest.java</path>
+<path
+   action="A">/trunk/panopticode/plugins</path>
+</paths>
+<msg>Initial Import</msg>
+</logentry>
+</log>

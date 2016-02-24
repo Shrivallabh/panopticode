@@ -1,0 +1,830 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="Default">
+            <Stats>
+                <TotalClasses>253</TotalClasses>
+                <ConcreteClasses>242</ConcreteClasses>
+                <AbstractClasses>11</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>1</Ce>
+                <A>0.04</A>
+                <I>1</I>
+                <D>0.04</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Example164.java">
+                    Author
+                </Class>
+                <Class sourceFile="Example164.java">
+                    Authors
+                </Class>
+                <Class sourceFile="Example085.java">
+                    Colored
+                </Class>
+                <Class sourceFile="Example085.java">
+                    ColoredDrawable
+                </Class>
+                <Class sourceFile="Example085.java">
+                    Drawable
+                </Class>
+                <Class sourceFile="Example144.java">
+                    Expr
+                </Class>
+                <Class sourceFile="Example114.java">
+                    Movable
+                </Class>
+                <Class sourceFile="MyList.java">
+                    MyList
+                </Class>
+                <Class sourceFile="Printable.java">
+                    Printable
+                </Class>
+                <Class sourceFile="Example139.java">
+                    Regex
+                </Class>
+                <Class sourceFile="Example027.java">
+                    Vessel
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Example144.java">
+                    Add
+                </Class>
+                <Class sourceFile="Example139.java">
+                    Alt
+                </Class>
+                <Class sourceFile="Example095.java">
+                    AnimatedCanvas
+                </Class>
+                <Class sourceFile="Example030.java">
+                    B
+                </Class>
+                <Class sourceFile="Example093.java">
+                    Bank
+                </Class>
+                <Class sourceFile="Example027.java">
+                    Barrel
+                </Class>
+                <Class sourceFile="Example094.java">
+                    Buffer
+                </Class>
+                <Class sourceFile="Example030.java">
+                    C
+                </Class>
+                <Class sourceFile="C1.java">
+                    C1
+                </Class>
+                <Class sourceFile="C2.java">
+                    C2
+                </Class>
+                <Class sourceFile="Example118.java">
+                    Car
+                </Class>
+                <Class sourceFile="Example093.java">
+                    Clerk
+                </Class>
+                <Class sourceFile="Example114.java">
+                    ColorLabelPoint
+                </Class>
+                <Class sourceFile="Example086.java">
+                    ColoredDrawablePoint
+                </Class>
+                <Class sourceFile="Example086.java">
+                    ColoredPoint
+                </Class>
+                <Class sourceFile="Example086.java">
+                    ColoredRectangle
+                </Class>
+                <Class sourceFile="Example110.java">
+                    ComparablePair
+                </Class>
+                <Class sourceFile="Example144.java">
+                    Cst
+                </Class>
+                <Class sourceFile="Example027.java">
+                    Cube
+                </Class>
+                <Class sourceFile="Example030.java">
+                    D
+                </Class>
+                <Class sourceFile="Example060.java">
+                    D1
+                </Class>
+                <Class sourceFile="Example060.java">
+                    D2
+                </Class>
+                <Class sourceFile="Example088.java">
+                    Day
+                </Class>
+                <Class sourceFile="Example139.java">
+                    Dfa
+                </Class>
+                <Class sourceFile="Example119.java">
+                    ErasedHold
+                </Class>
+                <Class sourceFile="Example001.java">
+                    Example001
+                </Class>
+                <Class sourceFile="Example002.java">
+                    Example002
+                </Class>
+                <Class sourceFile="Example003.java">
+                    Example003
+                </Class>
+                <Class sourceFile="Example004.java">
+                    Example004
+                </Class>
+                <Class sourceFile="Example006.java">
+                    Example006
+                </Class>
+                <Class sourceFile="Example007.java">
+                    Example007
+                </Class>
+                <Class sourceFile="Example008.java">
+                    Example008
+                </Class>
+                <Class sourceFile="Example009.java">
+                    Example009
+                </Class>
+                <Class sourceFile="Example010.java">
+                    Example010
+                </Class>
+                <Class sourceFile="Example011.java">
+                    Example011
+                </Class>
+                <Class sourceFile="Example012.java">
+                    Example012
+                </Class>
+                <Class sourceFile="Example013.java">
+                    Example013
+                </Class>
+                <Class sourceFile="Example014.java">
+                    Example014
+                </Class>
+                <Class sourceFile="Example015.java">
+                    Example015
+                </Class>
+                <Class sourceFile="Example016.java">
+                    Example016
+                </Class>
+                <Class sourceFile="Example017.java">
+                    Example017
+                </Class>
+                <Class sourceFile="Example018.java">
+                    Example018
+                </Class>
+                <Class sourceFile="Example019.java">
+                    Example019
+                </Class>
+                <Class sourceFile="Example020.java">
+                    Example020
+                </Class>
+                <Class sourceFile="Example021.java">
+                    Example021
+                </Class>
+                <Class sourceFile="Example021.java">
+                    Example021$Timer
+                </Class>
+                <Class sourceFile="Example022.java">
+                    Example022
+                </Class>
+                <Class sourceFile="Example023.java">
+                    Example023
+                </Class>
+                <Class sourceFile="Example026.java">
+                    Example026
+                </Class>
+                <Class sourceFile="Example028.java">
+                    Example028
+                </Class>
+                <Class sourceFile="Example033.java">
+                    Example033
+                </Class>
+                <Class sourceFile="Example034.java">
+                    Example034
+                </Class>
+                <Class sourceFile="Example035.java">
+                    Example035
+                </Class>
+                <Class sourceFile="Example038.java">
+                    Example038
+                </Class>
+                <Class sourceFile="Example039.java">
+                    Example039
+                </Class>
+                <Class sourceFile="Example040.java">
+                    Example040
+                </Class>
+                <Class sourceFile="Example040.java">
+                    Example040$1SuffixIterator
+                </Class>
+                <Class sourceFile="Example041.java">
+                    Example041
+                </Class>
+                <Class sourceFile="Example041.java">
+                    Example041$1
+                </Class>
+                <Class sourceFile="Example044.java">
+                    Example044
+                </Class>
+                <Class sourceFile="Example045.java">
+                    Example045
+                </Class>
+                <Class sourceFile="Example046.java">
+                    Example046
+                </Class>
+                <Class sourceFile="Example047.java">
+                    Example047
+                </Class>
+                <Class sourceFile="Example048.java">
+                    Example048
+                </Class>
+                <Class sourceFile="Example049.java">
+                    Example049
+                </Class>
+                <Class sourceFile="Example050.java">
+                    Example050
+                </Class>
+                <Class sourceFile="Example051.java">
+                    Example051
+                </Class>
+                <Class sourceFile="Example052.java">
+                    Example052
+                </Class>
+                <Class sourceFile="Example053.java">
+                    Example053
+                </Class>
+                <Class sourceFile="Example056.java">
+                    Example056
+                </Class>
+                <Class sourceFile="Example057.java">
+                    Example057
+                </Class>
+                <Class sourceFile="Example058.java">
+                    Example058
+                </Class>
+                <Class sourceFile="Example059.java">
+                    Example059
+                </Class>
+                <Class sourceFile="Example060.java">
+                    Example060
+                </Class>
+                <Class sourceFile="Example061.java">
+                    Example061
+                </Class>
+                <Class sourceFile="Example061.java">
+                    Example061$1Pair
+                </Class>
+                <Class sourceFile="Example062.java">
+                    Example062
+                </Class>
+                <Class sourceFile="Example063.java">
+                    Example063
+                </Class>
+                <Class sourceFile="Example064.java">
+                    Example064
+                </Class>
+                <Class sourceFile="Example065.java">
+                    Example065
+                </Class>
+                <Class sourceFile="Example067.java">
+                    Example067
+                </Class>
+                <Class sourceFile="Example068.java">
+                    Example068
+                </Class>
+                <Class sourceFile="Example069.java">
+                    Example069
+                </Class>
+                <Class sourceFile="Example070.java">
+                    Example070
+                </Class>
+                <Class sourceFile="Example070.java">
+                    Example070$1FromToIterable
+                </Class>
+                <Class sourceFile="Example070.java">
+                    Example070$1FromToIterator
+                </Class>
+                <Class sourceFile="Example071.java">
+                    Example071
+                </Class>
+                <Class sourceFile="Example071.java">
+                    Example071$1FromToIterable
+                </Class>
+                <Class sourceFile="Example071.java">
+                    Example071$1FromToIterator
+                </Class>
+                <Class sourceFile="Example072.java">
+                    Example072
+                </Class>
+                <Class sourceFile="Example073.java">
+                    Example073
+                </Class>
+                <Class sourceFile="Example074.java">
+                    Example074
+                </Class>
+                <Class sourceFile="Example074.java">
+                    Example074$1FromToIterable
+                </Class>
+                <Class sourceFile="Example074.java">
+                    Example074$1FromToIterator
+                </Class>
+                <Class sourceFile="Example075.java">
+                    Example075
+                </Class>
+                <Class sourceFile="Example076.java">
+                    Example076
+                </Class>
+                <Class sourceFile="Example077.java">
+                    Example077
+                </Class>
+                <Class sourceFile="Example078.java">
+                    Example078
+                </Class>
+                <Class sourceFile="Example079.java">
+                    Example079
+                </Class>
+                <Class sourceFile="Example080.java">
+                    Example080
+                </Class>
+                <Class sourceFile="Example081.java">
+                    Example081
+                </Class>
+                <Class sourceFile="Example082.java">
+                    Example082
+                </Class>
+                <Class sourceFile="Example083.java">
+                    Example083
+                </Class>
+                <Class sourceFile="Example084.java">
+                    Example084
+                </Class>
+                <Class sourceFile="Example087.java">
+                    Example087
+                </Class>
+                <Class sourceFile="Example087.java">
+                    Example087$1
+                </Class>
+                <Class sourceFile="Example088.java">
+                    Example088
+                </Class>
+                <Class sourceFile="Example090.java">
+                    Example090
+                </Class>
+                <Class sourceFile="Example091.java">
+                    Example091
+                </Class>
+                <Class sourceFile="Example092.java">
+                    Example092
+                </Class>
+                <Class sourceFile="Example093.java">
+                    Example093
+                </Class>
+                <Class sourceFile="Example094.java">
+                    Example094
+                </Class>
+                <Class sourceFile="Example094.java">
+                    Example094$1Consumer
+                </Class>
+                <Class sourceFile="Example094.java">
+                    Example094$1Producer
+                </Class>
+                <Class sourceFile="Example095.java">
+                    Example095
+                </Class>
+                <Class sourceFile="Example097.java">
+                    Example097
+                </Class>
+                <Class sourceFile="Example098.java">
+                    Example098
+                </Class>
+                <Class sourceFile="Example099.java">
+                    Example099
+                </Class>
+                <Class sourceFile="Example100.java">
+                    Example100
+                </Class>
+                <Class sourceFile="Example101.java">
+                    Example101
+                </Class>
+                <Class sourceFile="Example101.java">
+                    Example101$Timer
+                </Class>
+                <Class sourceFile="Example102.java">
+                    Example102
+                </Class>
+                <Class sourceFile="Example102.java">
+                    Example102$Timer
+                </Class>
+                <Class sourceFile="Example103.java">
+                    Example103
+                </Class>
+                <Class sourceFile="Example104.java">
+                    Example104
+                </Class>
+                <Class sourceFile="Example104.java">
+                    Example104$Person
+                </Class>
+                <Class sourceFile="Example105.java">
+                    Example105
+                </Class>
+                <Class sourceFile="Example105.java">
+                    Example105$Person
+                </Class>
+                <Class sourceFile="Example106.java">
+                    Example106
+                </Class>
+                <Class sourceFile="Example107.java">
+                    Example107
+                </Class>
+                <Class sourceFile="Example108.java">
+                    Example108
+                </Class>
+                <Class sourceFile="Example108.java">
+                    Example108$1
+                </Class>
+                <Class sourceFile="Example108.java">
+                    Example108$2
+                </Class>
+                <Class sourceFile="Example109.java">
+                    Example109
+                </Class>
+                <Class sourceFile="Example109.java">
+                    Example109$1
+                </Class>
+                <Class sourceFile="Example109.java">
+                    Example109$2
+                </Class>
+                <Class sourceFile="Example110.java">
+                    Example110
+                </Class>
+                <Class sourceFile="Example111.java">
+                    Example111
+                </Class>
+                <Class sourceFile="Example112.java">
+                    Example112
+                </Class>
+                <Class sourceFile="Example112.java">
+                    Example112$1
+                </Class>
+                <Class sourceFile="Example112.java">
+                    Example112$2
+                </Class>
+                <Class sourceFile="Example113.java">
+                    Example113
+                </Class>
+                <Class sourceFile="Example113.java">
+                    Example113$1
+                </Class>
+                <Class sourceFile="Example113.java">
+                    Example113$2
+                </Class>
+                <Class sourceFile="Example114.java">
+                    Example114
+                </Class>
+                <Class sourceFile="Example115.java">
+                    Example115
+                </Class>
+                <Class sourceFile="Example116.java">
+                    Example116
+                </Class>
+                <Class sourceFile="Example117.java">
+                    Example117
+                </Class>
+                <Class sourceFile="Example117.java">
+                    Example117$1
+                </Class>
+                <Class sourceFile="Example117.java">
+                    Example117$2
+                </Class>
+                <Class sourceFile="Example118.java">
+                    Example118
+                </Class>
+                <Class sourceFile="Example119.java">
+                    Example119
+                </Class>
+                <Class sourceFile="Example120.java">
+                    Example120
+                </Class>
+                <Class sourceFile="Example121.java">
+                    Example121
+                </Class>
+                <Class sourceFile="Example122.java">
+                    Example122
+                </Class>
+                <Class sourceFile="Example122.java">
+                    Example122$Timer
+                </Class>
+                <Class sourceFile="Example123.java">
+                    Example123
+                </Class>
+                <Class sourceFile="Example124.java">
+                    Example124
+                </Class>
+                <Class sourceFile="Example125.java">
+                    Example125
+                </Class>
+                <Class sourceFile="Example126.java">
+                    Example126
+                </Class>
+                <Class sourceFile="Example127.java">
+                    Example127
+                </Class>
+                <Class sourceFile="Example128.java">
+                    Example128
+                </Class>
+                <Class sourceFile="Example129.java">
+                    Example129
+                </Class>
+                <Class sourceFile="Example130.java">
+                    Example130
+                </Class>
+                <Class sourceFile="Example131.java">
+                    Example131
+                </Class>
+                <Class sourceFile="Example131.java">
+                    Example131$1FromToIterable
+                </Class>
+                <Class sourceFile="Example131.java">
+                    Example131$1FromToIterator
+                </Class>
+                <Class sourceFile="Example133.java">
+                    Example133
+                </Class>
+                <Class sourceFile="Example134.java">
+                    Example134
+                </Class>
+                <Class sourceFile="Example135.java">
+                    Example135
+                </Class>
+                <Class sourceFile="Example138.java">
+                    Example138
+                </Class>
+                <Class sourceFile="Example139.java">
+                    Example139
+                </Class>
+                <Class sourceFile="Example140.java">
+                    Example140
+                </Class>
+                <Class sourceFile="Example141.java">
+                    Example141
+                </Class>
+                <Class sourceFile="Example142.java">
+                    Example142
+                </Class>
+                <Class sourceFile="Example143.java">
+                    Example143
+                </Class>
+                <Class sourceFile="Example144.java">
+                    Example144
+                </Class>
+                <Class sourceFile="Example145.java">
+                    Example145
+                </Class>
+                <Class sourceFile="Example146.java">
+                    Example146
+                </Class>
+                <Class sourceFile="Example147.java">
+                    Example147
+                </Class>
+                <Class sourceFile="Example148.java">
+                    Example148
+                </Class>
+                <Class sourceFile="Example149.java">
+                    Example149
+                </Class>
+                <Class sourceFile="Example150.java">
+                    Example150
+                </Class>
+                <Class sourceFile="Example151.java">
+                    Example151
+                </Class>
+                <Class sourceFile="Example152.java">
+                    Example152
+                </Class>
+                <Class sourceFile="Example152.java">
+                    Example152$1
+                </Class>
+                <Class sourceFile="Example152.java">
+                    Example152$1$1
+                </Class>
+                <Class sourceFile="Example153.java">
+                    Example153
+                </Class>
+                <Class sourceFile="Example154.java">
+                    Example154
+                </Class>
+                <Class sourceFile="Example155.java">
+                    Example155
+                </Class>
+                <Class sourceFile="Example155.java">
+                    Example155$1Producer
+                </Class>
+                <Class sourceFile="Example156.java">
+                    Example156
+                </Class>
+                <Class sourceFile="Example164.java">
+                    Example164
+                </Class>
+                <Class sourceFile="Example165.java">
+                    Example165
+                </Class>
+                <Class sourceFile="Example165.java">
+                    Example165$1
+                </Class>
+                <Class sourceFile="Example165.java">
+                    Example165$Direction
+                </Class>
+                <Class sourceFile="Example120.java">
+                    F
+                </Class>
+                <Class sourceFile="Example120.java">
+                    G
+                </Class>
+                <Class sourceFile="Example111.java">
+                    Hold
+                </Class>
+                <Class sourceFile="Example135.java">
+                    IgnoreCaseComparator
+                </Class>
+                <Class sourceFile="Example091.java">
+                    Incrementer
+                </Class>
+                <Class sourceFile="Example115.java">
+                    IntegerComparator
+                </Class>
+                <Class sourceFile="Example114.java">
+                    LabelPoint
+                </Class>
+                <Class sourceFile="Example107.java">
+                    Log
+                </Class>
+                <Class sourceFile="Example088.java">
+                    Month
+                </Class>
+                <Class sourceFile="Example088.java">
+                    MyDate
+                </Class>
+                <Class sourceFile="Example088.java">
+                    MyDate$1
+                </Class>
+                <Class sourceFile="MyLinkedList.java">
+                    MyLinkedList
+                </Class>
+                <Class sourceFile="MyLinkedList.java">
+                    MyLinkedList$MyLinkedListIterator
+                </Class>
+                <Class sourceFile="MyLinkedList.java">
+                    MyLinkedList$Node
+                </Class>
+                <Class sourceFile="MyString.java">
+                    MyString
+                </Class>
+                <Class sourceFile="Example139.java">
+                    Nfa
+                </Class>
+                <Class sourceFile="Example139.java">
+                    Nfa$NameSource
+                </Class>
+                <Class sourceFile="Example139.java">
+                    Nfa$Transition
+                </Class>
+                <Class sourceFile="Example106.java">
+                    Pair
+                </Class>
+                <Class sourceFile="Point.java">
+                    Point
+                </Class>
+                <Class sourceFile="PrintableMyLinkedList.java">
+                    PrintableMyLinkedList
+                </Class>
+                <Class sourceFile="Example092.java">
+                    Printer
+                </Class>
+                <Class sourceFile="Example084.java">
+                    ReaderIterator
+                </Class>
+                <Class sourceFile="Example148.java">
+                    SC
+                </Class>
+                <Class sourceFile="Example148.java">
+                    SO
+                </Class>
+                <Class sourceFile="SPoint.java">
+                    SPoint
+                </Class>
+                <Class sourceFile="Example118.java">
+                    Sedan
+                </Class>
+                <Class sourceFile="Example139.java">
+                    Seq
+                </Class>
+                <Class sourceFile="Example118.java">
+                    Shop
+                </Class>
+                <Class sourceFile="SortedList.java">
+                    SortedList
+                </Class>
+                <Class sourceFile="Example139.java">
+                    Star
+                </Class>
+                <Class sourceFile="Example115.java">
+                    StringReverseComparator
+                </Class>
+                <Class sourceFile="Example139.java">
+                    Sym
+                </Class>
+                <Class sourceFile="TLC.java">
+                    TLC
+                </Class>
+                <Class sourceFile="TLC.java">
+                    TLC$1NLC
+                </Class>
+                <Class sourceFile="TLC.java">
+                    TLC$1SLC
+                </Class>
+                <Class sourceFile="TLC.java">
+                    TLC$NMC
+                </Class>
+                <Class sourceFile="TLC.java">
+                    TLC$SMC
+                </Class>
+                <Class sourceFile="Example027.java">
+                    Tank
+                </Class>
+                <Class sourceFile="Time.java">
+                    Time
+                </Class>
+                <Class sourceFile="TimeComparator.java">
+                    TimeComparator
+                </Class>
+                <Class sourceFile="Example150.java">
+                    Timer
+                </Class>
+                <Class sourceFile="Example092.java">
+                    Util
+                </Class>
+                <Class sourceFile="Example118.java">
+                    Vehicle
+                </Class>
+                <Class sourceFile="WeekdayException.java">
+                    WeekdayException
+                </Class>
+                <Class sourceFile="Example084.java">
+                    WordList
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>common</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="common">
+            <Stats>
+                <TotalClasses>3</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>0</Ce>
+                <A>0.33</A>
+                <I>0</I>
+                <D>0.67</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Mapper.java">
+                    common.Mapper
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Access.java">
+                    common.Access
+                </Class>
+                <Class sourceFile="Access.java">
+                    common.Access$SI
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>Default</Package>
+            </UsedBy>
+        </Package>
+    </Packages>
+
+    <Cycles>
+    </Cycles>
+</JDepend>

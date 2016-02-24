@@ -1,0 +1,109 @@
+<project name="Java Precisely" basedir="." default="metrics">
+    <import file="panopticode/panopticode-imports.xml" />
+
+    <property name="version"
+              value="2nd Edition" />
+
+    <target name="clean">
+        <delete dir="target" />
+    </target>
+
+    <target name="compile">
+        <delete dir="target/classes" />
+        <mkdir dir="target/classes" />
+        
+        <javac debug="true" destdir="target/classes">
+            <src path="src"/>
+            <classpath>
+                <pathelement location="target/classes" />
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="metrics" depends="clean">
+        <panopticode projectDir="${basedir}"
+                     projectName="${ant.project.name}"
+                     projectVersion="${version}"
+                     srcDir="src" />
+    </target>
+
+    <target name="unit-test">
+        <javac debug="true" destdir="target/classes">
+            <src path="unittest/src"/>
+            <classpath>
+                <pathelement location="target/classes" />
+            </classpath>
+            <compilerarg value="-Xlint:unchecked" />
+        </javac>
+
+        <mkdir dir="target/rawmetrics/xml/junit" />
+        <path id="unittest.path">
+            <pathelement location="target/classes" />
+        </path>
+        <panopticode-junit unitTestClasspathId="unittest.path"
+                           outputDir="target">
+            <batchtest todir="target/rawmetrics/xml/junit">
+                <fileset dir="target/classes" includes="**/*Test.class" />
+            </batchtest>
+        </panopticode-junit>
+    </target>
+
+    <target name="rasterize-all-reports" depends="rasterize-png-reports,rasterize-jpeg-reports,rasterize-tiff-reports"/>
+
+    <target name="rasterize-png-reports">
+        <delete dir="target/reports/png" />
+        <mkdir dir="target/reports/png" />
+
+        <svg-to-png srcFile="target/reports/svg/complexity-treemap.svg"
+                    destFile="target/reports/png/complexity-treemap.png" />
+        <svg-to-png srcFile="target/reports/svg/coverage-treemap.svg"
+                    destFile="target/reports/png/coverage-treemap.png" />
+
+        <svg-to-png srcFile="target/reports/svg/complexity-treemap.svg"
+                    destFile="target/reports/png/complexity-treemap-thumb.png"
+                    width="128"
+                    height="96"/>
+        <svg-to-png srcFile="target/reports/svg/coverage-treemap.svg"
+                    destFile="target/reports/png/coverage-treemap-thumb.png"
+                    width="128"
+                    height="96"/>
+    </target>
+
+    <target name="rasterize-jpeg-reports">
+        <delete dir="target/reports/jpeg" />
+        <mkdir dir="target/reports/jpeg" />
+
+        <svg-to-jpeg srcFile="target/reports/svg/complexity-treemap.svg"
+                     destFile="target/reports/jpeg/complexity-treemap.jpg" />
+        <svg-to-jpeg srcFile="target/reports/svg/coverage-treemap.svg"
+                     destFile="target/reports/jpeg/coverage-treemap.jpg" />
+
+        <svg-to-jpeg srcFile="target/reports/svg/complexity-treemap.svg"
+                     destFile="target/reports/jpeg/complexity-treemap-thumb.jpg"
+                     width="128"
+                     height="96"/>
+        <svg-to-jpeg srcFile="target/reports/svg/coverage-treemap.svg"
+                     destFile="target/reports/jpeg/coverage-treemap-thumb.jpg"
+                     width="128"
+                     height="96"/>
+    </target>
+
+    <target name="rasterize-tiff-reports">
+        <delete dir="target/reports/tiff" />
+        <mkdir dir="target/reports/tiff" />
+
+        <svg-to-tiff srcFile="target/reports/svg/complexity-treemap.svg"
+                     destFile="target/reports/tiff/complexity-treemap.tif" />
+        <svg-to-tiff srcFile="target/reports/svg/coverage-treemap.svg"
+                     destFile="target/reports/tiff/coverage-treemap.tif" />
+
+        <svg-to-tiff srcFile="target/reports/svg/complexity-treemap.svg"
+                     destFile="target/reports/tiff/complexity-treemap-thumb.tif"
+                     width="128"
+                     height="96"/>
+        <svg-to-tiff srcFile="target/reports/svg/coverage-treemap.svg"
+                     destFile="target/reports/tiff/coverage-treemap-thumb.tif"
+                     width="128"
+                     height="96"/>
+    </target>
+</project>
