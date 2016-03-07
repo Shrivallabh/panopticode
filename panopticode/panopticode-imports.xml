@@ -26,19 +26,15 @@
     <import file="supplements/javancss/javancss-imports.xml" />
     <import file="supplements/jdepend/jdepend-imports.xml" />
     <import file="supplements/simian/simian-imports.xml" />
+    <!--<import file="supplements/cobertura/cobertura-imports.xml" />-->
     <!--
-        Panopticode supports multiple competing code coverage tools.  You can switch which tool you use at will and your
-        build files will not change.  You must choose exactly one though.  If you do not want to collect coverage data
-        then choose the 'nocoverage' import.  You choose your coverage tool by using exactly one of the following import
-        statements:
+        Support for Emma has been dropped as the project has not been maintained. 
 
-            <import file="plugins/emma/emma-imports.xml" />
-            <import file="plugins/cobertura/cobertura-imports.xml" />
-            <import file="plugins/nocoverage-imports.xml" />
-
-        The default is Emma.  Try them all to see which one you prefer.
+        If you do not want to collect coverage data then choose the 'nocoverage' import.  
     -->
-    <import file="supplements/emma/emma-imports.xml" />
+            <import file="supplements/nocoverage-imports.xml" />
+    
+
 
     <!--
         Panopticode plans to support multiple source code management tools.  If your tool is listed below then select
@@ -131,12 +127,6 @@
                     <antcall target="unit-test" />
                     <panopticode-report-coverage srcDir="@{srcDir}"
                                                  outputDir="@{outputDir}"/>
-
-					<taskdef name="emmaPanopticode" classpath="panopticode/panopticode.jar"
-						classname="org.panopticode.supplement.ant.EmmaPanopticode" />
-					<emmaPanopticode
-						panopticodeFile="@{outputDir}/panopticode.xml" 
-						emmaFile="@{outputDir}/rawmetrics/xml/emma.xml" />
 	
             <!-- Run the reports -->
                 <mkdir dir="@{outputDir}/reports/svg" />
