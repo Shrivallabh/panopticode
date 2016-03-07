@@ -13,17 +13,28 @@
 	<classpathentry kind="lib" path="prod/lib/ant.jar"/>
 	<classpathentry kind="lib" path="unittest/lib/ant-testutil.jar"/>
 	<classpathentry kind="lib" path="panopticode/supplements/checkstyle/lib/checkstyle-all-4.2.jar"/>
-	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/asm-2.2.1.jar"/>
-	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/cobertura.jar"/>
-	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/jakarta-oro-2.0.8.jar"/>
-	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/log4j-1.2.9.jar"/>
 	<classpathentry kind="lib" path="panopticode/supplements/complexian/lib/complexian-0.9.1.jar"/>
-	<classpathentry kind="lib" path="panopticode/supplements/emma/lib/emma_ant.jar"/>
-	<classpathentry kind="lib" path="panopticode/supplements/emma/lib/emma.jar"/>
 	<classpathentry kind="lib" path="panopticode/supplements/javancss/lib/ccl.jar"/>
 	<classpathentry kind="lib" path="panopticode/supplements/javancss/lib/javancss.jar"/>
 	<classpathentry kind="lib" path="panopticode/supplements/javancss/lib/jhbasic.jar"/>
 	<classpathentry kind="lib" path="panopticode/supplements/jdepend/lib/jdepend-2.9.1.jar"/>
 	<classpathentry kind="lib" path="panopticode/supplements/simian/lib/simian-2.2.12.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/asm-5.0.1.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/asm-analysis-5.0.1.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/asm-commons-5.0.1.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/asm-tree-5.0.1.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/asm-util-5.0.1.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/cobertura-2.1.1.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/jaxen-1.1.4.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/jetty-6.1.14.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/jetty-util-6.1.14.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/logback-classic-1.0.13.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/logback-core-1.0.13.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/oro-2.0.8.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/servlet-api-2.5-6.1.14.jar"/>
+	<classpathentry kind="lib" path="panopticode/supplements/cobertura/lib/slf4j-api-1.7.5.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
