@@ -145,7 +145,7 @@ public class JavaNCSSSupplement implements Supplement {
         String methodName = panopticodeMethod.getName();
 
         int dotIndex = methodName.indexOf(".");
-        sb.append(methodName.substring(dotIndex));
+        sb.append(dotIndex==-1?methodName:methodName.substring(dotIndex));
 
         return sb.toString();
     }
