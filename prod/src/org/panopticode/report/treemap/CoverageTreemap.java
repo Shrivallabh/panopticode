@@ -14,6 +14,7 @@ package org.panopticode.report.treemap;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.panopticode.DecimalMetric;
 import org.panopticode.MetricTarget;
 import org.panopticode.PanopticodeProject;
 import org.panopticode.RatioMetric;
@@ -59,12 +60,15 @@ public class CoverageTreemap extends BaseTreemap {
 
 		@Override
 		public boolean inCategory(MetricTarget toCheck) {
-			RatioMetric metric = (RatioMetric) toCheck.getMetricByName("Line Coverage");
+			DecimalMetric metric = (DecimalMetric) toCheck.getMetricByName("Line Coverage");
 
 			if (metric == null)
 				return false;
 
-			return metric.getPercentValue() >= greaterThanInclusive;
+			double asPercentage = metric.getValue()*100;
+
+			return asPercentage >= greaterThanInclusive;
+			
 		}
 	}
 }

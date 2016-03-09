@@ -32,12 +32,12 @@ public class CoverageTreemapTest extends TestCase {
         unknownCoverage = categorizer.getDefaultCategory();
 
         assertEquals(noCoverage,     categoryForCoverageOf(categorizer,  0.0));
-        assertEquals(lowCoverage,    categoryForCoverageOf(categorizer,  0.1));
-        assertEquals(lowCoverage,    categoryForCoverageOf(categorizer, 49.9));
-        assertEquals(mediumCoverage, categoryForCoverageOf(categorizer, 50.0));
-        assertEquals(mediumCoverage, categoryForCoverageOf(categorizer, 74.9));
-        assertEquals(highCoverage,   categoryForCoverageOf(categorizer, 75.0));
-        assertEquals(highCoverage,   categoryForCoverageOf(categorizer,100.0));
+        assertEquals(lowCoverage,    categoryForCoverageOf(categorizer,  0.001));
+        assertEquals(lowCoverage,    categoryForCoverageOf(categorizer, 0.499));
+        assertEquals(mediumCoverage, categoryForCoverageOf(categorizer, 0.500));
+        assertEquals(mediumCoverage, categoryForCoverageOf(categorizer, 0.749));
+        assertEquals(highCoverage,   categoryForCoverageOf(categorizer, 0.750));
+        assertEquals(highCoverage,   categoryForCoverageOf(categorizer,1.000));
 
         assertEquals(unknownCoverage, categorizer.getCategory(createDummyMethod()));
     }
@@ -52,13 +52,13 @@ public class CoverageTreemapTest extends TestCase {
 
     private Category categoryForCoverageOf(Categorizer categorizer, final double lineCoverage) {
         PanopticodeMethod target;
-        RatioMetricDeclaration metricDeclaration;
+        DecimalMetricDeclaration metricDeclaration;
 
 
-        metricDeclaration = new RatioMetricDeclaration(createDummySupplement(), "Line Coverage");
+        metricDeclaration = new DecimalMetricDeclaration(createDummySupplement(), "Line Coverage");
 
         target = createDummyMethod();
-        target.addMetric(metricDeclaration.createMetric(lineCoverage, 100.0));
+        target.addMetric(metricDeclaration.createMetric(lineCoverage));
 
         return categorizer.getCategory(target);
     }

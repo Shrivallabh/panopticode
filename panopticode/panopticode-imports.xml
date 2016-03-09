@@ -26,14 +26,14 @@
     <import file="supplements/javancss/javancss-imports.xml" />
     <import file="supplements/jdepend/jdepend-imports.xml" />
     <import file="supplements/simian/simian-imports.xml" />
-    <!--<import file="supplements/cobertura/cobertura-imports.xml" />-->
+    <import file="supplements/cobertura/cobertura-imports.xml" />
     <!--
         Support for Emma has been dropped as the project has not been maintained. 
 
         If you do not want to collect coverage data then choose the 'nocoverage' import.  
-    -->
-            <import file="supplements/nocoverage-imports.xml" />
     
+            <import file="supplements/nocoverage-imports.xml" />
+    -->
 
 
     <!--
@@ -122,11 +122,21 @@
 						jdependFile="@{outputDir}/rawmetrics/xml/jdepend.xml" />
 	-->
                 <!-- Coverage -->
-                    <panopticode-setup-coverage outputDir="@{outputDir}"
-                                                classDir="@{classDir}" />
-                    <antcall target="unit-test" />
-                    <panopticode-report-coverage srcDir="@{srcDir}"
-                                                 outputDir="@{outputDir}"/>
+                <panopticode-setup-coverage outputDir="@{outputDir}"
+                                            classDir="@{classDir}" />
+                <antcall target="unit-test" />
+                <panopticode-report-coverage srcDir="@{srcDir}"
+                                             outputDir="@{outputDir}"/>
+
+                <taskdef name="panopticodeCobertura" 
+                         classpath="panopticode/panopticode.jar" 
+                         classname="org.panopticode.supplement.ant.CoberturaPanopticode" />
+
+                <panopticodeCobertura panopticodeFile="@{outputDir}/panopticode.xml" 
+                                      coberturaFile="@{outputDir}/rawmetrics/xml/cobertura.xml" />
+
+
+               
 	
             <!-- Run the reports -->
                 <mkdir dir="@{outputDir}/reports/svg" />
