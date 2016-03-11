@@ -24,7 +24,10 @@ package org.panopticode.supplement.cobertura;
 import junit.framework.TestCase;
 
 import org.panopticode.*;
+
 import static org.panopticode.TestHelpers.*;
+
+import org.dom4j.Attribute;
 import org.dom4j.Element;
 import org.dom4j.Document;
 
@@ -39,17 +42,22 @@ public class CoberturaSupplementTest extends TestCase {
         PanopticodeClass panopticodeClass;
 
         classElement = createDummyElement();
-        classElement.addAttribute("line-rate", "1.0");
-        classElement.addAttribute("branch-rate", "1.0");
-
+        
+        Element lines=classElement.addElement("lines");
+        addNewLine(lines, "10", false, null);
+		
         panopticodeClass = createDummyClass();
 
         supplement.getDeclaration();
         supplement.addCoverageToClass(classElement, panopticodeClass);
 
-        assertEquals(1.0, ((DecimalMetric)panopticodeClass.getMetricByName("Branch Coverage")).getValue(), 0.1);
+        RatioMetric branchMetric = (RatioMetric)panopticodeClass.getMetricByName("Branch Coverage");
+		assertEquals(0.0, branchMetric.getNumeratorValue(), 0.1);
+		assertEquals(0.0, branchMetric.getDenominatorValue(), 0.1);
 
-        assertEquals(1.0, ((DecimalMetric)panopticodeClass.getMetricByName("Line Coverage")).getValue(), 0.1);
+        RatioMetric lineMetric = (RatioMetric)panopticodeClass.getMetricByName("Line Coverage");
+		assertEquals(1.0, lineMetric.getNumeratorValue(), 0.1);
+		assertEquals(1.0, lineMetric.getDenominatorValue(), 0.1);
     }
 
     public void testAddCoverageToMethod() {
@@ -57,9 +65,10 @@ public class CoberturaSupplementTest extends TestCase {
         PanopticodeMethod panopticodeMethod;
 
         methodElement = createDummyElement();
-        methodElement.addAttribute("line-rate", "1.0");
-        methodElement.addAttribute("branch-rate", "1.0");
 
+        Element lines=methodElement.addElement("lines");
+        addNewLine(lines, "10", false, null);
+		
         panopticodeMethod = createDummyMethod();
 
         supplement.getDeclaration();
@@ -67,9 +76,13 @@ public class CoberturaSupplementTest extends TestCase {
 
         assertNull(panopticodeMethod.getMetricByName("Method Coverage"));
 
-        assertEquals(1.0, ((DecimalMetric)panopticodeMethod.getMetricByName("Branch Coverage")).getValue(), 0.1);
+        RatioMetric branchMetric = (RatioMetric)panopticodeMethod.getMetricByName("Branch Coverage");
+		assertEquals(1.0, branchMetric.getNumeratorValue(), 1.0);
+		assertEquals(1.0, branchMetric.getDenominatorValue(), 1.0);
 
-        assertEquals(1.0, ((DecimalMetric)panopticodeMethod.getMetricByName("Line Coverage")).getValue(), 0.1);
+        RatioMetric lineMetric = (RatioMetric)panopticodeMethod.getMetricByName("Line Coverage");
+		assertEquals(1.0, lineMetric.getNumeratorValue(), 1.0);
+		assertEquals(1.0, lineMetric.getDenominatorValue(), 1.0);
     }
 
 
@@ -199,16 +212,16 @@ public class CoberturaSupplementTest extends TestCase {
     
     public void testMetricsDeclaredProperly() {
         SupplementDeclaration supplementDeclaration = null;
-        DecimalMetricDeclaration branchCoverageMetricDeclaration = null;
-        DecimalMetricDeclaration lineCoverageMetricDeclaration = null;
+        RatioMetricDeclaration branchCoverageMetricDeclaration = null;
+        RatioMetricDeclaration lineCoverageMetricDeclaration = null;
 
         supplementDeclaration = supplement.getDeclaration();
 
         for(MetricDeclaration metricDeclaration : supplementDeclaration.getMetricsDeclared()) {
             if("Branch Coverage".equals(metricDeclaration.getName())) {
-            	branchCoverageMetricDeclaration = (DecimalMetricDeclaration) metricDeclaration;
+            	branchCoverageMetricDeclaration = (RatioMetricDeclaration) metricDeclaration;
             } else if ("Line Coverage".equals(metricDeclaration.getName())) {
-                lineCoverageMetricDeclaration = (DecimalMetricDeclaration) metricDeclaration;
+                lineCoverageMetricDeclaration = (RatioMetricDeclaration) metricDeclaration;
             } else {
                 fail("Improper declaration found: " + metricDeclaration.getName());
             }
@@ -217,13 +230,13 @@ public class CoberturaSupplementTest extends TestCase {
 
         assertFalse(branchCoverageMetricDeclaration.isLevel(Level.PROJECT));
         assertFalse(branchCoverageMetricDeclaration.isLevel(Level.PACKAGE));
-        assertFalse(branchCoverageMetricDeclaration.isLevel(Level.FILE));
+        assertTrue(branchCoverageMetricDeclaration.isLevel(Level.FILE));
         assertTrue(branchCoverageMetricDeclaration.isLevel(Level.CLASS));
         assertTrue(branchCoverageMetricDeclaration.isLevel(Level.METHOD));
 
         assertFalse(lineCoverageMetricDeclaration.isLevel(Level.PROJECT));
         assertFalse(lineCoverageMetricDeclaration.isLevel(Level.PACKAGE));
-        assertFalse(lineCoverageMetricDeclaration.isLevel(Level.FILE));
+        assertTrue(lineCoverageMetricDeclaration.isLevel(Level.FILE));
         assertTrue(lineCoverageMetricDeclaration.isLevel(Level.CLASS));
         assertTrue(lineCoverageMetricDeclaration.isLevel(Level.METHOD));
     }
@@ -435,39 +448,42 @@ public class CoberturaSupplementTest extends TestCase {
         supplement.loadMethodData(panopticodeProject, doc);
         supplement.loadClassData(panopticodeProject, doc);
 
+        
         // ensure no coverage metrics are loaded for interfaces
         assertNull(panopticodeInterfaceClass.getMetricByName("Method Coverage"));
-        assertNull(panopticodeInterfaceClass.getMetricByName("Bloc Coverage"));
+        assertNull(panopticodeInterfaceClass.getMetricByName("Branch Coverage"));
         assertNull(panopticodeInterfaceClass.getMetricByName("Line Coverage"));
 
         // ensure no coverage metrics are loaded for abstract methods
         assertNull(panopticodeAbstractMethod.getMetricByName("Method Coverage"));
-        assertNull(panopticodeAbstractMethod.getMetricByName("Bloc Coverage"));
+        assertNull(panopticodeAbstractMethod.getMetricByName("Branch Coverage"));
         assertNull(panopticodeAbstractMethod.getMetricByName("Line Coverage"));
 
         // check correct data is loaded for class
-        assertMetricValue(panopticodeClass, "Branch Coverage", 1.0);
-        assertMetricValue(panopticodeClass, "Line Coverage", 0.3);
+        assertMetricValue(panopticodeClass, "Branch Coverage", 2.0, 2.0);
+        assertMetricValue(panopticodeClass, "Line Coverage", 2.0, 2.0);
         
         // check correct data is loaded for method
-        assertMetricValue(panopticodeMethod, "Branch Coverage", 1.0);
-        assertMetricValue(panopticodeMethod, "Line Coverage", 0.5);
+        assertMetricValue(panopticodeMethod, "Branch Coverage", 0.0, 0.0);
+        assertMetricValue(panopticodeMethod, "Line Coverage", 2.0, 2.0);
     }
 
     private void assertMetricValue(PanopticodeClass panopticodeClass, String metricName,
-                                   double value) {
-        DecimalMetric decimalMetric;
-        decimalMetric = (DecimalMetric) panopticodeClass.getMetricByName(metricName);
-        assertEquals(value, decimalMetric.getValue(), 0.1);
+                                   double numeratorValue, double denominatorValue) {
+    	RatioMetric decimalMetric;
+        decimalMetric = (RatioMetric) panopticodeClass.getMetricByName(metricName);
+        assertEquals(numeratorValue, decimalMetric.getNumeratorValue(), 0.1);
+        assertEquals(denominatorValue, decimalMetric.getDenominatorValue(), 0.1);
     }
 
     private void assertMetricValue(PanopticodeMethod panopticodeMethod, String metricName,
-                                   double value) {
-        DecimalMetric decimalMetric;
+    		double numeratorValue, double denominatorValue) {
+    	RatioMetric decimalMetric;
 
-        decimalMetric = (DecimalMetric) panopticodeMethod.getMetricByName(metricName);
+        decimalMetric = (RatioMetric) panopticodeMethod.getMetricByName(metricName);
 
-        assertEquals(value, decimalMetric.getValue(), 0.1);
+        assertEquals(numeratorValue, decimalMetric.getNumeratorValue(), 0.1);
+        assertEquals(denominatorValue, decimalMetric.getNumeratorValue(), 0.1);
     }
 
     private Document createCoberturaDocument() {
@@ -479,7 +495,9 @@ public class CoberturaSupplementTest extends TestCase {
         Element class2Element;
         Element method1Element;
         Element method2Element;
-
+        Element linesElement;
+        Element lineElement;
+        
         doc = createDummyDocument();
         packageesElement = doc.addElement("coverage").addElement("packages");
 
@@ -495,12 +513,18 @@ public class CoberturaSupplementTest extends TestCase {
         class1Element.addAttribute("name", "Hello");
         class1Element.addAttribute("line-rate", "0.30");
         class1Element.addAttribute("branch-rate", "1.0");
-
+        linesElement = class1Element.addElement("lines");
+        addNewLine(linesElement, "10", true, "100% (2/2)");
+        addNewLine(linesElement, "10", false, null);
+        
+        
         class2Element = classesElement.addElement("class");
         class2Element.addAttribute("name", "Hello$Inner");
         class2Element.addAttribute("line-rate", "0.40");
         class2Element.addAttribute("branch-rate", "1.0");
-
+        linesElement = class2Element.addElement("lines");
+        addNewLine(linesElement, "10", false, null);
+        addNewLine(linesElement, "10", false, null);
         
         Element methodsElement = class1Element.addElement("methods");
 		method1Element = methodsElement.addElement("method");
@@ -508,6 +532,9 @@ public class CoberturaSupplementTest extends TestCase {
         method1Element.addAttribute("signature", "()V");
         method1Element.addAttribute("line-rate", "0.50");
         method1Element.addAttribute("branch-rate", "1.0");
+        linesElement = method1Element.addElement("lines");
+        addNewLine(linesElement, "10", false, null);
+        addNewLine(linesElement, "10", false, null);
         
         
         method2Element = methodsElement.addElement("method");
@@ -515,10 +542,20 @@ public class CoberturaSupplementTest extends TestCase {
         method2Element.addAttribute("signature", "(I)Ljava.lang.String");
         method2Element.addAttribute("line-rate", "0.60");
         method2Element.addAttribute("branch-rate", "1.0");
-
+        linesElement = method2Element.addElement("lines");
+        addNewLine(linesElement, "10", false, null);
+        addNewLine(linesElement, "10", false, null);
+ 
         return doc;
     }
     
-    
+    void addNewLine(Element linesElement, String hits, boolean branch, String conditionCoverage) {
+    	Element lineElement = linesElement.addElement("line");
+    	lineElement.addAttribute("hits", hits);
+    	lineElement.addAttribute("branch", Boolean.toString(branch));
+    	if(branch) {
+    		lineElement.addAttribute("condition-coverage", conditionCoverage);
+    	}
+    }
     
 }

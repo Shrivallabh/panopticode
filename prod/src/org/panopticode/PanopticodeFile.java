@@ -22,6 +22,7 @@
 package org.panopticode;
 
 import java.util.*;
+
 import org.dom4j.*;
 
 import static org.panopticode.util.ArgumentValidation.*;
@@ -99,6 +100,9 @@ public class PanopticodeFile implements MetricTarget {
         for (PanopticodeClass panopticodeClass : classList) {
             panopticodeClass.toXML(fileElement);
         }
+		for (Metric metric : metricsByName.values())
+			metric.toXML(fileElement);
+
     }
 
     public static PanopticodeFile fromXML(Element fileElement,

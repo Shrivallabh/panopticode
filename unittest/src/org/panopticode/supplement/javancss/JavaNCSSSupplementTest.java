@@ -22,8 +22,11 @@
 package org.panopticode.supplement.javancss;
 
 import junit.framework.TestCase;
+
 import org.panopticode.*;
+
 import static org.panopticode.TestHelpers.*;
+
 import org.dom4j.Document;
 import org.dom4j.Element;
 
@@ -93,7 +96,7 @@ public class JavaNCSSSupplementTest extends TestCase {
         SupplementDeclaration supplementDeclaration = null;
         IntegerMetricDeclaration ccnMetricDeclaration = null;
         IntegerMetricDeclaration ncssMetricDeclaration = null;
-
+        IntegerMetricDeclaration maxCcnMetricDeclaration = null;
         supplementDeclaration = supplement.getDeclaration();
 
         for(MetricDeclaration metricDeclaration : supplementDeclaration.getMetricsDeclared()) {
@@ -101,6 +104,8 @@ public class JavaNCSSSupplementTest extends TestCase {
                 ncssMetricDeclaration = (IntegerMetricDeclaration) metricDeclaration;
             } else if ("CCN".equals(metricDeclaration.getName())) {
                 ccnMetricDeclaration = (IntegerMetricDeclaration) metricDeclaration;
+            } else if ("MAX-CCN".equals(metricDeclaration.getName())) {
+                maxCcnMetricDeclaration = (IntegerMetricDeclaration) metricDeclaration;
             } else {
                 fail("Improper declaration found: " + metricDeclaration.getName());
             }
@@ -117,6 +122,14 @@ public class JavaNCSSSupplementTest extends TestCase {
         assertFalse(ccnMetricDeclaration.isLevel(Level.FILE));
         assertFalse(ccnMetricDeclaration.isLevel(Level.CLASS));
         assertTrue(ccnMetricDeclaration.isLevel(Level.METHOD));
+
+        assertFalse(maxCcnMetricDeclaration.isLevel(Level.PROJECT));
+        assertFalse(maxCcnMetricDeclaration.isLevel(Level.PACKAGE));
+        assertTrue(maxCcnMetricDeclaration.isLevel(Level.FILE));
+        assertFalse(maxCcnMetricDeclaration.isLevel(Level.CLASS));
+        assertFalse(maxCcnMetricDeclaration.isLevel(Level.METHOD));
+
+        
     }
 
     public void testSupplementDeclarationAddedToProjectOnLoad() {

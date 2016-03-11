@@ -12,34 +12,79 @@ import java.util.List;
 
 public class CoberturaSupplement implements Supplement {
     private SupplementDeclaration declaration;
-    private DecimalMetricDeclaration branchCoverageDeclaration;
-    private DecimalMetricDeclaration lineCoverageDeclaration;
+    private RatioMetricDeclaration branchCoverageDeclaration;
+    private RatioMetricDeclaration lineCoverageDeclaration;
 
     void addCoverageToClass(Element classElement, PanopticodeClass panopticodeClass) {
-        String lineRate = classElement.attributeValue("line-rate");
-    	panopticodeClass.addMetric(lineCoverageDeclaration.createMetric(Double.valueOf(lineRate)));
-
-    	String branchRate = classElement.attributeValue("branch-rate");
-    	panopticodeClass.addMetric(branchCoverageDeclaration.createMetric(Double.valueOf(branchRate)));
+    	panopticodeClass.addMetric(computeLineMetric(classElement));
+    	panopticodeClass.addMetric(computeBranchMetric(classElement));
     }
-
+    
     void addCoverageToMethod(Element methodElement, PanopticodeMethod panopticodeMethod) {
-        String lineRate = methodElement.attributeValue("line-rate");
-        panopticodeMethod.addMetric(lineCoverageDeclaration.createMetric(Double.valueOf(lineRate)));
-
-    	String branchRate = methodElement.attributeValue("branch-rate");
-    	panopticodeMethod.addMetric(branchCoverageDeclaration.createMetric(Double.valueOf(branchRate)));
+    	panopticodeMethod.addMetric(computeLineMetric(methodElement));
+    	panopticodeMethod.addMetric(computeBranchMetric(methodElement));
     }
+
+
+    RatioMetric computeLineMetric(Element parentElement) {
+        Element linesElement = parentElement.element("lines");
+        if(linesElement==null) {
+        	System.out.println("Missing lines element!");
+        }
+		List<Element> lineElements = linesElement.elements("line");
+		double lineNumerator=0,lineDenominator=0;
+        for(Element lineElement : lineElements) {
+        	lineDenominator++;
+        	String hits = lineElement.attributeValue("hits");
+        	if(!"0".equals(hits)) {
+        		lineNumerator++;
+        	}
+        }
+        return lineCoverageDeclaration.createMetric(lineNumerator, lineDenominator);
+    }
+
+
+    RatioMetric computeBranchMetric(Element parentElement) {
+        List<Element> lineElements = parentElement.element("lines").elements("line");
+		double branchNumerator=0,branchDenominator=0;
+        for(Element lineElement : lineElements) {
+        	String branchAttr = lineElement.attributeValue("branch");
+        	if("true".equals(branchAttr)) {
+        		String conditionCoverageAttr = lineElement.attributeValue("condition-coverage");
+        		branchNumerator+=getCovered(conditionCoverageAttr);
+        		branchDenominator+=getTotal(conditionCoverageAttr);
+        	}
+        }
+    	return branchCoverageDeclaration.createMetric(branchNumerator, branchDenominator);
+    }
+    
+    
+    double getCovered(String attributeValue) {
+        int openParenIndex = attributeValue.indexOf("(") + 1;
+        int slashIndex = attributeValue.indexOf("/");
+        String covered = attributeValue.substring(openParenIndex, slashIndex);
+        return Double.valueOf(covered);
+    }
+
+    double getTotal(String attributeValue) {
+        int slashIndex = attributeValue.indexOf("/") + 1;
+        int closeParenIndex = attributeValue.indexOf(")");
+        String total = attributeValue.substring(slashIndex, closeParenIndex);
+        return Double.valueOf(total);
+    }
+
 
   
 
     public SupplementDeclaration getDeclaration() {
         if (declaration == null) {
-            branchCoverageDeclaration = new DecimalMetricDeclaration(this, "Branch Coverage");
+            branchCoverageDeclaration = new RatioMetricDeclaration(this, "Branch Coverage");
+            branchCoverageDeclaration.addLevel(Level.FILE);
             branchCoverageDeclaration.addLevel(Level.CLASS);
             branchCoverageDeclaration.addLevel(Level.METHOD);
 
-            lineCoverageDeclaration = new DecimalMetricDeclaration(this, "Line Coverage");
+            lineCoverageDeclaration = new RatioMetricDeclaration(this, "Line Coverage");
+            lineCoverageDeclaration.addLevel(Level.FILE);
             lineCoverageDeclaration.addLevel(Level.CLASS);
             lineCoverageDeclaration.addLevel(Level.METHOD);
 
@@ -241,7 +286,7 @@ public class CoberturaSupplement implements Supplement {
             
             return arguments;
         } else {
-            return new LinkedList<>();
+            return new LinkedList<String>();
         }
     }
 
@@ -317,6 +362,7 @@ public class CoberturaSupplement implements Supplement {
 
         saxReader = new SAXReader();
         try {
+        	saxReader.setValidation(false);
             document = saxReader.read(arguments[0]);
         } catch (DocumentException e) {
             throw new RuntimeException(e);
@@ -324,9 +370,30 @@ public class CoberturaSupplement implements Supplement {
 
         loadMethodData(project, document);
         loadClassData(project, document);
+        computeFileDataFromClassData(project);
     }
 
-    void loadMethodData(PanopticodeProject project, Document document) {
+    private void computeFileDataFromClassData(PanopticodeProject project) {
+    	for(PanopticodeFile file : project.getFiles()) {
+    		file.addMetric(aggregateMetricPerFile(file, "Line Coverage", lineCoverageDeclaration));
+    		file.addMetric(aggregateMetricPerFile(file, "Branch Coverage", branchCoverageDeclaration));
+    	}
+	}
+    
+	RatioMetric aggregateMetricPerFile(PanopticodeFile file, String name, RatioMetricDeclaration decl) {
+		double numerator = 0, denominator = 0;
+		for(PanopticodeClass clazz : file.getClasses()) {
+			RatioMetric metric = (RatioMetric) clazz.getMetricByName(name);
+			if(metric!=null) {
+				numerator+=metric.getNumeratorValue();
+				denominator+=metric.getDenominatorValue();
+			}
+		}
+		return decl.createMetric(numerator, denominator);
+	}
+
+
+	void loadMethodData(PanopticodeProject project, Document document) {
         for (PanopticodeMethod panopticodeMethod : project.getMethods()) {
             if (coverageAppliesTo(panopticodeMethod)) {
 
@@ -342,6 +409,26 @@ public class CoberturaSupplement implements Supplement {
             }
         }
     }
+    
+    void loadFileDataFromClassData(PanopticodeProject project, Document document) {
+    	for(PanopticodeFile file : project.getFiles()) {
+    		file.addMetric(computeFileMetric(file, "Line Coverage", lineCoverageDeclaration));
+    		file.addMetric(computeFileMetric(file, "Branch Coverage", branchCoverageDeclaration));
+    	}
+    }
+
+	private RatioMetric computeFileMetric(PanopticodeFile file, String metricName, RatioMetricDeclaration decl) {
+		double numerator=0, denominator=0;
+		for(PanopticodeClass clazz : file.getClasses()) {
+			
+			Metric metric = clazz.getMetricByName(metricName);
+			if(metric!=null) {
+				numerator+=((RatioMetric)metric).getNumeratorValue();
+				denominator+=((RatioMetric)metric).getDenominatorValue();
+			}
+		}
+		return decl.createMetric(numerator, denominator);
+	}
 
     boolean coverageAppliesTo(PanopticodeClass panopticodeClass) {
         return !panopticodeClass.isInterface();
