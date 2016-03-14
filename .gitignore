@@ -1,0 +1,4 @@
+panopticode/lib/tools.jar
+prod/lib/tools.jar
+target/
+unit-test-output.xml

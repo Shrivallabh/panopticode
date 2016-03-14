@@ -26,6 +26,7 @@
     <import file="supplements/javancss/javancss-imports.xml" />
     <import file="supplements/jdepend/jdepend-imports.xml" />
     <import file="supplements/simian/simian-imports.xml" />
+    <import file="supplements/git/git-imports.xml" />
     <import file="supplements/cobertura/cobertura-imports.xml" />
     <!--
         Support for Emma has been dropped as the project has not been maintained. 
@@ -56,6 +57,9 @@
         <attribute name="projectVersion" />
         <attribute name="outputDir" default="target" />
         <attribute name="srcDir" default="src" />
+        <attribute name="churn-since" />
+        <attribute name="churn-until"  />
+        
 
         <sequential>
             <!-- We don't want any old data to slip in -->
@@ -135,9 +139,24 @@
                 <panopticodeCobertura panopticodeFile="@{outputDir}/panopticode.xml" 
                                       coberturaFile="@{outputDir}/rawmetrics/xml/cobertura.xml" />
 
+                <mkdir dir="@{outputDir}/log" />
 
-               
-	
+
+                <taskdef name="gitChurnPanopticode"
+                         classpath="panopticode/panopticode.jar"
+                         classname="org.panopticode.supplement.ant.GitChurnPanopticode" />
+
+                <git-log from="@{churn-since}"
+                         to="@{churn-until}"
+                         dir="@{srcdir}"
+                         gitLog="@{outputDir}/log/git.log">
+                </git-log>
+                <gitChurnPanopticode panopticodeFile="@{outputDir}/panopticode.xml"
+                                     from="@{churn-since}"
+                                     to="@{churn-until}"
+                                     gitLog="@{outputDir}/log/git.log">
+                </gitChurnPanopticode>
+
             <!-- Run the reports -->
                 <mkdir dir="@{outputDir}/reports/svg" />
 

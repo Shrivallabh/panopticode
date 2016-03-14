@@ -47,7 +47,9 @@
         <panopticode projectDir="${basedir}"
                      projectName="${ant.project.name}"
                      projectVersion="${version}"
-                     srcDir="prod/src" />
+                     srcDir="prod/src"
+                     churn-since="01/01/2016"
+                     churn-until="14/03/2016" />
     </target>
 
     <target name="unit-test">

@@ -82,7 +82,9 @@
         <panopticode projectDir="${basedir}"
                      projectName="Panopticode"
                      projectVersion="${version}"
-                     srcDir="prod/src" />
+                     srcDir="prod/src"
+                     churn-since="01/01/2016"
+                     churn-until="14/03/2016" />
 
         <delete file="target/rawmetrics/xml/javancss-test.xml" failonerror="no" />
         <delete file="target/rawmetrics/html/javancss-test.html" failonerror="no" />

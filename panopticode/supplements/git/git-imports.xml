@@ -1,0 +1,36 @@
+<project name="Git imports">
+	<macrodef name="git">
+	    <attribute name="command" />
+	    <attribute name="dir" default="" />
+	    <attribute name="output" />
+	    <element name="args" optional="true" />
+	    <sequential>
+	        <echo message="git @{command}" />
+	        <exec executable="git" dir="@{dir}" output="@{output}">
+	            <arg value="@{command}" />
+	            <args/>
+	        </exec>
+	    </sequential>
+	</macrodef>
+	 <macrodef name="git-log">
+	    <attribute name="from" />
+	    <attribute name="to" />
+	    <attribute name="dir" />
+	    <attribute name="gitLog" />
+	    <sequential>
+	    	<git dir="@{dir}"
+	    		 command="log"
+	    		 output="@{gitLog}">
+	    		<args>
+	    			<arg value="--all" />
+	    			<arg value="--numstat" />
+	    			<arg value="--date=short" />
+	    			<arg value="--pretty=format:--%h--%ad--%aN" />
+	    			<arg value="--no-renames" />
+	    			<arg value="--since=@{from}" />
+	    			<arg value="--until=@{to}" />
+	    		</args>
+	    	</git>
+	    </sequential>
+	 </macrodef>	 
+</project>

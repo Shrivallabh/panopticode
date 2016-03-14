@@ -1,0 +1,25 @@
+--a14582d--2016-01-25--Phillip Verheyden
+5	1	pom.xml
+
+--4a90ef6--2016-01-19--Phillip Verheyden
+1	5	pom.xml
+
+--2a23e26--2015-09-25--jefffischer
+--4cd0ae4--2015-09-25--Reginald C Cole
+28	23	admin/broadleaf-admin-module/src/main/java/org/broadleafcommerce/admin/server/service/handler/SkuCustomPersistenceHandler.java
+1	1	admin/broadleaf-open-admin-platform/src/main/java/org/broadleafcommerce/openadmin/server/service/persistence/datasource/SandBoxConnection.java
+
+--68559c7--2015-09-14--jenkins
+1	1	admin/broadleaf-admin-functional-tests/pom.xml
+1	1	admin/broadleaf-admin-module/pom.xml
+1	1	admin/broadleaf-contentmanagement-module/pom.xml
+1	1	admin/broadleaf-open-admin-platform/pom.xml
+1	1	admin/pom.xml
+1	1	common/pom.xml
+1	1	core/broadleaf-framework-web/pom.xml
+1	1	core/broadleaf-framework/pom.xml
+1	1	core/broadleaf-profile-web/pom.xml
+1	1	core/broadleaf-profile/pom.xml
+1	1	core/pom.xml
+1	1	integration/pom.xml
+1	1	pom.xml
