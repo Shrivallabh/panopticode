@@ -49,14 +49,32 @@ public class JavaNCSSSupplement implements Supplement {
 
         loadMethodData(project, document);
         loadClassData(project, document);
-        computeFileMaxCCNFromMethodData(project);
+        loadFileData(project, document);
     }
     
-    private void computeFileMaxCCNFromMethodData(PanopticodeProject project) {
+    private void loadFileData(PanopticodeProject project, Document document) {
+        computeFileMaxCCNFromMethodData(project);
+        computeFileNCSSFromClassData(project);
+    }
+    
+    private void computeFileNCSSFromClassData(PanopticodeProject project) {
+    	for(PanopticodeFile file : project.getFiles() ) {
+    		int ncss=0;
+    		for(PanopticodeClass clazz : file.getClasses()) {
+    			IntegerMetric metric = (IntegerMetric) clazz.getMetricByName("NCSS");
+    			if(metric!=null) {
+    				ncss+=metric.getValue();
+    			}
+    		}
+    		file.addMetric(ncssDeclaration.createMetric(ncss));
+    	}
+	}
+
+	private void computeFileMaxCCNFromMethodData(PanopticodeProject project) {
     	for(PanopticodeFile file : project.getFiles()) {
     		int max= 0;
-    		for(PanopticodeMethod clazz : file.getMethods()) {
-    			IntegerMetric metric = (IntegerMetric) clazz.getMetricByName("CCN");
+    		for(PanopticodeMethod method : file.getMethods()) {
+    			IntegerMetric metric = (IntegerMetric) method.getMetricByName("CCN");
     			if(metric!=null)
     				max=(max>metric.getValue()?max:metric.getValue());
     		}
@@ -135,6 +153,7 @@ public class JavaNCSSSupplement implements Supplement {
     public SupplementDeclaration getDeclaration() {
         if (declaration == null) {
             ncssDeclaration = new IntegerMetricDeclaration(this, "NCSS");
+            ncssDeclaration.addLevel(Level.FILE);
             ncssDeclaration.addLevel(Level.CLASS);
             ncssDeclaration.addLevel(Level.METHOD);
 

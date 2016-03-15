@@ -172,6 +172,11 @@
                         panopticodeXmlFile="@{outputDir}/panopticode.xml"
                         file="@{outputDir}/reports/svg/coverage-treemap.svg" />
 
+                <report pluginClass="org.panopticode.report.treemap.ChurnTreemap"
+                        panopticodeDir="@{panopticodeDir}"
+                        panopticodeXmlFile="@{outputDir}/panopticode.xml"
+                        file="@{outputDir}/reports/svg/churn-treemap.svg" />
+
                 <echo message="Building Interactive Reports" />
 
                 <report pluginClass="org.panopticode.report.treemap.ComplexityTreemap"
@@ -184,6 +189,12 @@
                         panopticodeDir="@{panopticodeDir}"
                         panopticodeXmlFile="@{outputDir}/panopticode.xml"
                         file="@{outputDir}/reports/svg/interactive-coverage-treemap.svg"
+                        interactive="-interactive" />
+
+                <report pluginClass="org.panopticode.report.treemap.ChurnTreemap"
+                        panopticodeDir="@{panopticodeDir}"
+                        panopticodeXmlFile="@{outputDir}/panopticode.xml"
+                        file="@{outputDir}/reports/svg/interactive-churn-treemap.svg"
                         interactive="-interactive" />
         </sequential>
     </macrodef>

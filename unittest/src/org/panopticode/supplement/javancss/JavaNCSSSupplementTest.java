@@ -113,7 +113,7 @@ public class JavaNCSSSupplementTest extends TestCase {
 
         assertFalse(ncssMetricDeclaration.isLevel(Level.PROJECT));
         assertFalse(ncssMetricDeclaration.isLevel(Level.PACKAGE));
-        assertFalse(ncssMetricDeclaration.isLevel(Level.FILE));
+        assertTrue(ncssMetricDeclaration.isLevel(Level.FILE));
         assertTrue(ncssMetricDeclaration.isLevel(Level.CLASS));
         assertTrue(ncssMetricDeclaration.isLevel(Level.METHOD));
 

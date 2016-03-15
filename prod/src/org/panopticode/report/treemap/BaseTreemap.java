@@ -83,7 +83,7 @@ public abstract class BaseTreemap implements Report {
 		return document;
 	}
 
-	private static List<MetricDeclaration> getMetricDeclarations(PanopticodeProject project, Level level) {
+	protected static List<MetricDeclaration> getMetricDeclarations(PanopticodeProject project, Level level) {
 		List<MetricDeclaration> metrics = new LinkedList<MetricDeclaration>();
 
 		for (MetricDeclaration metricDeclaration : project.getMetricDeclarations())
@@ -175,7 +175,7 @@ public abstract class BaseTreemap implements Report {
 		titleElement.addAttribute("style", "text-anchor: middle;");
 	}
 
-	private Element addDetailLine(Element detailElement, String id, double x, double y, String fontSize, String text) {
+	protected Element addDetailLine(Element detailElement, String id, double x, double y, String fontSize, String text) {
 		Element textElement;
 
 		textElement = addText(detailElement, x, y, text);
@@ -185,7 +185,7 @@ public abstract class BaseTreemap implements Report {
 		return textElement;
 	}
 
-	private double addMetricDetails(Element detailElement, String idSuffix, double x, double y, List<MetricDeclaration> metrics) {
+	protected double addMetricDetails(Element detailElement, String idSuffix, double x, double y, List<MetricDeclaration> metrics) {
 		double yPosition = y;
 
 		for (MetricDeclaration metricDeclaration : metrics) {
@@ -250,7 +250,7 @@ public abstract class BaseTreemap implements Report {
 		return cleanId(metricDeclaration.getName());
 	}
 
-	private String buildReplaceTextForMetrics(String idSuffix, String mapName, List<MetricDeclaration> metrics) {
+	protected String buildReplaceTextForMetrics(String idSuffix, String mapName, List<MetricDeclaration> metrics) {
 		StringBuilder sb = new StringBuilder();
 
 		for (MetricDeclaration metricDeclaration : metrics) {
@@ -269,7 +269,7 @@ public abstract class BaseTreemap implements Report {
 		return sb.toString();
 	}
 
-	private void renderJavascriptFunctions(Element parentElement, List<MetricDeclaration> projectMetrics, List<MetricDeclaration> packageMetrics,
+	protected void renderJavascriptFunctions(Element parentElement, List<MetricDeclaration> projectMetrics, List<MetricDeclaration> packageMetrics,
 			List<MetricDeclaration> fileMetrics, List<MetricDeclaration> classMetrics, List<MetricDeclaration> methodMetrics) {
 		StringBuffer javascript;
 

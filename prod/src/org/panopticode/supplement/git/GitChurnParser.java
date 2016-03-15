@@ -16,8 +16,7 @@ import java.util.StringTokenizer;
 public class GitChurnParser {
 
 	public Map<String, FileInfo> parse(String buffer) {
-		try (BufferedReader reader = new BufferedReader(
-				new StringReader(buffer))) {
+		try (BufferedReader reader = new BufferedReader(new StringReader(buffer))) {
 			return parse(reader);
 		} catch (IOException ioe) {
 			throw new RuntimeException("Failed to read input", ioe);
@@ -33,8 +32,7 @@ public class GitChurnParser {
 	}
 
 	public Map<String, FileInfo> parse(InputStream is) {
-		try (BufferedReader reader = new BufferedReader(new InputStreamReader(
-				is))) {
+		try (BufferedReader reader = new BufferedReader(new InputStreamReader(is))) {
 			return parse(reader);
 		} catch (IOException ioe) {
 			throw new RuntimeException("Failed to read input", ioe);
