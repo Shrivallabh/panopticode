@@ -172,6 +172,11 @@
                         panopticodeXmlFile="@{outputDir}/panopticode.xml"
                         file="@{outputDir}/reports/svg/coverage-treemap.svg" />
 
+                <report pluginClass="org.panopticode.report.treemap.C3Treemap"
+                        panopticodeDir="@{panopticodeDir}"
+                        panopticodeXmlFile="@{outputDir}/panopticode.xml"
+                        file="@{outputDir}/reports/svg/c3-treemap.svg" />
+
                 <report pluginClass="org.panopticode.report.treemap.ChurnTreemap"
                         panopticodeDir="@{panopticodeDir}"
                         panopticodeXmlFile="@{outputDir}/panopticode.xml"
@@ -189,6 +194,12 @@
                         panopticodeDir="@{panopticodeDir}"
                         panopticodeXmlFile="@{outputDir}/panopticode.xml"
                         file="@{outputDir}/reports/svg/interactive-coverage-treemap.svg"
+                        interactive="-interactive" />
+
+                <report pluginClass="org.panopticode.report.treemap.C3Treemap"
+                        panopticodeDir="@{panopticodeDir}"
+                        panopticodeXmlFile="@{outputDir}/panopticode.xml"
+                        file="@{outputDir}/reports/svg/interactive-c3-treemap.svg"
                         interactive="-interactive" />
 
                 <report pluginClass="org.panopticode.report.treemap.ChurnTreemap"

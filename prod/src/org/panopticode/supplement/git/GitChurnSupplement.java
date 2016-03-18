@@ -7,6 +7,7 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Map;
 
+import org.panopticode.DecimalMetricDeclaration;
 import org.panopticode.IntegerMetricDeclaration;
 import org.panopticode.Level;
 import org.panopticode.PanopticodeFile;
@@ -14,7 +15,7 @@ import org.panopticode.PanopticodeProject;
 import org.panopticode.Supplement;
 import org.panopticode.SupplementDeclaration;
 import org.panopticode.supplement.git.GitChurnParser.FileInfo;
-
+import static org.panopticode.util.IndicatorUtil.*;
 
 public class GitChurnSupplement implements Supplement {
 
@@ -22,6 +23,8 @@ public class GitChurnSupplement implements Supplement {
 	private IntegerMetricDeclaration linesAddedDeclaration;
 	private IntegerMetricDeclaration linesRemovedDeclaration;
 	private IntegerMetricDeclaration timesModifiedDeclaration;
+	private DecimalMetricDeclaration linesChangeIndicatorDeclaration;
+	private DecimalMetricDeclaration changeFrequencyIndicatorDeclaration;
 	private IntegerMetricDeclaration churnPeriodInDaysDeclaration;
 
 	@Override
@@ -37,7 +40,8 @@ public class GitChurnSupplement implements Supplement {
 			from = simpleDateFormat.parse(arguments[0]);
 			to = simpleDateFormat.parse(arguments[1]);
 			duration = Duration.between(from.toInstant(), to.toInstant());
-			project.addMetric(churnPeriodInDaysDeclaration.createMetric((int)duration.toDays()));
+			int days = (int)duration.toDays();
+			project.addMetric(churnPeriodInDaysDeclaration.createMetric(days));
 			parser = new GitChurnParser();
 			parseResult = parser.parse(new File(arguments[2]));
 			for(PanopticodeFile file : project.getFiles()) {
@@ -47,10 +51,15 @@ public class GitChurnSupplement implements Supplement {
 					file.addMetric(linesAddedDeclaration.createMetric(info.getAdded()));
 					file.addMetric(linesRemovedDeclaration.createMetric(info.getRemoved()));
 					file.addMetric(timesModifiedDeclaration.createMetric(info.getNumOfChanges()));
+					file.addMetric(linesChangeIndicatorDeclaration.createMetric(computeLinesChangedIndicator(info.getAdded()+info.getRemoved(),days)));
+					file.addMetric(changeFrequencyIndicatorDeclaration.createMetric(computeChangeFrequencyIndicator(info.getNumOfChanges(),days)));
+					
 				} else {
 					file.addMetric(linesAddedDeclaration.createMetric(0));
 					file.addMetric(linesRemovedDeclaration.createMetric(0));
 					file.addMetric(timesModifiedDeclaration.createMetric(0));
+					file.addMetric(linesChangeIndicatorDeclaration.createMetric(0.0));
+					file.addMetric(changeFrequencyIndicatorDeclaration.createMetric(0.0));
 				}
 			}
 		} catch (ParseException e) {
@@ -58,6 +67,8 @@ public class GitChurnSupplement implements Supplement {
 		}
         
 	}
+
+
 
 
 	@Override
@@ -72,6 +83,12 @@ public class GitChurnSupplement implements Supplement {
             timesModifiedDeclaration = new IntegerMetricDeclaration(this, "Times Changed");
             timesModifiedDeclaration.addLevel(Level.FILE);
 
+            linesChangeIndicatorDeclaration = new DecimalMetricDeclaration(this, "Lines Changed Indicator");
+            linesChangeIndicatorDeclaration.addLevel(Level.FILE);
+
+            changeFrequencyIndicatorDeclaration= new DecimalMetricDeclaration(this, "Change Frequency Indicator");
+            changeFrequencyIndicatorDeclaration.addLevel(Level.FILE);
+
             churnPeriodInDaysDeclaration= new IntegerMetricDeclaration(this, "Churn Duration");
             churnPeriodInDaysDeclaration.addLevel(Level.PROJECT);
 
@@ -79,6 +96,8 @@ public class GitChurnSupplement implements Supplement {
             declaration.addMetricDeclaration(linesAddedDeclaration);
             declaration.addMetricDeclaration(linesRemovedDeclaration);
             declaration.addMetricDeclaration(timesModifiedDeclaration);
+            declaration.addMetricDeclaration(linesChangeIndicatorDeclaration);
+            declaration.addMetricDeclaration(changeFrequencyIndicatorDeclaration);
             declaration.addMetricDeclaration(churnPeriodInDaysDeclaration);
         }
         return declaration;

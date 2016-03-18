@@ -9,15 +9,15 @@ import org.panopticode.util.IndicatorUtil;
 
 import static org.panopticode.TestHelpers.*;
 
-public class ChurnTreemapTest extends TestCase {
-    ChurnTreemap treemap = new ChurnTreemap();
+public class C3TreemapTest extends TestCase {
+    C3Treemap treemap = new C3Treemap();
 
     public void testCategorizerThesholds() {
-        Category veryLowChurn;
-        Category lowChurn;
-        Category mediumChurn;
-        Category highChurn;
-        Category unknownChurn;
+        Category veryLowC3;
+        Category lowC3;
+        Category mediumC3;
+        Category highC3;
+        Category unknownC3;
         Categorizer categorizer;
         List<Category> categoryList;
 
@@ -27,21 +27,21 @@ public class ChurnTreemapTest extends TestCase {
 
         categoryList = categorizer.getCategories();
 
-        veryLowChurn = categoryList.get(0);
-        lowChurn = categoryList.get(1);
-        mediumChurn = categoryList.get(2);
-        highChurn = categoryList.get(3);
+        veryLowC3 = categoryList.get(0);
+        lowC3 = categoryList.get(1);
+        mediumC3 = categoryList.get(2);
+        highC3 = categoryList.get(3);
 
-        unknownChurn = categorizer.getDefaultCategory();
+        unknownC3 = categorizer.getDefaultCategory();
 
 
-        assertEquals(veryLowChurn, categoryForChurnOf(categorizer,  0,   0,0));
-        assertEquals(veryLowChurn, categoryForChurnOf(categorizer,  0,   1,1));
-        assertEquals(lowChurn,     categoryForChurnOf(categorizer, 95,   6,2));
-        assertEquals(mediumChurn,  categoryForChurnOf(categorizer, 95, 106,3));
-        assertEquals(highChurn,    categoryForChurnOf(categorizer, 195,206,3));
+        assertEquals(veryLowC3, categoryForC3Of(categorizer,   0,  0,0, 0,1));
+        assertEquals(veryLowC3, categoryForC3Of(categorizer,   0,  1,1, 1,1));
+        assertEquals(lowC3,     categoryForC3Of(categorizer,  95,  6,2,10,0.75));
+        assertEquals(mediumC3,  categoryForC3Of(categorizer, 195,206,3,26,0.25));
+        assertEquals(highC3,    categoryForC3Of(categorizer, 195,256,10,26,0.1));
 
-        assertEquals(unknownChurn, categorizer.getCategory(createDummyFile()));
+        assertEquals(unknownC3, categorizer.getCategory(createDummyFile()));
     }
 
     public void testTitle() {
@@ -49,17 +49,18 @@ public class ChurnTreemapTest extends TestCase {
 
         project = createDummyProject();
 
-        assertEquals("Hello World churn", treemap.getTitle(project));
+        assertEquals("Hello World C3", treemap.getTitle(project));
     }
 
 
-    private Category categoryForChurnOf(Categorizer categorizer, final int linesAdded, final int linesRemoved, final int timesChanged) {
+    private Category categoryForC3Of(Categorizer categorizer, final int linesAdded, final int linesRemoved, final int timesChanged, int maxCCN, double coverage) {
         PanopticodePackage pkg;
     	PanopticodeFile target;
         PanopticodeProject project;
 
         IntegerMetricDeclaration integerMetricDeclaration;
         DecimalMetricDeclaration decimalMetricDeclaration;
+        RatioMetricDeclaration ratioMetricDeclation;
  
         project = createDummyProject();
         integerMetricDeclaration = new IntegerMetricDeclaration(createDummySupplement(), "Churn Duration");
@@ -78,12 +79,18 @@ public class ChurnTreemapTest extends TestCase {
         integerMetricDeclaration = new IntegerMetricDeclaration(createDummySupplement(), "Times Changed");
         target.addMetric(integerMetricDeclaration.createMetric(timesChanged));
 
+        integerMetricDeclaration = new IntegerMetricDeclaration(createDummySupplement(), "MAX-CCN");
+        target.addMetric(integerMetricDeclaration.createMetric(maxCCN));
+
         decimalMetricDeclaration = new DecimalMetricDeclaration(createDummySupplement(), "Lines Changed Indicator");
         target.addMetric(decimalMetricDeclaration.createMetric(IndicatorUtil.computeLinesChangedIndicator(linesAdded+linesRemoved, 10)));
 
-        decimalMetricDeclaration = new DecimalMetricDeclaration(createDummySupplement(), "Times Changed");
+        decimalMetricDeclaration = new DecimalMetricDeclaration(createDummySupplement(), "Change Frequency Indicator");
         target.addMetric(decimalMetricDeclaration.createMetric(IndicatorUtil.computeChangeFrequencyIndicator(timesChanged, 10)));
 
+        ratioMetricDeclation = new RatioMetricDeclaration(createDummySupplement(), "Line Coverage");
+        target.addMetric(ratioMetricDeclation.createMetric(coverage, 1.0));
+        
         return categorizer.getCategory(target);
     }
 }

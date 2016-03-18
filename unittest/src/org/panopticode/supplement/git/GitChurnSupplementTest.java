@@ -4,6 +4,7 @@ import static org.panopticode.TestHelpers.createDummyProject;
 
 import java.util.List;
 
+import org.panopticode.DecimalMetricDeclaration;
 import org.panopticode.Level;
 import org.panopticode.MetricDeclaration;
 import org.panopticode.PanopticodeProject;
@@ -38,6 +39,8 @@ public class GitChurnSupplementTest extends TestCase {
         IntegerMetricDeclaration linesAddedMetricDeclaration = null;
         IntegerMetricDeclaration linesRemovedMetricDeclaration = null;
         IntegerMetricDeclaration timesChangedMetricDeclaration = null;
+        DecimalMetricDeclaration linesChangedIndicatorMetricDeclaration = null;
+        DecimalMetricDeclaration changeFrequencyIndicatorMetricDeclaration = null;
         IntegerMetricDeclaration churnDurationMetricDeclaration = null;
 
         supplementDeclaration = supplement.getDeclaration();
@@ -51,6 +54,10 @@ public class GitChurnSupplementTest extends TestCase {
                 timesChangedMetricDeclaration = (IntegerMetricDeclaration) metricDeclaration;
             } else if ("Churn Duration".equals(metricDeclaration.getName())) {
             	churnDurationMetricDeclaration = (IntegerMetricDeclaration) metricDeclaration;
+            } else if ("Lines Changed Indicator".equals(metricDeclaration.getName())) {
+            	linesChangedIndicatorMetricDeclaration = (DecimalMetricDeclaration) metricDeclaration;
+            } else if ("Change Frequency Indicator".equals(metricDeclaration.getName())) {
+            	changeFrequencyIndicatorMetricDeclaration = (DecimalMetricDeclaration) metricDeclaration;
             } else {
                 fail("Improper declaration found: " + metricDeclaration.getName());
             }
@@ -79,5 +86,18 @@ public class GitChurnSupplementTest extends TestCase {
         assertFalse(churnDurationMetricDeclaration.isLevel(Level.FILE));
         assertFalse(churnDurationMetricDeclaration.isLevel(Level.CLASS));
         assertFalse(churnDurationMetricDeclaration.isLevel(Level.METHOD));
+
+        assertFalse(linesChangedIndicatorMetricDeclaration.isLevel(Level.PROJECT));
+        assertFalse(linesChangedIndicatorMetricDeclaration.isLevel(Level.PACKAGE));
+        assertTrue(linesChangedIndicatorMetricDeclaration.isLevel(Level.FILE));
+        assertFalse(linesChangedIndicatorMetricDeclaration.isLevel(Level.CLASS));
+        assertFalse(linesChangedIndicatorMetricDeclaration.isLevel(Level.METHOD));
+
+        assertFalse(changeFrequencyIndicatorMetricDeclaration.isLevel(Level.PROJECT));
+        assertFalse(changeFrequencyIndicatorMetricDeclaration.isLevel(Level.PACKAGE));
+        assertTrue(changeFrequencyIndicatorMetricDeclaration.isLevel(Level.FILE));
+        assertFalse(changeFrequencyIndicatorMetricDeclaration.isLevel(Level.CLASS));
+        assertFalse(changeFrequencyIndicatorMetricDeclaration.isLevel(Level.METHOD));
+
 	}
 }
