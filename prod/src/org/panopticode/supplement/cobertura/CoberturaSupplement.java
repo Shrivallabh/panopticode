@@ -28,9 +28,6 @@ public class CoberturaSupplement implements Supplement {
 
     RatioMetric computeLineMetric(Element parentElement) {
         Element linesElement = parentElement.element("lines");
-        if(linesElement==null) {
-        	System.out.println("Missing lines element!");
-        }
 		List<Element> lineElements = linesElement.elements("line");
 		double lineNumerator=0,lineDenominator=0;
         for(Element lineElement : lineElements) {

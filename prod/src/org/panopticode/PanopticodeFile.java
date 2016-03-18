@@ -168,4 +168,8 @@ public class PanopticodeFile implements MetricTarget {
     public boolean isLevel(Level toCheck) {
         return getLevel().equals(toCheck);
     }
+
+	public void setParentPackage(PanopticodePackage panopticodePackage) {
+		this.parentPackage=panopticodePackage;
+	}
 }

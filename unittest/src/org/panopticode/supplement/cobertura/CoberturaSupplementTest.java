@@ -407,9 +407,14 @@ public class CoberturaSupplementTest extends TestCase {
     public void testSupplementDeclarationAddedToProjectOnLoad() {
         List<SupplementDeclaration> declared;
         PanopticodeProject project;
-
+        PanopticodePackage pkg;
+        PanopticodeFile file;
+        
         project = createDummyProject();
-
+        pkg=project.createAndAddPackage("org.norg");
+        file = pkg.createAndAddFile("norg/foo.java", "foo.java");
+        file.createAndAddClass("Foo", 1, 1);
+        
         supplement.loadData(project, new String[] { "sample_data/cobertura.xml" });
 
         declared = project.getSupplementsDeclared();
