@@ -106,8 +106,8 @@
                                     outputDir="@{outputDir}"
                                     srcDir="@{srcDir}"/>
 
-                <panopticode-scm-log projectDir="@{projectDir}"
-                                     outputDir="@{outputDir}" />
+                <!--<panopticode-scm-log projectDir="@{projectDir}"
+                                     outputDir="@{outputDir}" />-->
 
             <!-- Time to compile -->
                 <antcall target="compile" />
