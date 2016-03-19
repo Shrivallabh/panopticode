@@ -29,8 +29,8 @@
         <sequential>
             <echo message="Panopticode - Using CheckStyle for conformance metrics" />
 
-            <taskdef resource="checkstyletask.properties"
-                     classpath="@{panopticodeDir}/supplements/checkstyle/lib/checkstyle-all-4.2.jar"/>
+            <taskdef resource="com/puppycrawl/tools/checkstyle/ant/checkstyle-ant-task.properties"
+                     classpath="@{panopticodeDir}/supplements/checkstyle/lib/checkstyle-6.16.1-all.jar"/>
 
             <delete file="@{outputDir}/rawmetrics/xml/checkstyle.xml" failonerror="no" />
             <delete file="@{outputDir}/rawmetrics/html/checkstyle.html" failonerror="no" />
