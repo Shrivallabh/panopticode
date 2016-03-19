@@ -31,13 +31,13 @@
             <echo message="Panopticode - Using Complexian for NPath complexity metrics" />
             <echo message="NOTE: This plugin and the Complexian tool itself are in an early stage of development.  Output only goes to the console." />
 
-            <taskdef resource="complexiantask.properties" classpath="@{panopticodeDir}/supplements/complexian/lib/complexian-0.9.1.jar"/>
+            <taskdef resource="complexiantask.properties" classpath="@{panopticodeDir}/supplements/complexian/lib/complexian-0.14.1.jar"/>
 
             <delete file="@{outputDir}/rawmetrics/xml/simian.xml" failonerror="no" />
 
             <mkdir dir="@{outputDir}/rawmetrics/xml" />
 
-            <complexian failOnViolation="@{failOnViolation}" threshold="@{threshold}">
+            <complexian type="npath" failOnViolation="@{failOnViolation}" threshold="@{threshold}">
                 <fileset dir="@{srcDir}" includes="**/*.java"/>
             </complexian>
         </sequential>
