@@ -29,7 +29,7 @@
         <sequential>
             <echo message="Panopticode - Using Simian for duplication metrics" />
 
-            <taskdef resource="simiantask.properties" classpath="@{panopticodeDir}/supplements/simian/lib/simian-2.2.12.jar"/>
+            <taskdef resource="simiantask.properties" classpath="@{panopticodeDir}/supplements/simian/lib/simian-2.4.0.jar"/>
 
             <delete file="@{outputDir}/rawmetrics/xml/simian.xml" failonerror="no" />
 
