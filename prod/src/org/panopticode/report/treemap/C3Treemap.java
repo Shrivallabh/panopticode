@@ -5,11 +5,13 @@ import java.util.List;
 
 import org.panopticode.DecimalMetric;
 import org.panopticode.IntegerMetric;
+import org.panopticode.Metric;
 import org.panopticode.MetricTarget;
 import org.panopticode.PanopticodeFile;
 import org.panopticode.PanopticodeMethod;
 import org.panopticode.PanopticodeProject;
 import org.panopticode.RatioMetric;
+
 import static org.panopticode.util.IndicatorUtil.*;
 
 public class C3Treemap extends BaseFileTreemap  {
@@ -50,18 +52,9 @@ public class C3Treemap extends BaseFileTreemap  {
         }
 
         public boolean inCategory(MetricTarget toCheck) {
-        	if(toCheck instanceof PanopticodeFile) {
-        		PanopticodeFile file = (PanopticodeFile) toCheck;
-        		PanopticodeProject project = file.getParentPackage().getParentProject();
-        		DecimalMetric linesChangedIndicator=(DecimalMetric) file.getMetricByName("Lines Changed Indicator");
-        		DecimalMetric changeFrequencyInficator=(DecimalMetric) file.getMetricByName("Change Frequency Indicator");
-        		RatioMetric coverage = (RatioMetric) file.getMetricByName("Line Coverage");
-        		IntegerMetric maxComplexity = (IntegerMetric) file.getMetricByName("MAX-CCN");
-        		if(linesChangedIndicator==null || changeFrequencyInficator==null || coverage == null || maxComplexity == null) {
-        			return false;
-        		}
-        		double c3Indicator = computeC3Indicator(linesChangedIndicator.getValue(), changeFrequencyInficator.getValue(), coverage.getPercentValue()/100, computeMaxCCNIndicator(maxComplexity.getValue()));
-        		return c3Indicator < lessThanExclusive;
+        	DecimalMetric metric = (DecimalMetric) toCheck.getMetricByName("C3 Indicator");
+        	if(metric!=null) {
+        		return metric.getValue()< lessThanExclusive;
         	}
             return false;
         }

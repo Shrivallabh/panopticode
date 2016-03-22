@@ -157,6 +157,13 @@
                                      gitLog="@{outputDir}/log/git.log">
                 </gitChurnPanopticode>
 
+                <taskdef name="c3Panopticode"
+                         classpath="panopticode/panopticode.jar"
+                         classname="org.panopticode.supplement.ant.C3Panopticode" />
+                <!-- This should be the last task run as it dependes on execution of 
+                     other supplement tasks -->
+                <c3Panopticode panopticodeFile="@{outputDir}/panopticode.xml" />
+
             <!-- Run the reports -->
                 <mkdir dir="@{outputDir}/reports/svg" />
 
