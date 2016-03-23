@@ -35,7 +35,7 @@ public class GitChurnSupplement implements Supplement {
 		Duration duration;
 
 		project.addSupplementDeclaration(getDeclaration());
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/mm/yyyy");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		try {
 			from = simpleDateFormat.parse(arguments[0]);
 			to = simpleDateFormat.parse(arguments[1]);
