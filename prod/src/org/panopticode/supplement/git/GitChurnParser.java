@@ -16,33 +16,60 @@ import java.util.StringTokenizer;
 public class GitChurnParser {
 
 	public Map<String, FileInfo> parse(String buffer) {
-		try (BufferedReader reader = new BufferedReader(new StringReader(buffer))) {
+		BufferedReader reader = null;
+		try {
+			reader = new BufferedReader(new StringReader(buffer));
 			return parse(reader);
 		} catch (IOException ioe) {
 			throw new RuntimeException("Failed to read input", ioe);
+		} finally {
+			if(reader!=null) {
+				try {
+					reader.close();
+				} catch (Exception e) 
+				{/*ignore */}
+			}
 		}
 	}
 
 	public Map<String, FileInfo> parse(File file) {
-		try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+		BufferedReader reader = null;
+		try {
+			reader = new BufferedReader(new FileReader(file));
 			return parse(reader);
 		} catch (IOException ioe) {
 			throw new RuntimeException("Failed to read input", ioe);
+		} finally {
+			if(reader!=null) {
+				try {
+					reader.close();
+				} catch (Exception e) 
+				{/*ignore */}
+			}
 		}
 	}
 
 	public Map<String, FileInfo> parse(InputStream is) {
-		try (BufferedReader reader = new BufferedReader(new InputStreamReader(is))) {
+		BufferedReader reader = null;
+		try {
+			reader = new BufferedReader(new InputStreamReader(is));
 			return parse(reader);
 		} catch (IOException ioe) {
 			throw new RuntimeException("Failed to read input", ioe);
+		} finally {
+			if(reader!=null) {
+				try {
+					reader.close();
+				} catch (Exception e) 
+				{/*ignore */}
+			}
 		}
 	}
 
 	private Map<String, FileInfo> parse(BufferedReader reader)
 			throws IOException {
 		String line;
-		Map<String, FileInfo> filenameVsInfo = new HashMap<>();
+		Map<String, FileInfo> filenameVsInfo = new HashMap<String, FileInfo>();
 		int lineCounter = 0;
 		try {
 			while ((line = reader.readLine()) != null) {
